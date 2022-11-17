@@ -1,33 +1,33 @@
-# Как отправить текстовое сообщение из браузера
-### Установка
+# How to send a text message from a browser
+### Installation
 ```
 <script type="text/javascript" src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 ```
 ### Import 
-Используя браузерный javascript 
+Using the browser javascript 
 ```
 <script src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 ```
-#### Как инициализировать объект
+#### How to initialize an object
 
-Храните Ваши авторизационные данные отдельно от кода. Библиотека позволяет создать  файл с произвольным именем и местом в следующем формате: 
+Store your authorization data separate from the code. The library allows you to create a file with an arbitrary name and location in the following format: 
 ```
 API_TOKEN_INSTANCE = "MY_API_TOKEN_INSTANCE"
 ID_INSTANCE = "MY_ID_INSTANCE"
 ```
-Передать ключи, можно используя пример ниже:
+You can pass the keys using the below example:
 ``` js
 const restAPI = whatsAppClient.restAPI(({
     credentialsPath: "examples\\credentials"
 }))
 ```
-### Примеры
+### Examples
 
-Комплексный пример отправки сообщений и получения уведомлений из браузера| [browserExample.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExample.html)
+A complex example of sending messages and getting notifications from a browser| [browserExample.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExample.html)
 
-#### Как отправить текстовое сообщения на номер WhatsApp
+#### How to send a text message to a WhatsApp number
 
-Используя  js script
+Using  js script
 ``` 
 <script src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 <script>
@@ -43,10 +43,10 @@ const restAPI = whatsAppClient.restAPI(({
     });
 </script>
 ```
-### Полный список примеров
+### The full list of examples
 
-Описание |  Модуль
+Description |  Module
 ----- | ----- 
-Комплексный пример отправки сообщений и получения уведомлений из браузера| [browserExample.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExample.html)
-Пример получения QR кода по HTTP | [browserExampleQRCode.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExampleQRCode.html)
-Пример получения QR кода по websocket| [browserExampleQRCodeWebsocket.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExampleQRCodeWebsocket.html)
+Complex example of sending messages and getting notifications from a browser| [browserExample.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExample.html)
+Example of getting a QR code via HTTP | [browserExampleQRCode.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExampleQRCode.html)
+Example of getting a QR code via websocket| [browserExampleQRCodeWebsocket.html](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/browserExampleQRCodeWebsocket.html)
