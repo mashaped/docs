@@ -45,7 +45,7 @@ import bodyParser from 'body-parser';
 (async () => {
     try {
 
-        // Set http url ссылку where webhooks will be sent to. 
+        // Set http url where webhooks will be sent to. 
         // Url must have a public address.
         await restAPI.settings.setSettings({
             webhookUrl: 'MY_HTTP_SERVER:3000/webhooks'
