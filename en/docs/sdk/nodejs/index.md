@@ -3,45 +3,45 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/green-api/whatsapp-api-client/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/green-api/whatsapp-api-client.svg)](https://github.com/green-api/whatsapp-api-client/releases)
 
-[Javascript библиотека](https://github.com/green-api/whatsapp-api-client-js) для интеграции с мессенджером WhatsAPP через API сервиса [green-api.com](https://green-api.com). Чтобы воспользоваться библиотекой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://console.green-api.com). Есть бесплатный тариф аккаунта разработчика.
+[Javascript library](https://github.com/green-api/whatsapp-api-client-js) for integration with WhatsAPP messenger via API of [green-api.com](https://green-api.com) service. To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
 
 #### API
 
-Документация к REST API находится по [ссылке](https://green-api.com/docs/api/). Библиотека является оберткой к REST API, поэтому документация по ссылке выше применима и к самой библиотеке.
+You can find REST API documentation by [url](https://green-api.com/docs/api/). The library is a wrapper for REST API, so the documentation at the above url applies to the library as well.
 
-#### Авторизация 
+#### Authorization 
 
-Чтобы отправить сообщение или выполнить другой метод Green-API, аккаунт WhatsApp в приложении телефона должен быть в авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://console.green-api.com) и сканируйте QR-код с использованием приложения WhatsApp.
+To send a message or to execute some other Green-API method, you have to have the WhatsApp account in the phone application to be authorized. To authorize your account please go to the [personal area](https://console.green-api.com) and scan a QR-code using the WhatsApp application.
 
-#### [Как отправить текстовое сообщение](sendmessage.md)
-#### [Как отправить файл по ссылке](sendfilebyurl.md)
-#### [Как отправить файл загрузкой с диска](sendfilebyupload.md)
-#### [Как принять и обработать уведомление](receiveNotification.md)
-#### [Как принять и обработать уведомления используя сервер](receiveNotificationserver.md)
-#### [Как получить QR код](getqr.md)
+#### [How to send a text message](sendmessage.md)
+#### [How to send a file by url](sendfilebyurl.md)
+#### [How to send a file by uploading from the disk](sendfilebyupload.md)
+#### [How to receive and process a notification](receiveNotification.md)
+#### [How to receive and process notifications using a server](receiveNotificationserver.md)
+#### [How to get a QR code](getqr.md)
 
-#### Разворачивание окружения разработки
+#### Development environment unrolling
 
-1. Склонируйте репозиторий через ``git clone``
-2. Установите зависимости через ``npm install``
-3. Установите глобально библиотеку ``rollup`` для сборки.
-4. Для вебхуков добавьте `express` как новую зависимость через npm
-5. Создайте файл `.env` в рутовом каталоге и пропишите переменные окружения. Образец переменных в файле [env.example](https://github.com/green-api/whatsapp-api-client-js/blob/master/env.example)
+1. Clone the repository via ``git clone``
+2. Install dependencies via ``npm install``
+3. Globally install the ``rollup`` library for building.
+4. For webhooks add  `express` as a new dependency via npm
+5. Create a `.env` file in the root directory and set the environment variables. The example of variables are in the [env.example](https://github.com/green-api/whatsapp-api-client-js/blob/master/env.example) file
 
-#### Сборка
-Скомпилировать как browser, так и node/webpack версии либы можно одной командой
+#### Building
+You can compile both browser and node/webpack versions of the library with one command
 ```
 npm run build
 ```
-#### Документация по методам сервиса
+#### Service methods documentation
 
-[Документация по методам сервиса](https://green-api.com/docs/api/)
+[Service methods documentation](https://green-api.com/docs/api/)
 
-#### Сторонние продукты
+#### External products
 
-* [axios](https://github.com/axios/axios) - для http запросов
-* [express](https://www.npmjs.com/package/express) - сервер приложений для вебхуков
+* [axios](https://github.com/axios/axios) - for http requests
+* [express](https://www.npmjs.com/package/express) - webhook applications server
 
-#### Лицензия
+#### License
 
-Лицензировано на условиях MIT. Смотрите файл [LICENSE](https://github.com/green-api/whatsapp-api-client-python/blob/master/LICENSE)
+Licensed under MIT terms. Please see file [LICENSE](https://github.com/green-api/whatsapp-api-client-python/blob/master/LICENSE)
