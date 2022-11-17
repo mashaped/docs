@@ -35,7 +35,7 @@ const restAPI = whatsAppClient.restAPI(({
 You may see the full example at: [ReceiveWebhook.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/ReceiveWebhook.js)
 
 #### How to receive and process a notification using a server
-Работает только в node js с на базе express
+Only works in node js with express based
 
 ``` js
 import whatsAppClient from '@green-api/whatsapp-api-client'
@@ -45,8 +45,8 @@ import bodyParser from 'body-parser';
 (async () => {
     try {
 
-        // Устанавливаем http url ссылку, куда будут отправляться вебхуки. 
-        // Ссылка должна иметь публичный адрес.
+        // Set http url ссылку where webhooks will be sent to. 
+        // Url must have a public address.
         await restAPI.settings.setSettings({
             webhookUrl: 'MY_HTTP_SERVER:3000/webhooks'
         });
@@ -55,12 +55,12 @@ import bodyParser from 'body-parser';
         app.use(bodyParser.json());
         const webHookAPI = whatsAppClient.webhookAPI(app, '/webhooks')
 
-        // Подписываемся на событие вебхука при получении сообщения
+        // Subscribe to the webhook event upon a message receipt
         webHookAPI.onIncomingMessageText((data, idInstance, idMessage, sender, typeMessage, textMessage) => {
             console.log(`outgoingMessageStatus data ${data.toString()}`)
         });
 
-        // Запускаем веб сервер, имеющий публичный адрес
+        // Start a web server with a public address
         app.listen(3000, async () => {
             console.log(`Started. App listening on port 3000!`)
 
@@ -68,7 +68,7 @@ import bodyParser from 'body-parser';
                 idInstance: MY_ID_INSTANCE,
                 apiTokenInstance: MY_API_TOKEN_INSTANCE
             }));
-            // Отправляем тестовое сообщение, для того чтобы сработали события вебхуков
+            // Send a text message to trigger webhook events
             const response = await restAPI.message.sendMessage("79999999999@c.us", null, "hello world");
     
         });
