@@ -21,7 +21,7 @@ To send a message or to execute some other Green-API method, you have to have th
 2. Install dependencies via ``npm install``
 3. Globally install the ``rollup`` library for building.
 4. For webhooks add `express` as a new dependency via npm
-5. Create an `.env` file in the root directory and set the environment variables. The example of variables are in the [env.example](https://github.com/green-api/whatsapp-api-client-js/blob/master/env.example) file
+5. Create a `.env` file in the root directory and set the environment variables. The example of variables are in the [env.example](https://github.com/green-api/whatsapp-api-client-js/blob/master/env.example) file
 
 #### Building
 You can compile both browser and node/webpack versions of the library with one command
