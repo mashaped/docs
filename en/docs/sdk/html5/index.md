@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/green-api/whatsapp-api-client/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/green-api/whatsapp-api-client.svg)](https://github.com/green-api/whatsapp-api-client/releases)
 
-[Javascript library](https://github.com/green-api/whatsapp-api-client-js) for integration of HTML with WhatsAPP messanger via API of [green-api.com](https://green-api.com) service. It is a specific case of the [NodeJs WhatsApp Library](../nodejs/index.md) usage. To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
+[Javascript library](https://github.com/green-api/whatsapp-api-client-js) for integration of HTML with WhatsAPP messenger via API of [green-api.com](https://green-api.com) service. It is a specific case of the [NodeJs WhatsApp Library](../nodejs/index.md) usage. To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
 
 #### API
 
