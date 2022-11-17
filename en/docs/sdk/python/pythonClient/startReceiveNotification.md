@@ -1,4 +1,4 @@
-# How to handle incoming notifications
+# How to process incoming notifications
 ### Installation
 ```
 pip install whatsapp-api-client-python
