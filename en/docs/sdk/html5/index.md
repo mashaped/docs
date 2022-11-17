@@ -15,7 +15,7 @@ To send a message or to execute some other Green-API method, you have to have th
 
 #### [How to send a text message from a browser](sendmessage.md)
 
-#### Development enviri=onment unrolling
+#### Development environment unrolling
 
 1. Clone the repository via ``git clone``
 2. Install dependencies via ``npm install``
