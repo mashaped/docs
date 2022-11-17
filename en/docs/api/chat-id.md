@@ -11,14 +11,14 @@ Correspondent Id is used to identify the recipient in outgoing messages and to i
 The format of the personal chat Id is formed according to the template `00000000000@c.us`, where  it is required to use the recipient's phone number instead of zeros`00000000000`. The telephone number must be entered in full, with the country code and without spaces. Example:
 
 ```
-79001234567@c.us
+11001234567@c.us
 ```
 
 ## Group chat {#gus}
 Group chat Id presents a string of `00000000000-XXXXXXXXXX@g.us` or `XXXXXXXXXXXXXXXXX@g.us` form. Example:
 
 ```
-79001234567-1581234048@g.us
+11001234567-1581234048@g.us
 120363043968066561@g.us
 ```
 

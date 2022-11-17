@@ -39,7 +39,7 @@ Parameter | Type |  Description
 
 ```json
 {
-    "wid": "79001234567@c.us", 
+    "wid": "11001234567@c.us", 
     "countryInstance": "ru",
     "typeAccount": "vip",
     "webhookUrl": "https://mysite.com/webhook/green-api/",

@@ -23,7 +23,7 @@ Parameter | Type | Mandatory | Description
 10 last messages request:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "count": 10
 }
 ```
@@ -100,8 +100,8 @@ Parameter | Type |  Description
         "timestamp": 1603964449,
         "idMessage": "3AADDD555CB0822C0539",
         "typeMessage": "textMessage",
-        "chatId": "79001234567@c.us",
-        "senderId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
+        "senderId": "11001234567@c.us",
         "senderName": "Andrew Sh",
         "textMessage": "I use Green-API to get this message from you!"
     },
@@ -111,7 +111,7 @@ Parameter | Type |  Description
         "idMessage": "3EB08816FEBCCC3FACD2",
         "statusMessage": "read",
         "typeMessage": "textMessage",
-        "chatId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
         "textMessage": "I use Green-API to send this message to you!"
     },
     {
@@ -119,8 +119,8 @@ Parameter | Type |  Description
         "timestamp": 1603964444,
         "idMessage": "3AA45F9F285C5249CDFC",
         "typeMessage": "imageMessage",
-        "chatId": "79001234567@c.us",
-        "senderId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
+        "senderId": "11001234567@c.us",
         "senderName": "Andrew Sh",
         "downloadUrl": "https://api.green-api.com/waInstance9075/downloadFile/download-file-id",
         "caption": "Green-API Logo"
@@ -139,7 +139,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/GetChatHistory/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"count\": 100\r\n}"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"count\": 100\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

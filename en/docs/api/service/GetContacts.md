@@ -35,7 +35,7 @@ Parameter | Type |  Description
 ```json
 [
     {
-        "id": "79001234567@c.us",
+        "id": "11001234567@c.us",
         "name": "Ivan Petrov",
         "type": "user"
     },

@@ -43,7 +43,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "typeWebhook": "incomingMessageReceived",
   "instanceData": {
     "idInstance": 1234,
-    "wid": "79001234567@c.us",
+    "wid": "11001234567@c.us",
     "typeInstance": "whatsapp"
   },
   "timestamp": 1588091580,
@@ -69,7 +69,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "typeWebhook": "incomingMessageReceived",
   "instanceData": {
     "idInstance": 1234,
-    "wid": "79001234567@c.us",
+    "wid": "11001234567@c.us",
     "typeInstance": "whatsapp"
   },
   "timestamp": 1588091580,
@@ -103,7 +103,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "typeWebhook": "incomingMessageReceived",
   "instanceData": {
     "idInstance": 1234,
-    "wid": "79001234567@c.us",
+    "wid": "11001234567@c.us",
     "typeInstance": "whatsapp"
   },
   "timestamp": 1588091580,
@@ -138,7 +138,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "typeWebhook": "incomingMessageReceived",
   "instanceData": {
     "idInstance": 1234,
-    "wid": "79001234567@c.us",
+    "wid": "11001234567@c.us",
     "typeInstance": "whatsapp"
   },
   "timestamp": 1588091580,
@@ -175,7 +175,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "typeWebhook": "incomingMessageReceived",
   "instanceData": {
     "idInstance": 1234,
-    "wid": "79001234567@c.us",
+    "wid": "11001234567@c.us",
     "typeInstance": "whatsapp"
   },
   "timestamp": 1588091580,

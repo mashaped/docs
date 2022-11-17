@@ -35,7 +35,7 @@ GET https://api.green-api.com/waInstance{{idInstance}}/GetContacts/{{apiTokenIns
 ```json
 [
     {
-        "id": "79001234567@c.us",
+        "id": "11001234567@c.us",
         "name": "Иван Петров",
         "type": "user"
     },

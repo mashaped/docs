@@ -21,7 +21,7 @@ Parameter | Type | Mandatory | Description
 
 ```json
 {
-    "groupId": "79001234567-1587570015@g.us"
+    "groupId": "11001234567-1587570015@g.us"
 }
 ```
 
@@ -52,13 +52,13 @@ Parameter | Type |  Description
 
 ```json
 {
-	"groupId": "79001234567-1587570015@g.us",
-	"owner": "79001234567@c.us",
+	"groupId": "11001234567-1587570015@g.us",
+	"owner": "11001234567@c.us",
 	"subject": "Green API Group",
 	"creation": 1587570015,
 	"participants": [
 		{
-			"id": "79001234567@c.us",
+			"id": "11001234567@c.us",
 			"isAdmin": true,
 			"isSuperAdmin": true
 		},
@@ -74,7 +74,7 @@ Parameter | Type |  Description
 		}
 	],
 	"subjectTime": 1587737715,
-	"subjectOwner": "79001234567@c.us",
+	"subjectOwner": "11001234567@c.us",
 	"groupInviteLink": "https://chat.whatsapp.com/xxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
@@ -90,7 +90,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/getGroupData/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"groupId\": \"79001234567-1587570015@g.us\"\r\n}"
+payload = "{\r\n\t\"groupId\": \"11001234567-1587570015@g.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

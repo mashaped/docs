@@ -22,7 +22,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/GetAvatarAsync/{{apiToke
 Получить аватар корреспондента:
 ```json
 {
-    "chatId": "79001234567@c.us"
+    "chatId": "11001234567@c.us"
 }
 ```
 
@@ -52,7 +52,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/getAvatarAsync/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"chatId\": \"79001234567@c.us\"\r\n}"
+payload = "{\r\n    \"chatId\": \"11001234567@c.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

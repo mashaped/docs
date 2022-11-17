@@ -15,13 +15,13 @@ POST https://api.green-api.com/waInstance{{idInstance}}/CheckWhatsapp/{{apiToken
 
 Параметр | Тип | Обязательный | Описание
 ----- | ----- | ----- | -----
-`phoneNumber` | **integer** | Да | Номер телефона получателя в международном формате: 11 или 12 цифр; Пример: `79001234567` или `380123456789`
+`phoneNumber` | **integer** | Да | Номер телефона получателя в международном формате: 11 или 12 цифр; Пример: `11001234567` или `380123456789`
 
 ### Пример тела запроса {#request-example-body}
 
 ```json
 {
-    "phoneNumber": 79001234567
+    "phoneNumber": 11001234567
 }
 ```
 
@@ -57,7 +57,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/checkWhatsapp/{{apiTokenInstance}}"
 
-payload = "{phoneNumber: 79001234567}"
+payload = "{phoneNumber: 11001234567}"
 headers = {
   'Content-Type': 'application/json'
 }

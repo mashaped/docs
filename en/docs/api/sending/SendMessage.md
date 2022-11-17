@@ -29,7 +29,7 @@ Parameter | Type | Mandatory | Description
 Sending a message to a personal chat:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "I use Green-API to send this message to you!"
 }
 ```
@@ -37,7 +37,7 @@ Sending a message to a personal chat:
 Sending a message to a group chat:
 ```json
 {
-    "chatId": "79001234567-1581234048@g.us",
+    "chatId": "11001234567-1581234048@g.us",
     "message": "I use Green-API to send this message to you!"
 }
 ```
@@ -45,7 +45,7 @@ Sending a message to a group chat:
 Sending a quoted message:
 ```json
 {
-    "chatId": "79001234567@с.us",
+    "chatId": "11001234567@с.us",
     "message": "I use Green-API to send this message to you!",
     "quotedMessageId": "361B0E63F2FDF95903B6A9C9A102F34B"
 }
@@ -77,7 +77,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendMessage/For a list of errors common to all methods, refer to {{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

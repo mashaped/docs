@@ -22,7 +22,7 @@ Parameter | Type | Mandatory | Description
 
 ```json
 {
-    "groupId": "79001234567-1587570015@g.us",
+    "groupId": "11001234567-1587570015@g.us",
     "groupName": "Group created by Green API+"
 }
 ```

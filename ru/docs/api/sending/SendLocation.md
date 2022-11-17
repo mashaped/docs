@@ -29,7 +29,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendLocation/{{apiTokenI
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "nameLocation": "Restaurant",
     "address": "123456, Perm",
     "latitude": 12.3456789,
@@ -51,7 +51,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendLocation/{{apiTokenI
 Отправка сообщения с цитированием:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "nameLocation": "Restaurant",
     "address": "123456, Perm",
     "latitude": 12.3456789,
@@ -86,7 +86,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendLocation/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"chatId\": \"79001234567@c.us\",\r\n    \"nameLocation\": \"Я здесь, приезжай\",\r\n    \"address\": \"613123, Perm\",\r\n   \t\"latitude\": 44.9370129,\r\n    \"longitude\": 89.8728409\r\n}\r\n"
+payload = "{\r\n    \"chatId\": \"11001234567@c.us\",\r\n    \"nameLocation\": \"Я здесь, приезжай\",\r\n    \"address\": \"613123, Perm\",\r\n   \t\"latitude\": 44.9370129,\r\n    \"longitude\": 89.8728409\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

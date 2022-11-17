@@ -30,7 +30,7 @@
     "typeWebhook":"statusInstanceChanged",
     "instanceData": {
         "idInstance": 1,
-        "wid": "79001234567@c.us",
+        "wid": "11001234567@c.us",
         "typeInstance":"whatsapp"
     },
     "timestamp": 1586700690,

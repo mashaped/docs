@@ -21,7 +21,7 @@ Parameter | Type | Mandatory | Description
 
 ```json
 {
-    "groupId": "79001234567-1587570015@g.us"
+    "groupId": "11001234567-1587570015@g.us"
 }
 ```
 
@@ -52,7 +52,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/leaveGroup/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"groupId\": \"79001234567-1587570015@g.us\"\r\n}"
+payload = "{\r\n    \"groupId\": \"11001234567-1587570015@g.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

@@ -37,7 +37,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendContact/{{apiTokenIn
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "contact": {
         "phoneContact": 79001234568,
         "firstName": "Артем",
@@ -65,7 +65,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendContact/{{apiTokenIn
 Отправка сообщения с цитированием:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "quotedMessageId": "361B0E63F2FDF95903B6A9C9A102F34B",
     "contact": {
         "phoneContact": 79001234568,
@@ -104,7 +104,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendContact/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"contact\": {\r\n\t\t\"phoneContact\": 79001234568,\r\n    \t\"firstName\": \"Артем\",\r\n\t\t\"middleName\": \"Петрович\",\r\n\t\t\"lastName\": \"Евпаторийский\",\r\n\t\t\"company\": \"Велосипед\"\r\n\t}\r\n}\r\n"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"contact\": {\r\n\t\t\"phoneContact\": 79001234568,\r\n    \t\"firstName\": \"Артем\",\r\n\t\t\"middleName\": \"Петрович\",\r\n\t\t\"lastName\": \"Евпаторийский\",\r\n\t\t\"company\": \"Велосипед\"\r\n\t}\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

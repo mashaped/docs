@@ -54,7 +54,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendListMessage/{{apiTok
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Текст сообщения",
     "title": "заголовок",
     "footer": "подвал",

@@ -53,12 +53,12 @@ POST https://api.green-api.com/waInstance{{idInstance}}/GetGroupData/{{apiTokenI
 ```json
 {
 	"groupId": "120363043968066561@g.us",
-	"owner": "79001234567@c.us",
+	"owner": "11001234567@c.us",
 	"subject": "Green API Group",
 	"creation": 1587570015,
 	"participants": [
 		{
-			"id": "79001234567@c.us",
+			"id": "11001234567@c.us",
 			"isAdmin": true,
 			"isSuperAdmin": true
 		},
@@ -74,7 +74,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/GetGroupData/{{apiTokenI
 		}
 	],
 	"subjectTime": 1587737715,
-	"subjectOwner": "79001234567@c.us",
+	"subjectOwner": "11001234567@c.us",
 	"groupInviteLink": "https://chat.whatsapp.com/xxxxxxxxxxxxxxxxxxxxxx"
 }
 ```

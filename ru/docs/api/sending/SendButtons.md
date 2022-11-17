@@ -45,7 +45,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendButtons/{{apiTokenIn
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Hello",
     "footer": "Please choose the color:",
     "buttons": [
@@ -94,7 +94,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendButtons/{{apiTokenIn
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/SendButtons/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
 	"message": "Please choose the color:",
     "buttons": [{"buttonId": "1", "buttonText": "green"}, {"buttonId": "2", "buttonText": "red"}, {"buttonId": "3", "buttonText": "blue"}]
 }'
