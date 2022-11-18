@@ -1,5 +1,5 @@
 site_name: Green API
-repo_name: green-api/docs 
+repo_name: green-api/docs
 repo_url: https://github.com/green-api/docs
 edit_uri: edit/master/ru/docs/
 site_dir: build
@@ -10,7 +10,7 @@ nav:
     - Главная: "/"
   - "Блог":
     - Блог: "/blog/index.html"
-  - "Документация": 
+  - "Документация":
     - 'Оглавление': 'index.md'
     - 'Быстрый старт':
         - 'Перед началом работы': 'before-start.md'
@@ -129,20 +129,30 @@ nav:
         - 'Все вопросы': 'faq/index.md'
         - 'Как защитить номер от бана?': 'faq/how-to-protect-number-from-ban.md'
         - 'Если ваш номер заблокирован': 'faq/if-your-number-is-blocked.md'
-  - Релизы: 
+  - Релизы:
         - "Оглавление": 'release/index.md'
-        - 'Список релизов': 
+        - 'Список релизов':
           - '5.44.19.39 от 19.10.2022': 'release/5.44.19.39.md'
           - '5.44.18.74 от 20.09.2022': 'release/5.44.18.74.md'
           - '5.44.18.28 от 13.09.2022': 'release/5.44.18.28.md'
           - '5.43.17.130 от 23.08.2022': 'release/5.43.17.130.md'
           - '5.43.16.63 от 09.08.2022': 'release/5.43.16.63.md'
-  - SDK: 
+  - SDK:
         - "Оглавление": 'sdk/index.md'
-        - 'Список SDK': 
+        - 'Список SDK':
+          - 'PHP WhatsApp Library':
+            - 'Обзор': 'sdk/php/index.md'
+            - 'PHP WhatsApp Library':
+              - 'Обзор': 'sdk/php/phpClient/index.md'
+              - 'sdk/php/phpClient/sendmessage.md'
+              - 'sdk/php/phpClient/sendfilebyurl.md'
+              - 'sdk/php/phpClient/sendfilebyupload.md'
+              - 'sdk/php/phpClient/creategroup.md'
+              - 'sdk/php/phpClient/startReceiveNotification.md'
+              - 'sdk/php/phpClient/fullmethods.md'
           - 'Python WhatsApp Library':
             - 'Обзор': 'sdk/python/index.md'
-            - 'Python WhatsApp Library': 
+            - 'Python WhatsApp Library':
               - 'Обзор': 'sdk/python/pythonClient/index.md'
               - 'sdk/python/pythonClient/sendmessage.md'
               - 'sdk/python/pythonClient/sendfilebyurl.md'
@@ -150,14 +160,14 @@ nav:
               - 'sdk/python/pythonClient/creategroup.md'
               - 'sdk/python/pythonClient/startReceiveNotification.md'
               - 'sdk/python/pythonClient/fullmethods.md'
-            - 'Python Webhook server Library': 
+            - 'Python Webhook server Library':
               - 'Обзор': 'sdk/python/pythonWebhookServer/index.md'
               - 'sdk/python/pythonWebhookServer/serverUbuntu.md'
               - 'sdk/python/pythonWebhookServer/serverWindows.md'
               - 'sdk/python/pythonWebhookServer/serverLibrary.md'
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
-          - 'NodeJs WhatsApp Library': 
+          - 'NodeJs WhatsApp Library':
             - 'Обзор': 'sdk/nodejs/index.md'
             - 'sdk/nodejs/sendmessage.md'
             - 'sdk/nodejs/sendfilebyurl.md'
@@ -165,7 +175,7 @@ nav:
             - 'sdk/nodejs/receiveNotification.md'
             - 'sdk/nodejs/receiveNotificationserver.md'
             - 'sdk/nodejs/getqr.md'
-          - 'HTML5 WhatsApp Library': 
+          - 'HTML5 WhatsApp Library':
             - 'Обзор': 'sdk/html5/index.md'
             - 'sdk/html5/sendmessage.md'
           - '1С WhatsApp Обработка':
@@ -177,7 +187,7 @@ nav:
     #     - '1С': 'api/sending/SendMessage.md'
     #     - 'NodeJS': 'api/sending/SendMessage.md'
     #     - 'HTML': 'api/sending/SendMessage.md'
-    
+
 theme:
   name: material
   custom_dir: overrides
@@ -202,7 +212,7 @@ theme:
 extra_css:
   - stylesheets/styles.css
   - stylesheets/extra.css
-  
+
 # Plugins
 plugins:
   - search:
