@@ -168,6 +168,7 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverLibrary.md'
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
+              - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
           - 'NodeJs WhatsApp Library':
             - 'Обзор': 'sdk/nodejs/index.md'
             - 'sdk/nodejs/sendmessage.md'
