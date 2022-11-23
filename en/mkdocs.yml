@@ -87,6 +87,7 @@ nav:
         - 'Journals':
             - 'Journals - review': 'api/journals/index.md'
             - 'Get chat history': 'api/journals/GetChatHistory.md'
+            - 'Get chat message': 'api/journals/GetMessage.md'
             - 'Get incoming messages journal': 'api/journals/LastIncomingMessages.md'
             - 'Get outgoing messages journal': 'api/journals/LastOutgoingMessages.md'
         - 'Queues':
