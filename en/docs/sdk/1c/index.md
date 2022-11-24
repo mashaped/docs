@@ -4,14 +4,14 @@
 
 #### Download a processing model
 
-Обработку можно скачать здесь [![Скачать](../../assets/button_download.svg)](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
+You can download a processing model here [![Скачать](../../assets/button_download.svg)](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
 
-После запуска обработки в 1С потребуется ввести идентификатор инстанса и токен авторизации
+After starting the processing model in 1C, you will have to enter the instance ID and authorization token
 
 ![`Скриншот`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Screenshort.png?raw=true)
 
-#### Требования
-Платформа 1С не ниже версии 8.3.10
+#### Requirements
+1С platform not lower than 8.3.10 version
 
 #### API
 
@@ -29,9 +29,9 @@ To send a message or to execute some other Green-API method, you have to have th
 
 [Service methods documentation](https://green-api.com/docs/api/)
 
-#### Установка обработки из исходников
+#### Installation of a processing model from sources
 
-Исходники в репозитории - это xml выгрузка из конфигуратора 1С версии 8.3.16 в режиме совместимости с 8.3.10. Скачайте исходники с репозитория и загрузите в конфигуратор с помощью команды Конфигурация -> Загрузить конфигурацию из файлов
+The sources in the repository are xml downloads from the 1C configurator of 8.3.16 version in the compatibility mode with 8.3.10 version. Download the sources from the repository and upload them into the configurator using the command Configuration -> Upload configuration from files
 
 #### License
 
