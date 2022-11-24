@@ -3,8 +3,8 @@
 1. [Download a processing model](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf) in the epf format
 2. Connect to the service through the assistant built into the processing model or via [green-api.com](https://green-api.com/) web site. Get ``API Token`` and ``ID Instance``
 3. Launch in a browser or thin client and specify connection parameters (``API Token`` and ``ID Instance``)
-4. Scan QR code с мобильного телефона WhatsApp (Меню чаты -> Иконка всех функций -> Связанные устройства -> Привязка устройства)
-6. В форме обработки нажать кнопку ``Проверить подключение``. Поле формы статус должно изменится на "Подключен"
+4. Scan QR code from your WhatsApp mobile phone. (Chats menu -> All functions icon -> Linked devices -> Device linking)
+6. In the processing model form click the ``Check connection`` button. The form status parameter should change to "Connected"
 
 ![`Проверить подключение`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Login.png?raw=true)
 
