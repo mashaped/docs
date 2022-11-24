@@ -35,4 +35,4 @@ Configuration file example:
 
 "\<Path-to-log-file\>" - path to the log file
 
-Besides you will have to open the relevant port to the external network by configuring the firewall settings (Advanced settings -> Inbound Rules -> Create a rule -> Rule type = Port, Protocoles and port -> TCP, specify port, Действие -> Разрешить соединение)
+Besides you will have to open the relevant port to the external network by configuring the firewall settings (Advanced settings -> Inbound Rules -> Create a rule -> Rule type = Port, Protocoles and port -> TCP, specify port, Action -> Allow connection)
