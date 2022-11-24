@@ -1,32 +1,32 @@
-# Пример подготовки среды сервера на операционной системе Ubuntu
+# Example of preparing a server environment on the Ubuntu operating system
 
-После создания машины для сервера нужно настроить на ней брандмауэр, установить необходимые компоненты и запустить сервер.
+After creating a machine for the server, you have to configure a firewall on it, install the necessary components and start up the server.
 
-Ubuntu 20.04 и выше поставляются с предустановленным Python 3.
-Обновим систему:
+Ubuntu 20.04 and higher are supplied with Python 3 pre-installed .
+Update the system:
 ```
 sudo apt update
 sudo apt -y upgrade
 ```
 
-Нужно настроить правила брандмауэра. В Ubuntu брандмауэр UFW установлен по умолчанию, но если по какой-то причине он не установлен, установим:
+You should set up firewall rules. In Ubuntu, the UFW firewall is installed by default, but if for some reason it is not installed, install it:
 ```
 sudo apt install ufw
 ```
 
-Сначала создадим правила брандмауэра по-умолчанию:
+First, create the default firewall rules:
 ```
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-Если мы сейчас активируем брандмауэр UFW, все входящие соединения будут запрещены.
-Чтобы после активации бранмауэра нам было доступно соединение по SSH нужно добавить правила:
+If we activate the UFW firewall at this stage, all incoming connections will be denied.
+We should add rules to be able to connect via SSH after activating the firewall:
 ```
 sudo ufw allow ssh
 ```
 
-Соединения HTTP на порту 80, которые используются веб-серверами без шифрования, с помощью команды:
+HTTP connections on port 80 that are used by non-encrypted web servers, using the command:
 ```
 sudo ufw allow http
 ```
