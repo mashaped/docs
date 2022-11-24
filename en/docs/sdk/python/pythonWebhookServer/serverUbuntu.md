@@ -58,14 +58,14 @@ Install the pip package management system if the OS distribution doesn't contain
 sudo apt install -y python3-pip
 ```
 
-Теперь можно устанавливать нашу библиотеку.
+Now we can install our library.
 
-Установка библиотеки:
+Library installation:
 ```
 pip3 install whatsapp-api-webhook-server-python
 ```
 
-Можно в качестве примера запустить на сервере наш скрипт echo.py, он будет выводить в консоль информацию о полученных вэбхуках:
+As an example, you can run our echo.py script on the server. It will output information on the received webhooks to the console:
 ```
 wget https://raw.githubusercontent.com/green-api/whatsapp-api-webhook-server-python/master/examples/echo.py
 python3 echo.py
