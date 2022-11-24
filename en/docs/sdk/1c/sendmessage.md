@@ -18,21 +18,21 @@
 
 ![`Отправка сообщения`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Sending.png?raw=true)
 
-1. Перейти на вкладку `Отправка сообщений`
-2. Указать телефон получателя и текст соообщения
-3. Нажать кнопку `Отправить текст`
+1. Go to the ``Sending Messages`` tab
+2. Specify the recipient's phone number and message text
+3. Click the `Send text` button
 
-#### Как отправить текстовое сообщения используя собственную конфигурацию
+#### How to send a text message using your own configuration
 
 ```bsl
-АПИ = Обработки.GreenAPI.Создать();
-АПИ.IdInstance = "ВАШ_ИНСТАНС";
-АПИ.ApiToken = "ВАШ_ТОКЕН";
-Ответ = АПИ.ОтправитьТекст("79001234567", "Hello"); 
+API = Processing models.GreenAPI.Create();
+API.IdInstance = "YOUR_INSTANCE";
+API.ApiToken = "YOUR_TOKEN";
+Response = API.SendText("79001234567", "Hello"); 
 ```
-### Полный список примеров
+### The full list of examples
 
-Описание |  Модуль
+Description |  Module
 ----- | ----- 
-Демо обработка 1С для WhatsApp| [GreenAPI.epf](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
-Исходники обработки 1С для WhatsApp| [whatsapp-api-client-1c](https://github.com/green-api/whatsapp-api-client-1c)
+1C demo processing model for WhatsApp| [GreenAPI.epf](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
+Sources of 1C processing model for WhatsApp| [whatsapp-api-client-1c](https://github.com/green-api/whatsapp-api-client-1c)
