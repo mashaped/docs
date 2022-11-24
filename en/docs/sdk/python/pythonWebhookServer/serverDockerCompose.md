@@ -1,24 +1,24 @@
-# Пример разворачивания сервера через Docker Compose
+# Example of unrolling a server via Docker Compose
 
-На машине должен быть установлен [Docker](https://docs.docker.com/engine/install/).
-А также плагин [Docker compose](https://docs.docker.com/compose/install/)
+[Docker](https://docs.docker.com/engine/install/) must be installed on the machine
+as well as [Docker compose](https://docs.docker.com/compose/install/) plugin.
 
-Нужно скачать файл [docker-compose.yml](https://github.com/green-api/whatsapp-api-webhook-server-python/blob/master/docker-compose.yml). Например, с помощью команды wget (Linux):
+You should download the [docker-compose.yml](https://github.com/green-api/whatsapp-api-webhook-server-python/blob/master/docker-compose.yml) file. For example, using the command wget (Linux):
 
 ```
 wget https://raw.githubusercontent.com/green-api/whatsapp-api-webhook-server-python/master/docker-compose.yml
 ```
 
-Затем собрать сервис из образа:
+Then you should compose the service from the image:
 
 ```
 docker-compose build
 ```
 
-И запустить его:
+and start it up:
 
 ```
 docker-compose up
 ```
 
-Команды следует выполнять из каталога с файлом docker-compose.yml
+The commands should be run from the directory with the docker-compose.yml file
