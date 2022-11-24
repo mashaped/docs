@@ -22,7 +22,7 @@ The processing model has a software interface designed in accordance with [1C de
 2. Specify the recipient's phone number and message text
 3. Click the `Send text` button
 
-#### How to send a text message to a group your own configurations
+#### How to send a text message to a group using your own configuration
 
 ```bsl
 API = Processing models.GreenAPI.Create();
