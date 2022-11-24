@@ -3,23 +3,23 @@
 [![Python application](https://github.com/green-api/whatsapp-api-webhook-server-python/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/green-api/whatsapp-api-webhook-server-python/actions/workflows/python-app.yml)
 [![Upload Python Package](https://github.com/green-api/whatsapp-api-webhook-server-python/actions/workflows/python-publish.yml/badge.svg)](https://github.com/green-api/whatsapp-api-webhook-server-python/actions/workflows/python-publish.yml)
 
-#### Настройка
+#### Configuration
 
-- [Настройка личного кабинета](../../../api/receiving/technology-webhook-endpoint.md#cabinet)
+- [Personal area configuration](../../../api/receiving/technology-webhook-endpoint.md#cabinet)
 
-#### Запуск сервера из библиотеки
+#### Server startup from the library
 
-##### Подготовка среды
+##### Preparing environment
 
-- [Пример подготовки среды сервера на операционной системе Ubuntu](serverUbuntu.md)
+- [Example of preparing a server environment on the Ubuntu operating system](serverUbuntu.md)
 
-- [Пример подготовки среды сервера на операционной системе Windows](serverWindows.md)
+- [Example of preparing a server environment on the Windows operating system](serverWindows.md)
 
-##### Библиотека
+##### Library
 
-- [Библиотека whatsapp-api-webhook-server-python](serverLibrary.md)
+- [Whatsapp-api-webhook-server-python library](serverLibrary.md)
 
-#### Запуск сервера в Docker
+#### Server startup in Docker
 
-- [Пример разворачивания сервера в контейнере Docker](serverDocker.md)
-- [Пример разворачивания сервера через Docker Compose](serverDockerCompose.md)
+- [Example of unrolling a server environment in a Docker container](serverDocker.md)
+- [Example of unrolling a server via Docker Compose](serverDockerCompose.md)
