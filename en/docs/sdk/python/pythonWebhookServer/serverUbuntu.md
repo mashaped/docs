@@ -26,34 +26,34 @@ We should add rules to be able to connect via SSH after activating the firewall:
 sudo ufw allow ssh
 ```
 
-HTTP connections on port 80 that are used by non-encrypted web servers, using the command:
+HTTP connections on port 80 that are used by non-encrypted web servers, use the command:
 ```
 sudo ufw allow http
 ```
 
-Соединения HTTPS на порту 443, которые используются веб-серверами с шифрованием, с помощью команды: 
+HTTP connections on port 443 that are used by encrypted web servers, use the command: 
 ```
 sudo ufw allow https
 ```
 
-Если на вашем сервере имеется публичный сетевой интерфейс под названием eth0, вы можете разрешить трафик HTTP (порт 80) для этого интерфейса с помощью следующей команды:
+If your server has a public network interface named eth0, you can allow HTTP traffic (port 80) to that interface with the following command:
 ```
 sudo ufw allow in on eth0 to any port 80
 ```
 
-Название сетевого интерфейса можно узнать с помощью команды:
+You can find the network interface name using the command:
 ```
 ip addr
 ```
 
-Активация брандмауэра UFW:
+UFW firewall activation:
 ```
 sudo ufw enable
 ```
 
-Теперь наш сервер может принимать входящие запросы на указанный нами порт.
+Now our server can accept incoming requests on the port we have specified.
 
-Установим систему управления пакетами pip, если он не содержиться в дистрибутиве ОС:
+Install the pip package management system if the OS distribution doesn't contain it:
 ```
 sudo apt install -y python3-pip
 ```
