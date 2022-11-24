@@ -1,19 +1,19 @@
-# Пример разворачивания среды сервера в контейнере Docker
+# Example of unrolling a server environment in a Docker container
 
-На машине должен быть установлен [docker](https://docs.docker.com/engine/install/).
+[Docker](https://docs.docker.com/engine/install/) must be installed on the machine.
 
-Для получения образа из DockerHub воспользуемся командой:
+To get an image from DockerHub, use the command:
 
 ```
 sudo docker pull greenapi/whatsapp-api-webhook-server-python
 ```
 
-Запустим образ в контейнере с указанием порта и отображением консоли:
+Run the image in a container specifying the port and displaying the console:
 
 ```
 sudo docker run --publish 8080:80 -it greenapi/whatsapp-api-webhook-server-python
 ```
 
-Вместо порта 8080 можно указать любой свободный порт машины. В консоле [кабинета Green-Api](https://console.green-api.com/instanceList/) нужно будет указать IP (или внешнее имя машины) с указанием этого порта.
+You can specify any free port on the machine instead of port 8080. You should identify IP (or the machine external name) specifying this port in the console of the [Green-Api personal area](https://console.green-api.com/instanceList/) нужно будет указать IP (or the machine external name) specifying this port.
 
-После запуска контейнера в консоль контейнера должны приходить вебхуки.
+After the container startup, webhooks should come to the container console.
