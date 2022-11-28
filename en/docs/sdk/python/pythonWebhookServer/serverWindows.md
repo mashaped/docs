@@ -1,12 +1,12 @@
-# Пример подготовки среды сервера на операционной системе Windows
+# Example of preparing a server environment on the Windows operating system
 
-Для использования IIS (Internet Information Services) в качетсве веб-сервере требуется настроить конфигурационный файл web.config,
-чтобы служба IIS могла правильно выполнять код Python. Этот файл располагается в папке публикации вашего веб-сервера.
-Интерпритатор языка можно скачать с официального сайта [python.org](https://www.python.org/downloads/).
+To use IIS (Internet Information Services) as a web server, you have to set up the web.config configuration file,
+so that IIS can execute Python code correctly. This file is located in your web server publish folder.
+The language interpreter can be downloaded from the [python.org](https://www.python.org/downloads/) official web site.
 
-После установки интерпритатора следует указать обработчик HttpPlatform в файле web.config. Этот обработчик будет передавать подключения в автономный процесс Python.
+After installing the interpreter, you should specify the HttpPlatform handler in the web.config file. This handler will pass connections to the offline Python process.
 
-Пример конфигурационного файла:
+Configuration file example:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -29,10 +29,10 @@
 </configuration>
 ```
 
-"\<Path-to-python\>" - путь к исполняемому файлу интерпритатора Python
+"\<Path-to-python\>" - path to the Python interpreter executable file
 
-"\<Path-to-server-file\>" - путь к исполняемому файлу сервера (например echo.py из примера к библиотеке)
+"\<Path-to-server-file\>" - path to the server executable file (for instance, echo.py from the library example)
 
-"\<Path-to-log-file\>" - путь к файл логов
+"\<Path-to-log-file\>" - path to the log file
 
-Также потребуется открыть соответствующий порт во внешнюю сеть, установив настройка брандмауэра (Дополнительные параметры -> Правила для входящих подключений -> Создать правило -> Тип правила = Порт, Протоколы и порт -> TCP, указать порт, Действие -> Разрешить соединение)
+Besides you will have to open the relevant port to the external network by configuring the firewall settings (Advanced settings -> Inbound Rules -> Create a rule -> Rule type = Port, Protocoles and port -> TCP, specify port, Action -> Allow connection)

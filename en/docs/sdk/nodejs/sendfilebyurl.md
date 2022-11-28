@@ -1,40 +1,40 @@
-# Как отправить файл по ссылке
-### Установка
+# How to send a file by URL
+### Installation
 ```
 npm i @green-api/whatsapp-api-client
 ```
 ### Import 
-Есть несколько способов импортировать библиотеку в проект
-Используя классический javascript 
+There are several ways how to import the library to a project
+Using stansard javascript 
 ```
 const whatsAppClient = require("@green-api/whatsapp-api-client");
 ```
-Используя ES6 javascript 
+Using ES6 javascript 
 ```
 import whatsAppClient from "@green-api/whatsapp-api-client";
 ```
-Используя typescript 
-```ы
+Using typescript 
+```
 import * as whatsAppClient from "@green-api/whatsapp-api-client";
 ```
-#### Как инициализировать объект
+#### How to initialize an object
 
-Храните Ваши авторизационные данные отдельно от кода. Библиотека позволяет создать  файл с произвольным именем и местом в следующем формате: 
+Store your authorization data separate from the code. The library allows you to create a file with an arbitrary name and location in the following format: 
 ```
 API_TOKEN_INSTANCE = "MY_API_TOKEN_INSTANCE"
 ID_INSTANCE = "MY_ID_INSTANCE"
 ```
-Передать ключи, можно используя пример ниже:
+You can pass the keys using the below example:
 ``` js
 const restAPI = whatsAppClient.restAPI(({
     credentialsPath: "examples\\credentials"
 }))
 ```
-### Примеры
+### Examples
 
-Полный пример можно посмотреть по ссылке: [SendWhatsAppFileUrl.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUrl.js)
+You may see the full example at: [SendWhatsAppFileUrl.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUrl.js)
 
-#### Как отправить файл по ссылке
+#### How to send a file by URL
 
 ``` js
 import whatsAppClient from '@green-api/whatsapp-api-client'
@@ -47,16 +47,16 @@ import whatsAppClient from '@green-api/whatsapp-api-client'
     const response = await restAPI.file.sendFileByUrl("79999999999@c.us", null, 'https://avatars.mds.yandex.net/get-pdb/477388/77f64197-87d2-42cf-9305-14f49c65f1da/s375', 'horse.png', 'horse');
 })();
 ```
-### Полный список примеров
+### The full list of examples
 
-Описание |  Модуль
+Description |  Module
 ----- | ----- 
-Пример отправки текста используя Async| [SendWhatsAppMessageAsync.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppMessageAsync.js)
-Пример отправки текста используя Callback| [SendWhatsAppMessageCallback.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppMessageCallback.js)
-Пример отправки картинки по URL | [SendWhatsAppFileUrl.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUrl.js)
-Пример отправки картинки загрузкой с диска | [SendWhatsAppFileUpload.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUpload.js)
-Пример получения входящего уведомления методом receiveNotification| [ReceiveNotifications.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/ReceiveNotifications.js)
-Пример получения входящих уведомлений через webhook service REST API | [StartReceivingNotifications.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/StartReceivingNotifications.js)
-Пример получения входящих уведомлений на сервер| [ReceiveWebhook.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/ReceiveWebhook.js)
-Пример получения QR кода по HTTP | [getQRCode.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/getQRCode.js)
-Пример получения QR кода по websocket| [getQRCodeWebsocket.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/getQRCodeWebsocket.js)
+Example of sending text using Async| [SendWhatsAppMessageAsync.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppMessageAsync.js)
+Example of sending text using Callback| [SendWhatsAppMessageCallback.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppMessageCallback.js)
+Example of sending a picture by URL | [SendWhatsAppFileUrl.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUrl.js)
+Example of sending a picture by uploading from the disk | [SendWhatsAppFileUpload.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUpload.js)
+Example of receiving an incoming notification with the receiveNotification method| [ReceiveNotifications.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/ReceiveNotifications.js)
+Example of receiving incoming notifications via webhook service REST API | [StartReceivingNotifications.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/StartReceivingNotifications.js)
+Example of receiving incoming notifications to a server| [ReceiveWebhook.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/ReceiveWebhook.js)
+Example of getting a QR code via HTTP | [getQRCode.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/getQRCode.js)
+Example of getting a QR code via websocket| [getQRCodeWebsocket.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/getQRCodeWebsocket.js)

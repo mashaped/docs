@@ -1,38 +1,38 @@
-# 1C WhatsApp обработка
+# 1C WhatsApp processing model
 
-[1C обработка](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf) для интеграции 1С с мессенджером WhatsAPP через API сервиса [green-api.com](https://green-api.com), можно так же воспользоваться [исходниками конфигурации в формате выгрузки xml](https://github.com/green-api/whatsapp-api-client-1c). Чтобы воспользоваться обработкой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://console.green-api.com). Есть бесплатный тариф аккаунта разработчика.
+[1C processing model](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf) for integration of 1С with WhatsAPP messenger via API of [green-api.com](https://green-api.com) service. You can also use [configuration sources in xml download format](https://github.com/green-api/whatsapp-api-client-1c). To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
 
-#### Скачать обработку
+#### Download a processing model
 
-Обработку можно скачать здесь [![Скачать](../../assets/button_download.svg)](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
+You can download a processing model here [![Скачать](../../assets/button_download.svg)](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
 
-После запуска обработки в 1С потребуется ввести идентификатор инстанса и токен авторизации
+After starting the processing model in 1C, you will have to enter the instance ID and authorization token
 
 ![`Скриншот`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Screenshort.png?raw=true)
 
-#### Требования
-Платформа 1С не ниже версии 8.3.10
+#### Requirements
+1С platform not lower than 8.3.10 version
 
 #### API
 
-Документация к REST API находится по [ссылке](https://green-api.com/docs/api/). Библиотека является оберткой к REST API, поэтому документация по ссылке выше применима и к самой библиотеке.
+You can find REST API documentation by [url](https://green-api.com/docs/api/). The library is a wrapper for REST API, so the documentation at the above url applies to the library as well.
 
-#### Авторизация 
+#### Authorization
 
-Чтобы отправить сообщение или выполнить другой метод Green-API, аккаунт WhatsApp в приложении телефона должен быть в авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://console.green-api.com) и сканируйте QR-код с использованием приложения WhatsApp.
+To send a message or to execute some other Green-API method, you have to have the WhatsApp account in the phone application to be authorized. To authorize your account please go to the [personal area](https://console.green-api.com) and scan a QR-code using the WhatsApp application.
 
-#### [Как отправить текстовое сообщение](sendmessage.md)
-#### [Как отправить текстовое сообщение в группу](sendmessagegroup.md)
-#### [Как получить сообщение](receivenotification.md)
+#### [How to send a text message](sendmessage.md)
+#### [How to send a text message to a group](sendmessagegroup.md)
+#### [How to receive a message](receivenotification.md)
 
-#### Документация по методам сервиса
+#### Service methods documentation
 
-[Документация по методам сервиса](https://green-api.com/docs/api/)
+[Service methods documentation](https://green-api.com/docs/api/)
 
-#### Установка обработки из исходников
+#### Installation of a processing model from sources
 
-Исходники в репозитории - это xml выгрузка из конфигуратора 1С версии 8.3.16 в режиме совместимости с 8.3.10. Скачайте исходники с репозитория и загрузите в конфигуратор с помощью команды Конфигурация -> Загрузить конфигурацию из файлов
+The sources in the repository are xml downloads from the 1C configurator of 8.3.16 version in the compatibility mode with 8.3.10 version. Download the sources from the repository and upload them into the configurator using the command Configuration -> Upload configuration from files
 
-#### Лицензия
+#### License
 
-Лицензировано на условиях MIT. Смотрите файл [LICENSE](https://github.com/green-api/whatsapp-api-client-1c/blob/master/LICENSE)
+Licensed under MIT terms. Please see file [LICENSE](https://github.com/green-api/whatsapp-api-client-1c/blob/master/LICENSE)

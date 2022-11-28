@@ -1,29 +1,29 @@
-# Как получить сообщение
-### Установка
-1. [Скачать обработку](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf) в формате epf
-2. Подключиться к сервису через встроенный в обработку помощник или  самостоятельно через сайт [green-api.com](https://green-api.com/). Получить ``API Token`` и ``ID Instance``
-3. Запустить в браузере или тонком клиенте и указать параметры подключения (``API Token`` и ``ID Instance``)
-4. Сканировать QR код с мобильного телефона WhatsApp (Меню чаты -> Иконка всех функций -> Связанные устройства -> Привязка устройства)
-6. В форме обработки нажать кнопку ``Проверить подключение``. Поле формы статус должно изменится на "Подключен"
+# How to receive a message
+### Installation
+1. [Download a processing model](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf) in the epf format
+2. Connect to the service through the assistant built into the processing model or via [green-api.com](https://green-api.com/) web site. Get ``API Token`` and ``ID Instance``
+3. Launch in a browser or thin client and specify connection parameters (``API Token`` and ``ID Instance``)
+4. Scan QR code from your WhatsApp mobile phone. (Chats menu -> All functions icon -> Linked devices -> Device linking)
+6. In the processing model form click the ``Check connection`` button. The form status parameter should change to "Connected"
 
 ![`Проверить подключение`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Login.png?raw=true)
 
-### Использование обработки в собственных конфигурациях
+### Using a processing model in your own configurations
 
-Обработка имеет программный интерфейс, оформленный в соответствии со [стандартами разработки 1С](https://its.1c.ru/db/v8std). Вы можете встроить ее в свою конфигурацию и вызывать АПИ на сервере через создание объекта.
+The processing model has a software interface designed in accordance with [1C development standards](https://its.1c.ru/db/v8std). You can build it into your configuration and call the API on the server by initializing an object.
 
-### Примеры
+### Examples
 
-#### Как отправить получить сообщение используя обработку
+#### How to receive a message using a processing model
 
 ![`Получение сообщения`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Receiving.png?raw=true)
 
-1. Перейти на вкладку ``Получение сообщений``
-2. Нажать на кнопку ``Получить сообщенние``. Если сообщение было отправлено, то поле ``Тело сообщения`` заполнится данными в формате JSON. Если нет отправленных сообщенимй - то обработка будет ждать 20 секунд для получения сообщения.
+1. Go to the ``Receiving Messages`` tab
+2. Click on the ``Receive a message`` button. If a message has been sent, then the ``Message body`` parameter will be filled in with the data in JSON format. If there are no messages sent, then the processing model will wait 20 seconds to receive a message.
 
-### Полный список примеров
+### The full list of examples
 
-Описание |  Модуль
+Description |  Module
 ----- | ----- 
-Демо обработка 1С для WhatsApp| [GreenAPI.epf](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
-Исходники обработки 1С для WhatsApp| [whatsapp-api-client-1c](https://github.com/green-api/whatsapp-api-client-1c)
+1C demo processing model for WhatsApp| [GreenAPI.epf](https://github.com/green-api/whatsapp-1c-example/releases/download/1.0/GreenAPI.epf)
+Sources of 1C processing model for WhatsApp| [whatsapp-api-client-1c](https://github.com/green-api/whatsapp-api-client-1c)

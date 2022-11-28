@@ -3,7 +3,7 @@
 [![Python application](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-app.yml/badge.svg)](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-app.yml)
 [![Upload Python Package](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-publish.yml/badge.svg)](https://github.com/green-api/whatsapp-api-client-python/actions/workflows/python-publish.yml)
 
-[Python library](https://github.com/green-api/whatsapp-api-client-python) for integration with WhatsAPP messanger via API of [green-api.com](https://green-api.com/en) service. To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
+[Python library](https://github.com/green-api/whatsapp-api-client-python) for integration with WhatsAPP messenger via API of [green-api.com](https://green-api.com/en) service. To use the library you have to get a registration token and an account id in the [personal area](https://console.green-api.com). There is a free developer account tariff plan.
 
 #### API
 
@@ -16,7 +16,7 @@ To send a message or to execute some other Green-API method, you have to have th
 #### [How to send a text message](sendmessage.md)
 #### [How to send a file by URL](sendfilebyurl.md)
 #### [How to send a file by uploading from the disk](sendfilebyupload.md)
-#### [How to handle incoming notifications](startReceiveNotification.md)
+#### [How to process incoming notifications](startReceiveNotification.md)
 #### [The full list of the library methods](fullmethods.md)
 
 #### Service methods documentation
@@ -27,6 +27,8 @@ To send a message or to execute some other Green-API method, you have to have th
 
 - [requests](https://requests.readthedocs.io) - for http requests
 
-#### Licence
+
+#### License
+
 
 Licensed under MIT terms. Please see file [LICENSE](https://github.com/green-api/whatsapp-api-client-python/blob/master/LICENSE)
