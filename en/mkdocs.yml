@@ -161,13 +161,29 @@ nav:
               - 'sdk/python/pythonClient/creategroup.md'
               - 'sdk/python/pythonClient/startReceiveNotification.md'
               - 'sdk/python/pythonClient/fullmethods.md'
-            # - 'Python Webhook server Library':
-            #   - 'Overview': 'sdk/python/pythonWebhookServer/index.md'
-            #   - 'sdk/python/pythonWebhookServer/serverUbuntu.md'
-            #   - 'sdk/python/pythonWebhookServer/serverWindows.md'
-            #   - 'sdk/python/pythonWebhookServer/serverLibrary.md'
-            #   - 'sdk/python/pythonWebhookServer/serverDocker.md'
-            #   - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
+            - 'Python Webhook server Library':
+              - 'Overview': 'sdk/python/pythonWebhookServer/index.md'
+              - 'sdk/python/pythonWebhookServer/serverUbuntu.md'
+              - 'sdk/python/pythonWebhookServer/serverWindows.md'
+              - 'sdk/python/pythonWebhookServer/serverLibrary.md'
+              - 'sdk/python/pythonWebhookServer/serverDocker.md'
+              - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
+          - 'NodeJs WhatsApp Library':
+            - 'Обзор': 'sdk/nodejs/index.md'
+            - 'sdk/nodejs/sendmessage.md'
+            - 'sdk/nodejs/sendfilebyurl.md'
+            - 'sdk/nodejs/sendfilebyupload.md'
+            - 'sdk/nodejs/receiveNotification.md'
+            - 'sdk/nodejs/receiveNotificationserver.md'
+            - 'sdk/nodejs/getqr.md'
+          - 'HTML5 WhatsApp Library':
+            - 'Обзор': 'sdk/html5/index.md'
+            - 'sdk/html5/sendmessage.md'
+          - '1С WhatsApp Library':
+            - 'Overview': 'sdk/1c/index.md'
+            - 'sdk/1c/sendmessage.md'
+            - 'sdk/1c/sendmessagegroup.md'
+            - 'sdk/1c/receivenotification.md'
     #   - 'Integration':
     #     - '1С': 'api/sending/SendMessage.md'
     #     - 'NodeJS': 'api/sending/SendMessage.md'
