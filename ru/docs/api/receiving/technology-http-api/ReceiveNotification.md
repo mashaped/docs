@@ -38,7 +38,7 @@ GET https://api.green-api.com/waInstance{{idInstance}}/ReceiveNotification/{{api
         "typeWebhook": "incomingMessageReceived",
         "instanceData": {
             "idInstance": 1234,
-            "wid": "79001234567@c.us",
+            "wid": "11001234567@c.us",
             "typeInstance": "whatsapp"
         },
         "timestamp": 1588091580,

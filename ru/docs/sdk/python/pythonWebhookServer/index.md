@@ -39,3 +39,4 @@
 
 - [Пример разворачивания сервера в контейнере Docker](serverDocker.md)
 - [Пример разворачивания сервера через Docker Compose](serverDockerCompose.md)
+- [Пример разворачивания сервера в контейнере Docker на Yandex Cloud](serverDockerOnYandexCloud.md)

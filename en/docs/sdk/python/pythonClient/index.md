@@ -27,6 +27,8 @@ To send a message or to execute some other Green-API method, you have to have th
 
 - [requests](https://requests.readthedocs.io) - for http requests
 
+
 #### License
+
 
 Licensed under MIT terms. Please see file [LICENSE](https://github.com/green-api/whatsapp-api-client-python/blob/master/LICENSE)

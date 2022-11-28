@@ -28,7 +28,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendLink/{{apiTokenInsta
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "urlLink": "https://green-api.com"
 }
 ```
@@ -44,7 +44,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendLink/{{apiTokenInsta
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "urlLink": "https://green-api.com",
     "quotedMessageId": "361B0E63F2FDF95903B6A9C9A102F34B"
 }
@@ -77,7 +77,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendLink/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"urlLink\": \"https://green-api.com\"\r\n}\r\n"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"urlLink\": \"https://green-api.com\"\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

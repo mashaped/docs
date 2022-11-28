@@ -45,7 +45,7 @@ Parameter | Type |  Description
 ```json
 {
     "created": true,
-    "chatId": "79001234567-1587570015@g.us",
+    "chatId": "11001234567-1587570015@g.us",
     "groupInviteLink": "https://chat.whatsapp.com/xxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
@@ -61,7 +61,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/createGroup/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"groupName\": \"Group created by Green API\",\r\n    \"chatIds\": [\r\n        \"79001234567@c.us\",\r\n        \"79001234568@c.us\"\r\n    ]\r\n}\r\n"
+payload = "{\r\n\t\"groupName\": \"Group created by Green API\",\r\n    \"chatIds\": [\r\n        \"11001234567@c.us\",\r\n        \"79001234568@c.us\"\r\n    ]\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

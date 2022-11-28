@@ -23,7 +23,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/ReadChat/{{apiTokenInsta
 Отметка прочтения одного сообщения в чате:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "idMessage": "B275A7AA0D6EF89BB9245169BDF174E6"
 }
 ```
@@ -31,7 +31,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/ReadChat/{{apiTokenInsta
 Отметка прочтения всех сообщений в чате:
 ```json
 {
-    "chatId": "79001234567@c.us"
+    "chatId": "11001234567@c.us"
 }
 ```
 
@@ -62,7 +62,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/readChat/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"idMessage\": \"B275A7AA0D6EF89BB9245169BDF174E6\"\r\n}\r\n"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"idMessage\": \"B275A7AA0D6EF89BB9245169BDF174E6\"\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

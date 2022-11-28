@@ -24,11 +24,13 @@ The processing model has a software interface designed in accordance with [1C de
 
 #### How to send a text message to a group using your own configuration
 
-```bsl
+```
+
 API = Processing models.GreenAPI.Create();
 API.IdInstance = "YOUR_INSTANCE";
 API.ApiToken = "YOUR_TOKEN";
 Response = API.SendTextToGroup("79001234567-1615394251@g.us", "Hello"); 
+
 ```
 ### The full list of examples
 

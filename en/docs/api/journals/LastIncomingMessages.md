@@ -91,8 +91,8 @@ Parameter | Type |  Description
         "idMessage": "DE8CFFA93B95237B077F8FA08331A0B5",
         "timestamp": 1587129319,
         "typeMessage": "textMessage",
-        "chatId": "79001234567@c.us",
-        "senderId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
+        "senderId": "11001234567@c.us",
         "senderName": "Nikolay",
         "textMessage": "Hi"
     },
@@ -100,8 +100,8 @@ Parameter | Type |  Description
         "idMessage": "EA0BD1AE042DC4F3609867126309D67C",
         "timestamp": 1587147598,
         "typeMessage": "imageMessage",
-        "chatId": "79001234567@c.us",
-        "senderId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
+        "senderId": "11001234567@c.us",
         "senderName": "Nikolay",
         "downloadUrl": "https://api.green-api.com/waInstance1234/downloadFile/EA1BD1AE042DC4F3609867126309D67C",
         "caption": "What do you think?"

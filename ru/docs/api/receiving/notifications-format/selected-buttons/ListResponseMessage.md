@@ -32,14 +32,14 @@
     "typeWebhook": "incomingMessageReceived",
     "instanceData": {
         "idInstance": 1101000001,
-        "wid": "79001234567@c.us",
+        "wid": "11001234567@c.us",
         "typeInstance": "whatsapp"
     },
     "timestamp": 1657025112,
     "idMessage": "A36C68A09C54796295FCAD20C15C534C",
     "senderData": {
-        "chatId": "79001234567@c.us",
-        "sender": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
+        "sender": "11001234567@c.us",
         "senderName": "Green API"
     },
     "messageData": {

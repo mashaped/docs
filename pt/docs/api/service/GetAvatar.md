@@ -72,7 +72,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/getAvatar/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"chatId\": \"79001234567@c.us\"\r\n}"
+payload = "{\r\n    \"chatId\": \"11001234567@c.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

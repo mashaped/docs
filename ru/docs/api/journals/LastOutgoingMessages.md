@@ -88,7 +88,7 @@ GET https://api.green-api.com/waInstance{{idInstance}}/LastOutgoingMessages/{{ap
         "timestamp": 1587133830,
         "statusMessage": "read",
         "typeMessage": "textMessage",
-        "chatId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
         "textMessage": "Привет",
     },
     {
@@ -96,7 +96,7 @@ GET https://api.green-api.com/waInstance{{idInstance}}/LastOutgoingMessages/{{ap
         "timestamp": 1587133830,
         "statusMessage": "read",
         "typeMessage": "imageMessage",
-        "chatId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
         "downloadUrl": "https://api.green-api.com/waInstance1234/downloadFile/3EB0BDDC94BFDFB3D4FA",
         "caption": "Как тебе?"
     }

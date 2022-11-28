@@ -34,10 +34,10 @@
 ```json
 {
     "typeWebhook": "outgoingMessageStatus",
-    "chatId": "79001234567890@c.us",
+    "chatId": "11001234567890@c.us",
     "instanceData": {
         "idInstance": 1234,
-        "wid": "79001234567@c.us",
+        "wid": "11001234567@c.us",
         "typeInstance": "whatsapp"
     },
     "timestamp": 1586700802,

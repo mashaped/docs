@@ -29,7 +29,7 @@ Parameter | Type | Mandatory | Description
 Sending a message to a personal chat:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "nameLocation": "Restaurant",
     "address": "123456, Perm",
     "latitude": 12.3456789,
@@ -40,7 +40,7 @@ Sending a message to a personal chat:
 Sending a message to a group chat:
 ```json
 {
-    "chatId": "79001234567-1581234048@g.us",
+    "chatId": "11001234567-1581234048@g.us",
     "nameLocation": "Restaurant",
     "address": "123456, Perm",
     "latitude": 12.3456789,
@@ -51,7 +51,7 @@ Sending a message to a group chat:
 Sending quoted messages:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "nameLocation": "Restaurant",
     "address": "123456, Perm",
     "latitude": 12.3456789,
@@ -86,7 +86,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendLocation/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"chatId\": \"79001234567@c.us\",\r\n    \"nameLocation\": \"Я здесь, приезжай\",\r\n    \"address\": \"613123, Perm\",\r\n   \t\"latitude\": 44.9370129,\r\n    \"longitude\": 89.8728409\r\n}\r\n"
+payload = "{\r\n    \"chatId\": \"11001234567@c.us\",\r\n    \"nameLocation\": \"Я здесь, приезжай\",\r\n    \"address\": \"613123, Perm\",\r\n   \t\"latitude\": 44.9370129,\r\n    \"longitude\": 89.8728409\r\n}\r\n"
 headers = {
   'Content-Type': 'application/json'
 }

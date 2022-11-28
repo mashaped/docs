@@ -39,7 +39,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendFileByUpload/{{apiTokenInstance}}"
 
-payload = {'chatId': '79001234567@c.us',
+payload = {'chatId': '11001234567@c.us',
 'caption': 'Description'}
 files = [
   ('file', open('/C:/window.jpg','rb'))

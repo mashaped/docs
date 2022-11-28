@@ -34,7 +34,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenI
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "namespace": "not_existing_namespace",
     "name": "not_existing_template",
     "languageCode": "ru",
@@ -72,7 +72,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenI
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "namespace": "not_existing_namespace",
     "name": "not_existing_template",
     "languageCode": "ru",

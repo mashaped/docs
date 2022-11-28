@@ -54,7 +54,7 @@ Parameter | Type | Description
 Sending a message to a personal chat:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Message text",
     "title": "title",
     "footer": "footer",

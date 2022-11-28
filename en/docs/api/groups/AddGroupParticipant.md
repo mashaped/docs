@@ -23,7 +23,7 @@ Parameter | Type | Mandatory | Description
 Adding a participant to a group chat:
 ```json
 {
-    "groupId": "79001234567-1587570015@g.us",
+    "groupId": "11001234567-1587570015@g.us",
     "participantChatId": "79001234565@c.us"
 }
 ```
@@ -55,7 +55,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/addGroupParticipant/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"groupId\": \"79001234567-1581234048@g.us\",\r\n\t\"participantChatId\": \"79001234568@c.us\"\r\n}"
+payload = "{\r\n\t\"groupId\": \"11001234567-1581234048@g.us\",\r\n\t\"participantChatId\": \"79001234568@c.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

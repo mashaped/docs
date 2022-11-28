@@ -27,7 +27,7 @@ API_TOKEN_INSTANCE = environ['API_TOKEN_INSTANCE']
 
 ```
 chatIds = [
-    "79001234567@c.us"
+    "11001234567@c.us"
 ]
 resultCreate = restApi.groups.createGroup('GroupName', 
     chatIds)

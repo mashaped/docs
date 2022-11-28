@@ -15,13 +15,13 @@ For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you
 
 Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
-`phoneNumber` | **integer** | Yes | Recipient's phone number in international format: 11 or 12 digits; Example: `79001234567` or `380123456789`
+`phoneNumber` | **integer** | Yes | Recipient's phone number in international format: 11 or 12 digits; Example: `11001234567` or `380123456789`
 
 ### Request body example {#request-example-body}
 
 ```json
 {
-    "phoneNumber": 79001234567
+    "phoneNumber": 11001234567
 }
 ```
 
@@ -57,7 +57,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/checkWhatsapp/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"phoneNumber\": 79001234567\r\n}"
+payload = "{\r\n    \"phoneNumber\": 11001234567\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

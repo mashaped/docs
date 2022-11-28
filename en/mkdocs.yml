@@ -1,5 +1,5 @@
 site_name: Green API
-repo_name: green-api/docs 
+repo_name: green-api/docs
 repo_url: https://github.com/green-api/docs
 edit_uri: edit/master/ru/docs/
 site_dir: build
@@ -10,7 +10,7 @@ nav:
     - Home: "/en"
   - "Blog":
     - Blog: "/en/blog/index.html"
-  - "Documents": 
+  - "Documents":
     - 'Index': 'index.md'
     - 'Quick start':
         - 'Before you start': 'before-start.md'
@@ -69,7 +69,7 @@ nav:
                 - 'Selecting buttons':
                     - 'Simple button selection ': 'api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md'
                     - 'Template button selection': 'api/receiving/notifications-format/selected-buttons/TemplateButtonsReplyMessage.md'
-                    - 'List element selection': 'api/receiving/notifications-format/selected-buttons/ListResponseMessage.md'                
+                    - 'List element selection': 'api/receiving/notifications-format/selected-buttons/ListResponseMessage.md'
                 - 'Outgoing message':
                     - 'Message sent from phone': 'api/receiving/notifications-format/outgoing-message/OutgoingMessage.md'
                     - 'Message sent via API': 'api/receiving/notifications-format/outgoing-message/OutgoingApiMessage.md'
@@ -87,6 +87,7 @@ nav:
         - 'Journals':
             - 'Journals - review': 'api/journals/index.md'
             - 'Get chat history': 'api/journals/GetChatHistory.md'
+            - 'Get chat message': 'api/journals/GetMessage.md'
             - 'Get incoming messages journal': 'api/journals/LastIncomingMessages.md'
             - 'Get outgoing messages journal': 'api/journals/LastOutgoingMessages.md'
         - 'Queues':
@@ -129,20 +130,30 @@ nav:
         - 'FAQ': 'faq/index.md'
         - 'How to protect number from ban?': 'faq/how-to-protect-number-from-ban.md'
         - 'If your number is blocked': 'faq/if-your-number-is-blocked.md'
-  - Releases: 
+  - Releases:
         - "Overview": 'release/index.md'
-        - 'GREEN-API releases': 
+        - 'GREEN-API releases':
           - '5.44.19.39 dd. 19.10.2022': 'release/5.44.19.39.md'
           - '5.44.18.74 dd. 20.09.2022': 'release/5.44.18.74.md'
           - '5.44.18.28 dd. 13.09.2022': 'release/5.44.18.28.md'
           - '5.43.17.130 dd. 23.08.2022': 'release/5.43.17.130.md'
           - '5.43.16.63 dd. 09.08.2022': 'release/5.43.16.63.md'
-  - SDK: 
+  - SDK:
         - "Overview": 'sdk/index.md'
-        - 'GREEN-API SDK': 
+        - 'GREEN-API SDK':
+          - 'PHP WhatsApp Library':
+            - 'Overview': 'sdk/php/index.md'
+            - 'PHP WhatsApp Library':
+              - 'Overview': 'sdk/php/phpClient/index.md'
+              - 'sdk/php/phpClient/sendmessage.md'
+              - 'sdk/php/phpClient/sendfilebyurl.md'
+              - 'sdk/php/phpClient/sendfilebyupload.md'
+              - 'sdk/php/phpClient/creategroup.md'
+              - 'sdk/php/phpClient/startReceiveNotification.md'
+              - 'sdk/php/phpClient/fullmethods.md'
           - 'Python WhatsApp Library':
             - 'Overview': 'sdk/python/index.md'
-            - 'Python WhatsApp Library': 
+            - 'Python WhatsApp Library':
               - 'Overview': 'sdk/python/pythonClient/index.md'
               - 'sdk/python/pythonClient/sendmessage.md'
               - 'sdk/python/pythonClient/sendfilebyurl.md'
@@ -150,18 +161,18 @@ nav:
               - 'sdk/python/pythonClient/creategroup.md'
               - 'sdk/python/pythonClient/startReceiveNotification.md'
               - 'sdk/python/pythonClient/fullmethods.md'
-            # - 'Python Webhook server Library': 
+            # - 'Python Webhook server Library':
             #   - 'Overview': 'sdk/python/pythonWebhookServer/index.md'
             #   - 'sdk/python/pythonWebhookServer/serverUbuntu.md'
             #   - 'sdk/python/pythonWebhookServer/serverWindows.md'
             #   - 'sdk/python/pythonWebhookServer/serverLibrary.md'
             #   - 'sdk/python/pythonWebhookServer/serverDocker.md'
-            #   - 'sdk/python/pythonWebhookServer/serverDockerCompose.md' 
+            #   - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
     #   - 'Integration':
     #     - '1С': 'api/sending/SendMessage.md'
     #     - 'NodeJS': 'api/sending/SendMessage.md'
     #     - 'HTML': 'api/sending/SendMessage.md'
-    
+
 theme:
   name: material
   custom_dir: overrides
@@ -186,7 +197,7 @@ theme:
 extra_css:
   - stylesheets/styles.css
   - stylesheets/extra.css
-  
+
 # Plugins
 plugins:
   - search:

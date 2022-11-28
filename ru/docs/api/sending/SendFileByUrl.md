@@ -36,7 +36,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendFileByUrl/{{apiToken
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "urlFile": "https://my.site.com/img/horse.png",
     "fileName": "horse.png",
     "caption": "Лошадка"
@@ -56,7 +56,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendFileByUrl/{{apiToken
 Отправка сообщения с цитированием:
 ```json
 {
-    "chatId": "79001234567@с.us",
+    "chatId": "11001234567@с.us",
     "urlFile": "https://my.site.com/img/horse.png",
     "fileName": "horse.png",
     "caption": "Лошадка",
@@ -91,7 +91,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendFileByUrl/{{apiTokenInstance}}"
 
-payload = "{\r\n   \t\"chatId\": \"79001234567@c.us\",\r\n\t\"urlFile\": \"https://avatars.mds.yandex.net/get-pdb/477388/77f64197-87d2-42cf-9305-14f49c65f1da/s375\",\r\n\t\"fileName\": \"horse.png\",\r\n\t\"caption\": \"лошадка\"\r\n}"
+payload = "{\r\n   \t\"chatId\": \"11001234567@c.us\",\r\n\t\"urlFile\": \"https://avatars.mds.yandex.net/get-pdb/477388/77f64197-87d2-42cf-9305-14f49c65f1da/s375\",\r\n\t\"fileName\": \"horse.png\",\r\n\t\"caption\": \"лошадка\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

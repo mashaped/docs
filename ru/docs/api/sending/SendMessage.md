@@ -30,7 +30,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendMessage/{{apiTokenIn
 Отправка сообщения в личный чат:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "I use Green-API to send this message to you!"
 }
 ```
@@ -46,7 +46,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendMessage/{{apiTokenIn
 Отправка сообщения с цитированием:
 ```json
 {
-    "chatId": "79001234567@с.us",
+    "chatId": "11001234567@с.us",
     "message": "I use Green-API to send this message to you!",
     "quotedMessageId": "361B0E63F2FDF95903B6A9C9A102F34B"
 }
@@ -78,7 +78,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/sendMessage/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"chatId\": \"79001234567@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}"
+payload = "{\r\n\t\"chatId\": \"11001234567@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

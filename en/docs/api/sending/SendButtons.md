@@ -45,7 +45,7 @@ Parameter | Type | Description
 Sending a message to a personal chat:
 ```json
 {
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Hello",
     "footer": "Please choose the color:",
     "buttons": [
@@ -94,7 +94,7 @@ For a list of errors common to all methods, refer to [Common errors](../common-e
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendMessage/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79001234567@c.us",
+    "chatId": "11001234567@c.us",
 	"message": "Please choose the color:",
     "buttons": [{"buttonId": "1", "buttonText": "green"}, {"buttonId": "2", "buttonText": "red"}, {"buttonId": "3", "buttonText": "blue"}]
 }'

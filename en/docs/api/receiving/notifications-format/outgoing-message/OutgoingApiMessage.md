@@ -9,7 +9,7 @@ The format of a message, sent via API, is the same as for an [incoming message](
     "typeWebhook": "outgoingAPIMessageReceived",
     "instanceData": {
         "idInstance": 1234,
-        "wid": "79001234567@c.us",
+        "wid": "11001234567@c.us",
         "typeInstance": "whatsapp"
     },
     "timestamp": 1588091580,

@@ -36,7 +36,7 @@ Parameter | Type | Description
     "timestamp": 1586700802,
     "instanceData": {
         "idInstance": 1234,
-        "wid": "79001234567@c.us",
+        "wid": "11001234567@c.us",
         "typeInstance": "whatsapp"
     },
     "idMessage": "3EB0608D6A2901063D63",

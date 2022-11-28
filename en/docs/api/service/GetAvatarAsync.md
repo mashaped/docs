@@ -22,14 +22,14 @@ To get your avatar - specify your number in chatId ("{your number}@c.us").
 Get user avatar:
 ```json
 {
-    "chatId": "79001234567@c.us"
+    "chatId": "11001234567@c.us"
 }
 ```
 
 Get group chat avatar:
 ```json
 {
-    "chatId": "79001234567-1581234048@g.us"
+    "chatId": "11001234567-1581234048@g.us"
 }
 ```
 
@@ -52,7 +52,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/getAvatarAsync/{{apiToFor a list of errors common to all methods, refer to kenInstance}}"
 
-payload = "{\r\n    \"chatId\": \"79001234567@c.us\"\r\n}"
+payload = "{\r\n    \"chatId\": \"11001234567@c.us\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

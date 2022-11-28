@@ -14,7 +14,7 @@ You may restore access to your WhatsApp account via email.
 You have to:
 
 1. Generate a message according to [Sample message](#006), substiting your data.
-2. Make the message title with the following content: "I kindly ask you to unblock number 79001234567"
+2. Make the message title with the following content: "I kindly ask you to unblock number 11001234567"
 3. Send the message to support@support.whatsapp.com
 4. Wait for the reply from WhatsApp 
 
@@ -28,7 +28,7 @@ You have to:
 2. Specify your phone number, select a country code out of the dropdown list.
 3. Fill in the mailbox fielfd.
 4. Select WhatsApp for computers
-5. Make the message title with the following content: "I kindly ask you to unblock number 790012345671"
+5. Make the message title with the following content: "I kindly ask you to unblock number 110012345671"
 6. Generate a message according to [Sample message](#006), substiting your data.
 7. Wait for the reply from WhatsApp.
 
@@ -47,7 +47,7 @@ We have noticed that when sending unblock requests using mailboxes in the ru zon
 ## 6. Sample message {#006}
 ```
 Hello!
-I kindly ask you to unblock number 790012345671
+I kindly ask you to unblock number 110012345671
 The number is used in the WhatsApp Business by our company to communicate with customers.
 Thank you!
 ```

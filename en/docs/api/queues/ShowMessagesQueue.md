@@ -39,12 +39,12 @@ Parameter | Type |  Description
 [
     {
         "typeMessage": "textMessage",
-        "chatId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
         "message": "I use Green-API to send this message to you!"
     },
     {
         "typeMessage": "imageMessage",
-        "chatId": "79001234567@c.us",
+        "chatId": "11001234567@c.us",
         "fileName": "image.jpg"
     }
 ]
