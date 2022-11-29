@@ -2,7 +2,7 @@
 
 [![build_site](https://github.com/green-api/docs/workflows/build_site/badge.svg)](https://github.com/green-api/docs/actions/workflows/build_site.yml)
 
-Welcome to GREEN API [docs](https://green-api.com/docs) repository. 
+Welcome to GREEN API [docs](https://green-api.com/docs/) repository. 
 
 ## About documentation
 
