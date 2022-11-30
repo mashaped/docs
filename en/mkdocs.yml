@@ -141,16 +141,6 @@ nav:
   - SDK:
         - "Overview": 'sdk/index.md'
         - 'GREEN-API SDK':
-          - 'PHP WhatsApp Library':
-            - 'Overview': 'sdk/php/index.md'
-            - 'PHP WhatsApp Library':
-              - 'Overview': 'sdk/php/phpClient/index.md'
-              - 'sdk/php/phpClient/sendmessage.md'
-              - 'sdk/php/phpClient/sendfilebyurl.md'
-              - 'sdk/php/phpClient/sendfilebyupload.md'
-              - 'sdk/php/phpClient/creategroup.md'
-              - 'sdk/php/phpClient/startReceiveNotification.md'
-              - 'sdk/php/phpClient/fullmethods.md'
           - 'Python WhatsApp Library':
             - 'Overview': 'sdk/python/index.md'
             - 'Python WhatsApp Library':
@@ -168,8 +158,18 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverLibrary.md'
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
+          - 'PHP WhatsApp Library':
+            - 'Overview': 'sdk/php/index.md'
+            - 'PHP WhatsApp Library':
+              - 'Overview': 'sdk/php/phpClient/index.md'
+              - 'sdk/php/phpClient/sendmessage.md'
+              - 'sdk/php/phpClient/sendfilebyurl.md'
+              - 'sdk/php/phpClient/sendfilebyupload.md'
+              - 'sdk/php/phpClient/creategroup.md'
+              - 'sdk/php/phpClient/startReceiveNotification.md'
+              - 'sdk/php/phpClient/fullmethods.md'
           - 'NodeJs WhatsApp Library':
-            - 'Обзор': 'sdk/nodejs/index.md'
+            - 'Overview': 'sdk/nodejs/index.md'
             - 'sdk/nodejs/sendmessage.md'
             - 'sdk/nodejs/sendfilebyurl.md'
             - 'sdk/nodejs/sendfilebyupload.md'
@@ -177,7 +177,7 @@ nav:
             - 'sdk/nodejs/receiveNotificationserver.md'
             - 'sdk/nodejs/getqr.md'
           - 'HTML5 WhatsApp Library':
-            - 'Обзор': 'sdk/html5/index.md'
+            - 'Overview': 'sdk/html5/index.md'
             - 'sdk/html5/sendmessage.md'
           - '1С WhatsApp Library':
             - 'Overview': 'sdk/1c/index.md'
