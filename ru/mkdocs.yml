@@ -141,16 +141,6 @@ nav:
   - SDK:
         - "Оглавление": 'sdk/index.md'
         - 'Список SDK':
-          - 'PHP WhatsApp Library':
-            - 'Обзор': 'sdk/php/index.md'
-            - 'PHP WhatsApp Library':
-              - 'Обзор': 'sdk/php/phpClient/index.md'
-              - 'sdk/php/phpClient/sendmessage.md'
-              - 'sdk/php/phpClient/sendfilebyurl.md'
-              - 'sdk/php/phpClient/sendfilebyupload.md'
-              - 'sdk/php/phpClient/creategroup.md'
-              - 'sdk/php/phpClient/startReceiveNotification.md'
-              - 'sdk/php/phpClient/fullmethods.md'
           - 'Python WhatsApp Library':
             - 'Обзор': 'sdk/python/index.md'
             - 'Python WhatsApp Library':
@@ -169,6 +159,16 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
               - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
+          - 'PHP WhatsApp Library':
+            - 'Обзор': 'sdk/php/index.md'
+            - 'PHP WhatsApp Library':
+              - 'Обзор': 'sdk/php/phpClient/index.md'
+              - 'sdk/php/phpClient/sendmessage.md'
+              - 'sdk/php/phpClient/sendfilebyurl.md'
+              - 'sdk/php/phpClient/sendfilebyupload.md'
+              - 'sdk/php/phpClient/creategroup.md'
+              - 'sdk/php/phpClient/startReceiveNotification.md'
+              - 'sdk/php/phpClient/fullmethods.md'
           - 'NodeJs WhatsApp Library':
             - 'Обзор': 'sdk/nodejs/index.md'
             - 'sdk/nodejs/sendmessage.md'

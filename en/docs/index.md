@@ -15,7 +15,7 @@ Full description of Green API methods with examples
 Detailed responses with examples to frequently asked questions
 
 ## [Releases](release/index.md)
-Releases
+List of published releases with a detailed list of completed tasks and fixed bugs
 
 ## [SDK](sdk/index.md)
-SDK
+Auxiliary tools for quick integration with WhatsApp in various programming languages
