@@ -126,6 +126,11 @@ nav:
             - 'Идентификатор чата': 'api/chat-id.md'
             - 'Интервал отправки сообщений': 'api/send-messages-delay.md'
             - 'Стандартные ошибки': 'api/common-errors.md'
+    - 'Партнёрам':
+        - 'Обзор': 'partners/index.md'
+        - 'Создание инстанса': 'partners/createInstance.md'
+        - 'Удаление инстанса аккаунта партнера': 'partners/deleteInstanceAccount.md'
+        - 'Получение всех инстансов аккаунта созданных партнером': 'partners/getInstances.md'   
     - 'FAQ':
         - 'Все вопросы': 'faq/index.md'
         - 'Как защитить номер от бана?': 'faq/how-to-protect-number-from-ban.md'
