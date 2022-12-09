@@ -1,4 +1,4 @@
-# deleteInstanceAccount
+# DeleteInstanceAccount
 
 Метод предназначен для удаления инстанса аккаунта партнера.
 
