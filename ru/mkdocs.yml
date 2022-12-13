@@ -135,6 +135,7 @@ nav:
         - 'Все вопросы': 'faq/index.md'
         - 'Как защитить номер от бана?': 'faq/how-to-protect-number-from-ban.md'
         - 'Если ваш номер заблокирован': 'faq/if-your-number-is-blocked.md'
+        - 'Особенности отправки и получения сообщений на номера разных стран': 'faq/features-of-sending-and-receiving-messages-from-different-countries.md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':
