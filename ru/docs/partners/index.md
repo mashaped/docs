@@ -1,4 +1,20 @@
-# Работа с методами партнеров
+# Партнёрам
+
+Партнёрская схема работы предполагает более глубокую интеграцию с сервисом и работу с большим числом инстансев на вашей стороне:
+
+* Управление инстансами по API
+
+* Постоплатная система работы (со второго месяца работы)
+
+* Посуточная тарификация (за созданные и не удалённые инстансы)
+
+* Выделенная линия поддержки 
+
+> По вопросам подключения к партнёрской схеме и дополнительных условиях просим вас писать на почту support@green-api.com или в чат на сайте.
+
+## Получение партнерского ключа
+
+Получение партнерского API-ключа происходит через техподдержку Green API support@green-api.com.
 
 ## Тестирование методов
 
@@ -34,20 +50,11 @@ https://api.green-api.com/partner/{method}/{partnerToken}
 
     Дополнительно отображение QR-кода можно реализовать в интерфейсе Вашего программного продукта. Для этого рекомендуется воспользоваться примерами кода ниже:
 
-    * Получение QR-кода через HTTP-запрос: 
-    ```
-    https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html
-    ```
+    * Получение QR-кода через [HTTP-запрос](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html)
 
-    * Получение QR-кода через web-socket: 
-    ```
-    https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCodeWebsocket.html
-    ```
+    * Получение QR-кода через [web-socket](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCodeWebsocket.html)
 
-    * Получение QR-кода в 1С: 
-    ```
-    https://green-api.com/integrations/1c.html
-    ```
+    * Получение QR-кода в [1С](https://green-api.com/integrations/1c.html)
 
     * Также реализовано получение QR-кода на отдельной странице в Интернете: 
     ```
