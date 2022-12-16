@@ -10,6 +10,9 @@
 - [Входящее сообщение с геолокацией](incoming-message/LocationMessage.md)
 - [Входящее сообщение с контактом](incoming-message/ContactMessage.md)
 - [Входящее сообщение с цитированием](incoming-message/QuotedMessage.md)
+- [Входящее сообщение со стикером](StickerMessage.md)
+- [Входящее сообщение-реакция](ReactionMessage.md)
+- [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
 
 
 ## Отправленное сообщение

@@ -13,6 +13,9 @@
 - [Входящее сообщение с геолокацией](LocationMessage.md)
 - [Входящее сообщение с контактом](ContactMessage.md)
 - [Входящее сообщение с цитированием](QuotedMessage.md)
+- [Входящее сообщение со стикером](StickerMessage.md)
+- [Входящее сообщение-реакция](ReactionMessage.md)
+- [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
 
 ## Поля уведомления incomingMessageReceived {#webhook-parameters}
 
@@ -52,6 +55,9 @@
 - [Входящее сообщение с геолокацией](LocationMessage.md)
 - [Входящее сообщение с контактом](ContactMessage.md)
 - [Входящее сообщение с цитированием](QuotedMessage.md)
+- [Входящее сообщение со стикером](StickerMessage.md)
+- [Входящее сообщение-реакция](ReactionMessage.md)
+- [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
 
 ### Пример тела уведомления {#webhook-example-body}
 
