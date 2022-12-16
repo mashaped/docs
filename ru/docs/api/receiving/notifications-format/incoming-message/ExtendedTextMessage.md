@@ -1,4 +1,4 @@
-# Входящее текстовое сообщение или сообщение с URL
+# Входящее текстовое сообщение, сообщение с URL или рекламное сообщение
 
 В данном разделе описывается формат входящего уведомления объекта `messageData` для входящего текстового сообщения или сообщения с URL. Для получения описания общего формата входящих уведомлений обратитесь к разделу [Входящие сообщения](Webhook-IncomingMessageReceived.md). 
 
@@ -28,6 +28,17 @@
 `description` | **string** | Описание ссылки, может быть пустым
 `title` | **string** | Заголовок ссылки, может быть пустым
 `jpegThumbnail` | **string** | Превью изображения в `base64` кодировке, может отсутствовать
+`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+`forwardingScore` | **integer** | Количество пересылок сообщения
+`previewType` | **string** | Тип превью.(только для рекламных сообщений)
+`containsAutoReply` | **boolean** | Содержит ли сообщение автоответ.(только для рекламных сообщений)
+`mediaType` | **string** | Тип медиа сообщения, например "IMAGE".(только для рекламных сообщений)
+`showAdAttribution` | **boolean** | Показывать ли атрибуты рекламы в сообщении.(только для рекламных сообщений)
+`sourceId` | **string** | Id рекламы.(только для рекламных сообщений)
+`sourceType` | **string** | Тип источника, напрмиер "ad".(только для рекламных сообщений)
+`sourceUrl` | **string** | Ссылка на рекламу.(только для рекламных сообщений)
+`thumbnailUrl` | **string** | Ссылка на превью изображения.(только для рекламных сообщений)
+
 
 Поля объекта `quotedMessage`
 
@@ -54,6 +65,7 @@
     "senderData": {
         "chatId": "79001234568@c.us",
         "sender": "79001234568@c.us",
+		"chatName": "Green API",
         "senderName": "Green API"
     },
     "messageData": {
@@ -62,7 +74,9 @@
             "text": "https://green-api.com/docs/video",
             "description": "Green API docs shows how you can develop the WhatsApp Bot",
             "title": "How to develop WhatsApp Bot",
-            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYG=="
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYG==",
+			 "forwardingScore": 4,
+             "isForwarded": true
         }
     }
 }
@@ -90,7 +104,9 @@
     "extendedTextMessageData": {
       "text": "https://yandex.ru/former&utm_source=home&utm_content=main_informer&utm_term=main_number",
       "stanzaId": "0EA554E587820E35309858AE265BE7EA",
-      "participant": "79001230000@c.us"
+      "participant": "79001230000@c.us",
+	   "forwardingScore": 4,
+       "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -127,7 +143,9 @@
     "extendedTextMessageData": {
       "text": "https://yandex.ru/pogoda/?utm_medium=source=home&utm_content=main_informer&utm_term=main_number",
       "stanzaId": "B4AA239D112CB2576897B3910FEDE26E",
-      "participant": "79001230000@c.us"
+      "participant": "79001230000@c.us",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

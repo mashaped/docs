@@ -30,6 +30,8 @@
 | `listMessage` | **object** | Объект данных с кнопками |
 |`buttonText` | **string** | Нет | надпись на кнопке списка выбора|
 |`sections` | **array** | Да | значения списка выбора|
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 Поля массива `sections`
 
@@ -71,6 +73,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
     "messageData": {
@@ -107,7 +110,9 @@
                             "rowId": "option4",
                             "description": "Пояснение"
                 }
-            ]
+            ],
+			 "forwardingScore": 4,
+             "isForwarded": true
         }
     }
 }

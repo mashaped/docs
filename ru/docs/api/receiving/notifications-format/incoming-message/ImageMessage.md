@@ -29,6 +29,8 @@
 | `fileName` | **string** | Название файла |
 | `jpegThumbnail` | **string** | Предпросмотр изображения в base64 |
 | `mimeType` | **string** | Тип файла, согласно класификации [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 Поля объекта `quotedMessage`
 
@@ -55,6 +57,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -63,7 +66,9 @@
       "downloadUrl": "https://api.green-api.com/waInstance1234/downloadFile/19136A974392FA8CF584D70DD0E1AEDF",
       "caption": "Картинка",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+	  "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -84,6 +89,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -91,8 +97,9 @@
     "fileMessageData": {
       "downloadUrl": "https://sw-media.storage.yandexcloud.net/9901742665/39c20293-eb8d-abdd-5fdd1b83820a.mpga",
       "fileName": "39c20293-eb8d-abdd-5fdd1b83820a.mpga",
-      "titleFile": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -119,6 +126,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -128,7 +136,9 @@
       "caption": "",
       "fileName": "801078ab-3340-4f78-е9978be4aa5.ogg",
       "jpegThumbnail": "",
-      "mimeType": "audio/ogg"
+      "mimeType": "audio/ogg",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -157,6 +167,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -166,7 +177,9 @@
       "caption": "",
       "fileName": "d417740b483b-8426-e8d871d6de9f.jpeg",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -199,6 +212,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -208,7 +222,9 @@
       "caption": "",
       "fileName": "542ad819-166b-b0e1-279069cd03bb.jpeg",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

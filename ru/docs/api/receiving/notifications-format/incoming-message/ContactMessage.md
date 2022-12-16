@@ -26,6 +26,8 @@
 | ------------- | ---------- | -------------------------------------------- |
 | `displayName` | **string** | Отображаемое имя контакта                    |
 | `vcard`       | **string** | Структура VCard (визитной карточки контакта) |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 Поля объекта `quotedMessage`
 
@@ -52,13 +54,16 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Виктор Андреевич",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD",
+	  "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -79,13 +84,16 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Антиспам",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Антиспам;;;\nFN:Антиспам\nitem1.TEL:*9035936232#\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Антиспам;;;\nFN:Антиспам\nitem1.TEL:*9035936232#\nitem1.X-ABLabel:Мобильный\nEND:VCARD",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -112,13 +120,16 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
           "displayName": "Антиспам",
-          "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Лена\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+          "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Лена\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Мобильный\nEND:VCARD",
+		  "forwardingScore": 4,
+          "isForwarded": true
     },
     },
     "quotedMessage": {
@@ -147,13 +158,16 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Фонд;\nitem1.TEL;waid=79001203030:/em1.X-ABLabel:Новый тип\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Фонд;\nitem1.TEL;waid=79001203030:/em1.X-ABLabel:Новый тип\nEND:VCARD",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -182,13 +196,16 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Фонд",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Сердца\nitem1.TEL;waid=79200000102\nitem1.X-ABLabel:Новый тип\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Сердца\nitem1.TEL;waid=79200000102\nitem1.X-ABLabel:Новый тип\nEND:VCARD",
+	  "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

@@ -39,6 +39,7 @@
 ----- | ----- | -----
 `chatId` | **string** | [Идентификатор чата](../../../chat-id.md), в котором получено сообщение или файл
 `sender` | **string** | [Идентификатор](../../../chat-id.md#corr) отправителя сообщения или файла
+`chatName` | **string** | Имя чата
 `senderName` | **string** | Имя отправителя
 
 ### Поля объекта `messageData`
@@ -67,6 +68,7 @@
     "senderData": {
         "chatId": "79001234568@c.us",
         "sender": "79001234568@c.us",
+		"chatName": "Green API",
         "senderName": "Green API"
     },
     "messageData":{

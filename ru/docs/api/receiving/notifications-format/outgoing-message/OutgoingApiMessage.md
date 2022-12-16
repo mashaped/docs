@@ -17,6 +17,7 @@
     "senderData": {
         "chatId": "79001234568@c.us",
         "sender": "79001234568@c.us",
+		"chatName": "Green API",
         "senderName": "Green API"
     },
     "messageData":{

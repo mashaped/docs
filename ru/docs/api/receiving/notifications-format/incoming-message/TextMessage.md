@@ -51,6 +51,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -77,6 +78,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -111,6 +113,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -147,6 +150,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -184,6 +188,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -224,6 +229,7 @@
   "senderData": {
     "chatId": "79000000000@c.us",
     "sender": "79000000000@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {

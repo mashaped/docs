@@ -27,6 +27,8 @@
 | `contentText` | **string** | Текстовое сообщение тела кнопок|
 | `footer` | **string** | Текстовое сообщение подвала кнопок|
 | `buttons`   | **object** | Объект данных с кнопками |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 Поля объекта `buttons`
 
@@ -60,6 +62,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
     "messageData": {
@@ -80,7 +83,9 @@
                     "buttonId": "3",
                     "buttonText": "blue"
                 }
-            ]
+            ],
+			 "forwardingScore": 4,
+             "isForwarded": true
         }
     }
 }

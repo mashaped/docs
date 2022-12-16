@@ -27,6 +27,8 @@
 | `latitude`      | **double** | Широта локации                          |
 | `longitude`     | **double** | Долгота локации                         |
 | `jpegThumbnail` | **string** | Превью изображения в `base64` кодировке |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false|
+|`forwardingScore` | **integer** | Количество пересылок сообщения|
 
 Поля объекта `quotedMessage`
 
@@ -53,6 +55,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -60,7 +63,10 @@
     "locationMessageData": {
       "latitude": 12.345678910111213,
       "longitude": 14.151617181920212,
-      "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFx="
+      "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFx=",
+		"forwardingScore": 4,
+        "isForwarded": true
+	  
     }
   }
 }
@@ -81,6 +87,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+	"chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -90,7 +97,10 @@
       "address": "",
       "jpegThumbnail": "217",
       "latitude": 74.5922641,
-      "longitude": 59.6645355
+      "longitude": 59.6645355,
+		"forwardingScore": 4,
+        "isForwarded": true
+	  
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

@@ -30,7 +30,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/downloadFile/{{apiTokenI
 ## Пример кода на curl  {#request-example-curl}
 
 ```
-curl --location -g --request POST '{{host}}/waInstance{{idInstance}}/downloadEncFile/{{apiTokenInstance}}' \
+curl --location -g --request POST '{{host}}/waInstance{{idInstance}}/downloadFile/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "chatId": "79000001234@c.us",
