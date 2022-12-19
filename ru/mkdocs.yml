@@ -139,6 +139,7 @@ nav:
         - 'Как защитить номер от бана?': 'faq/how-to-protect-number-from-ban.md'
         - 'Если ваш номер заблокирован': 'faq/if-your-number-is-blocked.md'
         - 'Особенности отправки и получения сообщений на номера разных стран': 'faq/features-of-sending-and-receiving-messages-from-different-countries.md'
+        - 'Как предотвратить постоянное отключение QR-сессии?': 'faq/how-can-I-prevent-a-QR-session-from-being-permanently-disconnected.md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':

@@ -4,3 +4,5 @@
 #### [Если ваш номер заблокирован](if-your-number-is-blocked.md)
 
 #### [Особенности отправки и получения сообщений разных стран](features-of-sending-and-receiving-messages-from-different-countries.md)
+
+#### [Как предотвратить постоянное отключение QR-сессии?](how-can-I-prevent-a-QR-session-from-being-permanently-disconnected.md)
