@@ -28,7 +28,7 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 
 ```
 $result = $greenApi->sending->sendFileByUpload('11001234567@c.us',
-        'C:\Games\PicFromDisk.png', 'PicFromDisk.jpg', 'Picture from disk');
+        'C:\Games\PicFromDisk.png', 'PicFromDisk.png', 'Picture from disk');
 ```
 ### Полный список примеров
 

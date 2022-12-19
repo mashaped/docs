@@ -1,5 +1,8 @@
 # PHP WhatsApp client Library
 
+* [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/green-api/whatsapp-api-client-php/blob/master/LICENSE)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/green-api/whatsapp-api-client-php?color=2&label=release)](https://github.com/green-api/whatsapp-api-client-php/releases)
+
 [PHP библиотека](https://github.com/green-api/whatsapp-api-client-php) для интеграции с мессенджером WhatsAPP через API сервиса [green-api.com](https://green-api.com). Чтобы воспользоваться библиотекой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://console.green-api.com). Есть бесплатный тариф аккаунта разработчика.
 
 #### API
