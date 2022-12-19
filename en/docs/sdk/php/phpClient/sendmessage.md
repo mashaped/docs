@@ -27,7 +27,7 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 #### How to send a text message to a WhatsApp number
 
 ```
-$result = $greenApi->sending->sendMessage('11001234567@g.us', 'Message text');
+$result = $greenApi->sending->sendMessage('11001234567@c.us', 'Message text');
 ```
 ### The full list of examples
 
