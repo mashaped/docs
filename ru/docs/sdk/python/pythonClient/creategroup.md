@@ -27,7 +27,7 @@ API_TOKEN_INSTANCE = environ['API_TOKEN_INSTANCE']
 
 ```
 chatIds = [
-    "11001234567@g.us"
+    "11001234567@c.us"
 ]
 resultCreate = greenAPI.groups.createGroup('GroupName', 
     chatIds)
