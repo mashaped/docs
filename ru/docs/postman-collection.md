@@ -15,7 +15,13 @@
 - Приложение [Postman](https://www.postman.com/downloads/) 
 - Коллекция [Green API - Postman Collection](https://github.com/green-api/green-api-postman-collection) (клонируйте репозиторий или скачайте пакет в виде ZIP-файла)
 
-После установки и запуска Postman, нажмите `Import` и выберите два JSON-файла `collection.json` и `environment.json` из пакета коллекции Postman на GitHub. После импорта вы увидите элемент `Green API` в разделе `Collections` и сможете выбрать пункт `Green API Developer` в качестве `Environment`.
+После установки и запуска Postman, нажмите `Import` и выберите два JSON-файла `collection.json` и `environment.json` из пакета коллекции [Postman на GitHub](https://github.com/green-api/green-api-postman-collection).
+
+<center>![`Пункт 1`](./assets/postman_step1.png)</center>
+
+<center>![`Пункт 2`](./assets/postman_step2.png)</center>
+
+ После импорта вы увидите элемент `Green API` в разделе `Collections` и сможете выбрать пункт `Green API Developer` в качестве `Environment`.
 
 ## Конфигурирование {#configure}
 
