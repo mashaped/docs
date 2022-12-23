@@ -43,10 +43,14 @@ Green API предоставляет HTTP API WhatsApp для отправки �
 - [Выбор обычной кнопки](./receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md)
 - [Выбор шаблонной кнопки](./receiving/notifications-format/selected-buttons/TemplateButtonsReplyMessage.md)
 - [Выбор элемента списка](./receiving/notifications-format/selected-buttons/ListResponseMessage.md)
-- [Входящее текстовое сообщение с URL](./receiving/notifications-format/incoming-message/ExtendedTextMessage.md)
+- [Входящее текстовое сообщение, сообщение с URL, рекламное сообщение](./receiving/notifications-format/incoming-message/ExtendedTextMessage.md)
 - [Входящее сообщение с изображением, видео, аудио, документом](./receiving/notifications-format/incoming-message/ImageMessage.md)
 - [Входящее сообщение с геолокацией](./receiving/notifications-format/incoming-message/LocationMessage.md)
 - [Входящее сообщение с контактом](./receiving/notifications-format/incoming-message/ContactMessage.md)
+- [Входящее сообщение с массивом контактов](./receiving/notifications-format/incoming-message/ContactsArrayMessage.md)
+- [Входящее сообщение со стикером](./receiving/notifications-format/incoming-message/StickerMessage.md)
+- [Входящее сообщение-реакция](./receiving/notifications-format/incoming-message/ReactionMessage.md)
+- [Входящее сообщение с приглашением в группу](./receiving/notifications-format/incoming-message/GroupInviteMessage.md)
 
 #### Отправленное сообщение {#receiving-outgoing-message}
 
