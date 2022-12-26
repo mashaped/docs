@@ -54,10 +54,11 @@ POST https://api.green-api.com/waInstance{{idInstance}}/CheckWhatsapp/{{apiToken
 
 ```python
 import requests
+import json
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/checkWhatsapp/{{apiTokenInstance}}"
 
-payload = "{phoneNumber: 11001234567}"
+payload = json.dumps({ "phoneNumber": 79876716790 })
 headers = {
   'Content-Type': 'application/json'
 }
