@@ -47,7 +47,7 @@ https://api.green-api.com/partner/createInstance/{partnerToken}
     "incomingWebhook": "yes",
     "deviceWebhook": "no",
     "stateWebhook": "no",
-     "keepOnlineStatus": "no"
+    "keepOnlineStatus": "no"
 }
 ```
 
