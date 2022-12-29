@@ -3,19 +3,23 @@
 ### Установка
 
 ```shell
-go get github.com/green-api/whatsapp-api-client-golang
+go get github.com/green-api/whatsapp-api-client-golang/v1
 ```
 
 ### Пример создания группы
+
+Ссылка на
+пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go).
 
 ```go
 package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
-	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
+	"github.com/green-api/whatsapp-api-client-golang/v1/pkg/api"
 )
 
 func main() {
@@ -27,11 +31,22 @@ func main() {
 		APITokenInstance: APITokenInstance,
 	}
 
-	response := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
+	response, err := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
 		"79001234567@c.us",
 		"79002345678@c.us",
 	})
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	fmt.Println(response)
 }
 ```
+
+### Список примеров
+
+| Описание                | Ссылка на пример                                                                                                    |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Как создать группу      | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go)        |
+| Как отправить вложение  | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go) |
+| Как отправить сообщение | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go)        |

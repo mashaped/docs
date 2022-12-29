@@ -1,4 +1,4 @@
-# How to create a group
+# How to send a message with an attachment
 
 ### Installation
 
@@ -6,10 +6,12 @@
 go get github.com/green-api/whatsapp-api-client-golang/v1
 ```
 
-### Example of creating a group
+### Example of sending a message with an attachment
+
+To send an attachment, you need to give the path to the attachment.
 
 Link to
-example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go).
+example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go).
 
 ```go
 package main
@@ -31,9 +33,8 @@ func main() {
 		APITokenInstance: APITokenInstance,
 	}
 
-	response, err := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
-		"79001234567@c.us",
-		"79002345678@c.us",
+	response, err := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
+		"chatId": "79001234567@c.us",
 	})
 	if err != nil {
 		log.Fatal(err)

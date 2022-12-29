@@ -1,4 +1,4 @@
-# Как отправить сообщение
+# Как отправить вложение
 
 ### Установка
 
@@ -6,12 +6,12 @@
 go get github.com/green-api/whatsapp-api-client-golang/v1
 ```
 
-### Пример отправки сообщения
+### Пример отправки вложения
 
-Если у метода API есть необязательные параметры, то в метод библиотеки нужно передавать JSON (`map[string]interface{}`).
+Чтобы отправить вложение, нужно указать первым параметром путь к нужному документу.
 
 Ссылка на
-пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go).
+пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go).
 
 ```go
 package main
@@ -33,9 +33,8 @@ func main() {
 		APITokenInstance: APITokenInstance,
 	}
 
-	response, err := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
-		"chatId":  "79373263431@c.us",
-		"message": "Any message",
+	response, err := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
+		"chatId": "79001234567@c.us",
 	})
 	if err != nil {
 		log.Fatal(err)
