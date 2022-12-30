@@ -1,4 +1,4 @@
-# SetSystemProxy
+<!-- # SetSystemProxy
 
 The method is aimed for setting a system proxy. Use the method when you need to reset custom proxy settings to system ones.
 
@@ -44,4 +44,4 @@ headers= {}
 response = requests.request("GET", url, headers=headers, data = payload)
 
 print(response.text.encode('utf8'))
-```
+``` -->

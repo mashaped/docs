@@ -61,5 +61,5 @@ wss://api.green-api.com/waInstance{{idInstance}}/scanqrcode/{{apiTokenInstance}
 `type` | **string** | `accountData` - получены данные аккаунта после успешной авторизации
 `wid` | **string** | Идентификатор аккаунта в формате WhatsApp
 `pushname` | **string** | Имя аккаунта в WhatsApp
-`proxy` | **string** |  IP-адрес прокси, который назначен аккаунту
 `webhookUrl` | **string** | URL для получения входящих уведомлений
+<!-- `proxy` | **string** |  IP-адрес прокси, который назначен аккаунту -->

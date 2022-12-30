@@ -1,4 +1,4 @@
-# SetSystemProxy
+<!-- # SetSystemProxy
 
 Метод предназначен для установки системного прокси. Используйте метод, когда требуется сбросить пользовательские настройки прокси на системные.
 
@@ -44,4 +44,4 @@ headers= {}
 response = requests.request("GET", url, headers=headers, data = payload)
 
 print(response.text.encode('utf8'))
-```
+``` -->

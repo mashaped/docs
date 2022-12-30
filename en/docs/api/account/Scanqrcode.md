@@ -62,5 +62,5 @@ Parameter | Type |  Description
 `type` | **string** | `accountData` - received account data after successful authorization 
 `wid` | **string** | Account Id in WhatsApp format
 `pushname` | **string** | Account name in WhatsApp
-`proxy` | **string** |  Proxy IP address assigned to the account
 `webhookUrl` | **string** | Incoming webhooks URL
+<!-- `proxy` | **string** |  Proxy IP address assigned to the account -->
