@@ -25,7 +25,6 @@ Parameter | Type |  Description
 `delaySendMessagesMilliseconds` | **integer** | [Message sending delay](../send-messages-delay.md) is in milliseconds
 `markIncomingMessagesReaded` | **string** | Mark incoming messages as read or not, possible variants: `yes`, `no`. Ignored if markIncomingMessagesReadedOnReply is 'yes'.
 `markIncomingMessagesReadedOnReply` | **string** | Mark incoming messages as read when sending a message to the chat via API, possible variants: `yes`, `no`. If 'yes', then markIncomingMessagesReaded setting is ignored.
-`proxyInstance` | **string** | Account proxy parameters. Displayed depending on proxy settings. If the proxy is your own, all parameters are given as follows:  `ip:port:login:password`. If the proxy is system, it is given depending on proxy system settings. Can have the following variants: `ip:port:login:password` or `system proxy`.
 `outgoingWebhook` | **string** | Get notifications about outgoing messages sending / delivering / reading status, possible variants: `yes`, `no`
 `outgoingMessageWebhook` | **string** | Get notifications about messages sent from phone, possible variants: `yes`, `no`
 `stateWebhook` | **string** | Get notifications about changes in the account authorization status, possible variants: `yes`, `no`
@@ -47,7 +46,6 @@ Parameter | Type |  Description
     "delaySendMessagesMilliseconds": 3000,
     "markIncomingMessagesReaded": "yes",
     "markIncomingMessagesReadedOnReply": "no",
-    "proxyInstance": "123.45.67.891:3435:hdhhd:i3ji3",
     "outgoingWebhook": "yes",
     "outgoingMessageWebhook": "yes",
     "stateWebhook": "yes",

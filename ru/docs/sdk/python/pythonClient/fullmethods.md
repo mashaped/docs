@@ -10,7 +10,6 @@
 `account.reboot` | Метод предназначен для перезапуска аккаунта | [Reboot](https://green-api.com/docs/api/account/Reboot/)
 `account.setProfilePicture` | Метод предназначен для установки аватара аккаунта | [SetProfilePicture](https://green-api.com/docs/api/account/SetProfilePicture/)
 `account.setSettings` | Метод предназначен для установки настроек аккаунта | [SetSettings](https://green-api.com/docs/api/account/SetSettings/)
-`account.setSystemProxy` | Метод предназначен для установки системного прокси. Нужно используйте метод, когда требуется сбросить пользовательские настройки прокси на системные | [SetSystemProxy](https://green-api.com/docs/api/account/SetSystemProxy/)
 `groups.addGroupParticipant` | Метод добавляет участника в групповой чат | [AddGroupParticipant](https://green-api.com/docs/api/groups/AddGroupParticipant/)
 `groups.createGroup` | Метод добавляет участника в групповой чат. ВАЖНО: Если попытаться создать группу с несуществующим номером WhatsApp может заблокировать номер отправителя. | [CreateGroup](https://green-api.com/docs/api/groups/CreateGroup/)
 `groups.getGroupData` | Метод получает данные группового чата | [GetGroupData](https://green-api.com/docs/api/groups/GetGroupData/)

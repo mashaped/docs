@@ -26,7 +26,7 @@ nav:
             - 'Account - overview': 'api/account/index.md'
             - 'Get account settings': 'api/account/GetSettings.md'
             - 'Set account settings': 'api/account/SetSettings.md'
-            - 'Set system proxy': 'api/account/SetSystemProxy.md'
+            # - 'Set system proxy': 'api/account/SetSystemProxy.md'
             - 'Get account state': 'api/account/GetStateInstance.md'
             - 'Get account connection status': 'api/account/GetStatusInstance.md'
             - 'Reboot account': 'api/account/Reboot.md'

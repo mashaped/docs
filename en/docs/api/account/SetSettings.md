@@ -25,7 +25,6 @@ Parameter | Type | Mandatory | Description
 `delaySendMessagesMilliseconds` | **integer** | No | [Message sending delay](../send-messages-delay.md) is in milliseconds. Minimum value is 500 msec
 `markIncomingMessagesReaded` | **string** | No | Mark incoming messages as read or not, possible variants: `yes`,` no`. Ignored if markIncomingMessagesReadedOnReply is 'yes'.
 `markIncomingMessagesReadedOnReply` | **string** | No | Mark incoming messages as read when posting a message to the chat via API, possible variants: `yes`,` no`. If it is 'yes', then the markIncomingMessagesReaded setting is ignored.
-`proxyInstance` | **string** | No | Proxy for the account in the format {ip}:{port}:{login}:{password}, if you want the account to work on your proxy; system proxies are used by default
 `outgoingWebhook` | **string** | No |Get notifications about outgoing messages sending/delivering/reading statuses, possible variants: `yes`,` no`
 `outgoingMessageWebhook` | **string** | No |Get notifications about messages sent from the phone, possible variants: `yes`,` no`
 `stateWebhook` | **string** | No |Get notifications about the account authorization state change, possible variants: `yes`,` no`
@@ -45,7 +44,6 @@ Parameter | Type | Mandatory | Description
     "delaySendMessagesMilliseconds": 1000,
     "markIncomingMessagesReaded": "no",
     "markIncomingMessagesReadedOnReply": "no",
-    "proxyInstance": "100.100.100.100:3535:login:password",
     "outgoingWebhook": "yes",
     "outgoingMessageWebhook": "yes",
     "stateWebhook": "yes",
@@ -93,7 +91,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/setSettings/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"countryInstance\": \"ru\",\r\n\t\"webhookUrl\": \"https://mysite.ru\",\r\n\t\"delaySendMessagesMilliseconds\": 1000,\r\n\t\"markIncomingMessagesReaded\": \"no\",\r\n\t\"proxyInstance\": \"123.456.78.910:39898:qGKqCo:Jb26Xz\",\r\n\t\"outgoingWebhook\": \"yes\",\r\n\t\"stateWebhook\": \"yes\",\r\n\t\"incomingWebhook\": \"yes\",\r\n\t\"deviceWebhook\": \"no\"\r\n}"
+payload = "{\r\n\t\"countryInstance\": \"ru\",\r\n\t\"webhookUrl\": \"https://mysite.ru\",\r\n\t\"delaySendMessagesMilliseconds\": 1000,\r\n\t\"markIncomingMessagesReaded\": \"no\",\r\n\t\"outgoingWebhook\": \"yes\",\r\n\t\"stateWebhook\": \"yes\",\r\n\t\"incomingWebhook\": \"yes\",\r\n\t\"deviceWebhook\": \"no\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }

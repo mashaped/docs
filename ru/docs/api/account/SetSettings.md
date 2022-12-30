@@ -25,7 +25,6 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SetSettings/{{apiTokenIn
 `delaySendMessagesMilliseconds` | **integer** | Нет | [Интервал отправки сообщений](../send-messages-delay.md) в миллисекундах. Минимальное значение 500 мсек
 `markIncomingMessagesReaded` | **string** | Нет | Отмечать входящие сообщения прочитанными или нет, возможные значения: `yes`, `no`. Игнорируется, если markIncomingMessagesReadedOnReply в значении 'yes'.
 `markIncomingMessagesReadedOnReply` | **string** | Нет | Отмечать входящие сообщения прочитанными при отправке сообщения в чат через API, возможные значения: `yes`, `no`. Если в значении 'yes', то настройка markIncomingMessagesReaded игнорируется.
-`proxyInstance` | **string** | Нет | Прокси для аккаунта в формате `{ip}:{port}:{login}:{password}`, если вы хотите что бы аккаунт работал на вашем прокси, по умолчанию используются системные прокси
 `outgoingWebhook` | **string** | Нет |Получать уведомления о статусах отправки/доставки/прочтении исходящих сообщений, возможные значения: `yes`, `no`
 `outgoingMessageWebhook` | **string** | Нет |Получать уведомления о сообщениях, отправленных с телефона, возможные значения: `yes`, `no`
 `stateWebhook` | **string** | Нет |Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: `yes`, `no`
@@ -45,7 +44,6 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SetSettings/{{apiTokenIn
     "delaySendMessagesMilliseconds": 1000,
     "markIncomingMessagesReaded": "no",
     "markIncomingMessagesReadedOnReply": "no",
-    "proxyInstance": "100.100.100.100:3535:login:password",
     "outgoingWebhook": "yes",
     "outgoingMessageWebhook": "yes",
     "stateWebhook": "yes",
@@ -93,7 +91,7 @@ import requests
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/setSettings/{{apiTokenInstance}}"
 
-payload = "{\r\n\t\"countryInstance\": \"ru\",\r\n\t\"webhookUrl\": \"https://mysite.ru\",\r\n\t\"delaySendMessagesMilliseconds\": 1000,\r\n\t\"markIncomingMessagesReaded\": \"no\",\r\n\t\"proxyInstance\": \"123.456.78.910:39898:qGKqCo:Jb26Xz\",\r\n\t\"outgoingWebhook\": \"yes\",\r\n\t\"stateWebhook\": \"yes\",\r\n\t\"incomingWebhook\": \"yes\",\r\n\t\"deviceWebhook\": \"no\"\r\n}"
+payload = "{\r\n\t\"countryInstance\": \"ru\",\r\n\t\"webhookUrl\": \"https://mysite.ru\",\r\n\t\"delaySendMessagesMilliseconds\": 1000,\r\n\t\"markIncomingMessagesReaded\": \"no\",\r\n\t\"outgoingWebhook\": \"yes\",\r\n\t\"stateWebhook\": \"yes\",\r\n\t\"incomingWebhook\": \"yes\",\r\n\t\"deviceWebhook\": \"no\"\r\n}"
 headers = {
   'Content-Type': 'application/json'
 }
