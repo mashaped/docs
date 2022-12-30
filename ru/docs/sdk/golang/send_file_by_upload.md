@@ -3,7 +3,7 @@
 ### Установка
 
 ```shell
-go get github.com/green-api/whatsapp-api-client-golang/v1
+go get github.com/green-api/whatsapp-api-client-golang
 ```
 
 ### Пример отправки вложения
@@ -21,7 +21,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/green-api/whatsapp-api-client-golang/v1/pkg/api"
+	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
 )
 
 func main() {
