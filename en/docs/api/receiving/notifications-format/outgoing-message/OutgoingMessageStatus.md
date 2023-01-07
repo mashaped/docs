@@ -16,9 +16,10 @@ Parameter | Type | Description
 | | `sent` - message sent
 | | `delivered` - message delivered to the recipient
 | | `read` - message read/viewed/heard by the recipient
-| | `fail` - an error occurred while sending a message to WhatsApp server
+| | `failed` - an error occurred while sending a message to WhatsApp server
 | | `noAccount` - the recipient's phone number does not have a WhatsApp account 
 | | `notInGroup` - the sender is not a participant of a group chat where the message is being sent to
+`sendByApi` | **boolean** | Флаг указывает отправлено сообщение из API или нет, принимает значения: true , false
 
 `instanceData` object parameters
 
@@ -39,7 +40,9 @@ Parameter | Type | Description
         "wid": "11001234567@c.us",
         "typeInstance": "whatsapp"
     },
+    "timestamp": 1586700802,
     "idMessage": "3EB0608D6A2901063D63",
-    "status": "noAccount"
+    "status": "noAccount",
+    "sendByApi": true
 }
 ```

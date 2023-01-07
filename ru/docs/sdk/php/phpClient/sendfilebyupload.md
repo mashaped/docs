@@ -1,11 +1,14 @@
 # Как отправить файл загрузкой с диска
 ### Установка
+
+Перед добавлением [пакета green-api](https://packagist.org/packages/green-api/whatsapp-api-client-php), необходимо установить менеджер зависимостей php [composer](https://getcomposer.org)
+
 ```
 composer require green-api/whatsapp-api-client-php
 ```
 ### Import 
 ```
-require 'vendor\autoload.php';
+require './vendor/autoload.php';
 ```
 ### Примеры
 Полный пример можно посмотреть по ссылке: [sendPictureByUpload.php](https://github.com/green-api/whatsapp-api-client-php/blob/master/examples/sendPictureByUpload.php)
@@ -18,7 +21,7 @@ $greenApi = new GreenApiClient( ID_INSTANCE, API_TOKEN_INSTANCE );
 Обратите внимание, что ключи можно получать из переменных среды:
 ```
 <?php
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 define( "ID_INSTANCE", getenv("ID_INSTANCE" ));
 define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );

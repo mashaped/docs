@@ -71,7 +71,11 @@ You can also set up to receive incoming webhooks online. To do this, go to [My P
 
 ## Receive incoming webhooks
 
-After setting up the account, you can start receiving webhooks. You can see the example of incoming webhook processing code on [NodeJS](https://nodejs.org) in [file](https://github.com/green-api/whatsapp-api-client/blob/master/examples/ReceiveWebhook.js).
+After setting up the account, you can start receiving webhooks. You can see the example of incoming webhook processing code:
+
+- On [NodeJS](https://nodejs.org) in [file](../../sdk/nodejs/receiveNotificationserver.md#_5).
+
+- On [Python](https://python.org) in [file](../../sdk/python/pythonWebhookServer/index.md).
 
 ## Debug incoming webhooks
 

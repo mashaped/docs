@@ -24,9 +24,13 @@ To get incoming webhooks of this type, two conditions must be true:
 
 | Parameter      | Type        | Description               |
 | ------------- | ---------- | ------------------- |
+| `namespace` | **string** | Пространство имен организации|
+| `elementName` | **string** | Имя шаблонного сообщения|
 | `contentText` | **string** | Buttons body text message|
 | `footer` | **string** | Buttons footer text message|
 | `buttons`   | **object** | Buttons data object |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 `buttons` object parameters
 
@@ -83,6 +87,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
     "messageData": {
@@ -112,7 +117,9 @@ The rest of the fields are filled depending on the type of the quoted message an
                     },
                     "index": 3
                 }
-            ]
+            ],
+            "forwardingScore": 4,
+            "isForwarded": true
         }
     }
 }

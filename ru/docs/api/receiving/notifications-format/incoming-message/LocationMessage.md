@@ -55,7 +55,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -64,9 +64,8 @@
       "latitude": 12.345678910111213,
       "longitude": 14.151617181920212,
       "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFx=",
-		"forwardingScore": 4,
-        "isForwarded": true
-	  
+		  "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -98,9 +97,8 @@
       "jpegThumbnail": "217",
       "latitude": 74.5922641,
       "longitude": 59.6645355,
-		"forwardingScore": 4,
-        "isForwarded": true
-	  
+		  "forwardingScore": 4,
+      "isForwarded": true  
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

@@ -46,6 +46,10 @@ Make sure you have completed all the steps in [Before you start](../before-start
 - [Incoming image, video, audio, document message](./receiving/notifications-format/incoming-message/ImageMessage.md)
 - [Incoming location message](./receiving/notifications-format/incoming-message/LocationMessage.md)
 - [Incoming contact message](./receiving/notifications-format/incoming-message/ContactMessage.md)
+- [Входящее сообщение с массивом контактов](./receiving/notifications-format/incoming-message/ContactsArrayMessage.md)
+- [Входящее сообщение со стикером](./receiving/notifications-format/incoming-message/StickerMessage.md)
+- [Входящее сообщение-реакция](./receiving/notifications-format/incoming-message/ReactionMessage.md)
+- [Входящее сообщение с приглашением в группу](./receiving/notifications-format/incoming-message/GroupInviteMessage.md)
 
 #### Outgoing message {#receiving-outgoing-message}
 

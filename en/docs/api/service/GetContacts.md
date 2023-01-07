@@ -2,12 +2,6 @@
 
 The method is aimed for getting a list of the current account contacts.
 
-Sends contacts of all recipients whom the account connected with.
-Parameter "contact name" 'name' takes on a value based on the below criteria:
-1) If the account is recorded in the phonebook, then we get the name from the book;
-2) If the account is not recorded in the phonebook, then we get the name from WhatsApp account;
-3) If the account is not recorded in the phone book and WhatsApp account name is not assigned, then we get an empty field. 
-
 ## Request {#request}
 
 To get contacts, you have to execute a request at:
@@ -24,7 +18,10 @@ For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you
 Parameter | Type |  Description
 ----- | ----- | ----- 
 `id` | **string** | [User or group chat Id](../chat-id.md)
-`name` | **string** | Contact name
+`name` | **string** | Contact name. Possible variants:
+                    ||1) If the account is recorded in the phonebook, then we get the name from the book
+                    ||2) If the account is not recorded in the phonebook, then we get the name from WhatsApp account
+                    ||3) If the account is not recorded in the phone book and WhatsApp account name is not assigned, then we get an empty field
 `type` | **string** | Contact type. Possible variants:
 ||`user` - contact belongs to a user
 ||`group` - contact is a group chat 

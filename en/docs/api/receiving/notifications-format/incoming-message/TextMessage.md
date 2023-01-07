@@ -14,25 +14,25 @@ To get incoming webhooks of this type, two conditions must be true:
 
 `messageData` object parameters
 
-Parameter | Type | Descriptionе
------ | ----- | -----
-`typeMessage` | **string** | Received message type. For messages of this type, the parameter takes on the value `textMessage` 
-`textMessageData` | **object** | Text message data object 
+|Parameter          | Type       | Descriptionе
+|------------------ | ---------- | -----
+|`typeMessage`      | **string** | Received message type. For messages of this type, the parameter takes on the value `textMessage` 
+|`textMessageData`  | **object** | Text message data object 
 | `quotedMessage`   | **object** |Quoted message data object. Present only if the message itself is a quote |
 
 `textMessageData` object parameters
 
-Parameter | type | Description
------ | ----- | -----
-`textMessage` | **string** | Text message
+|Parameter     | type       | Description  |
+|------------- | ---------- | -----        |
+|`textMessage` | **string** | Text message |
 
 `quotedMessage` object parameters
 
-| Parameter     | Type        | Description            |
-| ------------- | ---------- | ------------------- |
-| `stanzaId` | **string** | Quoted message id |
+| Parameter     | Type        | Description               |
+| ------------- | ---------- | -------------------------- |
+| `stanzaId` | **string** | Quoted message id             |
 | `participant` | **string** | Quoted message sender's id |
-| `typeMessage` | **string** | Quoted message type |
+| `typeMessage` | **string** | Quoted message type        |
 
 The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md) section
 
@@ -51,6 +51,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -77,6 +78,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -111,6 +113,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -125,7 +128,8 @@ The rest of the fields are filled depending on the type of the quoted message an
       "participant": "79061230000@c.us",
       "typeMessage": "imageMessage",
       "downloadUrl": "",
-      "caption": ""
+      "caption": "",
+      "jpegThumbnail": ""
     }
   }
 }
@@ -146,6 +150,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -183,6 +188,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -223,6 +229,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79000000000@c.us",
     "sender": "79000000000@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {

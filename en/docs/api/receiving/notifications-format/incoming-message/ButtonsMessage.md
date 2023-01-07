@@ -14,10 +14,10 @@ To get incoming webhooks of this type, two conditions must be true:
 
 `messageData` object parameters
 
-| Parameter          | Type        | Description                                                                                     |
+| Parameter        | Type        | Description                                                                                     |
 | ----------------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| `typeMessage`     | **string** | Incoming message type. For messages of this type the parameter takes on the value `buttonsMessage`       |
-| `buttonsMessage` | **object** | Buttons data object                                                           |
+| `typeMessage`     | **string** | Incoming message type. For messages of this type the parameter takes on the value `buttonsMessage`|
+| `buttonsMessage`  | **object** | Buttons data object                                                           |
 | `quotedMessage`   | **object** | Quoted message data object. Present only if the message itself is a quote |
 
 `buttonsMessage` object parameters
@@ -27,6 +27,8 @@ To get incoming webhooks of this type, two conditions must be true:
 | `contentText` | **string** | Buttons body text message|
 | `footer` | **string** | Buttons footer text message|
 | `buttons`   | **object** | Buttons data object |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 `buttons` object parameters
 
@@ -60,6 +62,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
     "messageData": {
@@ -80,7 +83,9 @@ The rest of the fields are filled depending on the type of the quoted message an
                     "buttonId": "3",
                     "buttonText": "blue"
                 }
-            ]
+            ],
+             "forwardingScore": 4,
+             "isForwarded": true
         }
     }
 }

@@ -36,33 +36,36 @@ The response contains a received or sent message in the chat.
 
 Object with parameters:
 
-| Parameter             | Type                                             | Description                                                                                                |
-|-----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| `type`                | **string**                                       | Message type: `outgoing` - outgoing message; `incoming` - incoming message                                 |
-| `timestamp`           | **integer**                                      | Time when the message has been sent in UNIX format                                                         |
-| `idMessage`           | **string**                                       | Message Id                                                                                                 |
-| `statusMessage`       | **string**                                       | Outgoing message status. Present only for `type` = `outgoing`. Possible variants:                          |
-|                       | `sent` - sent                                    |                                                                                                            |
-|                       | `delivered` - delivered                          |                                                                                                            |
-|                       | `read` - read/seen/heard                         |                                                                                                            |
-| `typeMessage`         | **string**                                       | Message type, possible variants:                                                                           |
-|                       | `textMessage` - text message                     |                                                                                                            |
-|                       | `imageMessage` - image message                   |                                                                                                            |
-|                       | `videoMessage` - video message                   |                                                                                                            |
-|                       | `documentMessage` - document file message        |                                                                                                            |
-|                       | `audioMessage` - audio message                   |                                                                                                            |
-|                       | `locationMessage` - сообщение геолокации         |                                                                                                            |
-|                       | `contactMessage` - contact message               |                                                                                                            |
-|                       | `extendedTextMessage` - link and preview message |                                                                                                            |
-| `chatId`              | **string**                                       | [Chat Id](../chat-id.md)                                                                                   |
-| `senderId`            | **string**                                       | Incoming message sender [Id](../chat-id.md#corr). Present only for `type` = `incoming`                     |
-| `senderName`          | **string**                                       | Incoming message sender name. Present only for `type` = `incoming`                                         |
-| `textMessage`         | **string**                                       | Message text, if `typeMessage`=`textMessage`                                                               |
-| `downloadUrl`         | **string**                                       | Link to download a file, if `typeMessage` = `imageMessage`/`videoMessage`/`documentMessage`/`audioMessage` |
-| `caption`             | **string**                                       | File caption, if `typeMessage` = `imageMessage`/`videoMessage`/`documentMessage`                           |
-| `location`            | **object**                                       | Location structure object, if `typeMessage`=`locationMessage`                                              |
-| `contact`             | **object**                                       | Contact structure object, if `typeMessage`=`contactMessage`                                                |
-| `extendedTextMessage` | **object**                                       | Link data structure object, if `typeMessage`=`extendedTextMessage`                                         |
+| Parameter             | Type                                                       | Description                                                                                                |
+|-----------------------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| `idMessage`           | **string**                                                 | Message Id                                                                                                 |
+| `timestamp`           | **integer**                                                | Time when the message has been sent in UNIX format                                                         |
+| `typeMessage`         | **string**                                                 | Message type, possible variants:                                                                           |
+|                       | `textMessage` - text message                               |                                                                                                            |
+|                       | `imageMessage` - image message                             |                                                                                                            |
+|                       | `videoMessage` - video message                             |                                                                                                            |
+|                       | `documentMessage` - document file message                  |                                                                                                            |
+|                       | `audioMessage` - audio message                             |                                                                                                            |
+|                       | `locationMessage` - сообщение геолокации                   |                                                                                                            |
+|                       | `contactMessage` - contact message                         |                                                                                                            |
+|                       | `extendedTextMessage` - link and preview message           |                                                                                                            |
+|                       | `quotedMessage` - сообщение с цитированием (УСТАРЕЛО)      |                                                                                                            |
+|                       | `buttonsMessage` - сообщение с кнопками                    |                                                                                                            |
+|                       | `templateMessage` - сообщение с шаблонными кнопками        |                                                                                                            |
+|                       | `listMessage` - сообщение с кнопкой со списком             |                                                                                                            |
+|                       | `buttonsResponseMessage` - ответ с кнопками                |                                                                                                            |
+|                       | `templateButtonsReplyMessage` - ответ с фигурными кнопками |                                                                                                            |
+|                       | `listResponseMessage` - ответ со списком                   |                                                                                                            |
+| `chatId`              | **string**                                                 | [Chat Id](../chat-id.md)                                                                                   |
+| `senderId`            | **string**                                                 | Incoming message sender [Id](../chat-id.md#corr). Present only for `type` = `incoming`                     |
+| `senderName`          | **string**                                                 | Incoming message sender name. Present only for `type` = `incoming`                                         |
+| `textMessage`         | **string**                                                 | Message text, if `typeMessage`=`textMessage`                                                               |
+| `downloadUrl`         | **string**                                                 | Link to download a file, if `typeMessage` = `imageMessage`/`videoMessage`/`documentMessage`/`audioMessage` |
+| `caption`             | **string**                                                 | File caption, if `typeMessage` = `imageMessage`/`videoMessage`/`documentMessage`                           |
+| `location`            | **object**                                                 | Location structure object, if `typeMessage`=`locationMessage`                                              |
+| `contact`             | **object**                                                 | Contact structure object, if `typeMessage`=`contactMessage`                                                |
+| `extendedTextMessage` | **object**                                                 | Link data structure object, if `typeMessage`=`extendedTextMessage`                                         |
+| `quotedMessage`       | **object**                                                 | Объект данных о цитируемом сообщении. Присутствует только, если само сообщение является цитатой            |
 
 Parameters of `location` object:
 
@@ -90,6 +93,8 @@ Parameters of `extendedTextMessage` object:
 | `title`         | **string** | Link title                   |
 | `previewType`   | **string** | Link preview type            |
 | `jpegThumbnail` | **string** | `base64`-coded image preview |
+| `stanzaId`      | **string** | ID цитируемого сообщения     |
+| `participant`   | **string** | ID чата получателя           |
 
 ### Response body example {#response-example-body}
 

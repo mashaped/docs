@@ -117,8 +117,7 @@
                     },
                     "index": 3
                 }
-            ]
-			,
+            ],
 			 "forwardingScore": 4,
              "isForwarded": true
         }

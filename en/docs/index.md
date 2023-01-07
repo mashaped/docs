@@ -11,6 +11,9 @@ Full description of Green API methods with examples
 
 > If WhatsApp API is required without using a telephone (without a handset), refer to [API v1](/docs-v1/index.html) section.
 
+## [Partners](partners/index.md)
+Description of partner methods
+
 ## [FAQ](faq/index.md)
 Detailed responses with examples to frequently asked questions
 

@@ -27,8 +27,10 @@ Parameter | Type | Description
 `downloadUrl` | **string** | Link to download file
 `caption` | **string** | File caption
 | `fileName` | **string** | File name |
-| `titleFile` | **string** | File title |
+| `jpegThumbnail` | **string** | Предпросмотр изображения в base64 |
 | `mimeType` | **string** | File type according to the classification [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 `quotedMessage` object parameters
 
@@ -55,6 +57,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -63,7 +66,9 @@ The rest of the fields are filled depending on the type of the quoted message an
       "downloadUrl": "https://api.green-api.com/waInstance1234/downloadFile/19136A974392FA8CF584D70DD0E1AEDF",
       "caption": "Image",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+      "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -84,6 +89,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -91,8 +97,9 @@ The rest of the fields are filled depending on the type of the quoted message an
     "fileMessageData": {
       "downloadUrl": "https://sw-media.storage.yandexcloud.net/9901742665/39c20293-eb8d-abdd-5fdd1b83820a.mpga",
       "fileName": "39c20293-eb8d-abdd-5fdd1b83820a.mpga",
-      "titleFile": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -119,16 +126,19 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "audioMessage",
     "fileMessageData": {
-      "downloadUrl": "https://s/990173687/801078ab-3340-4e4aa5.jpeg",
+      "downloadUrl": "https://s/990173687/801078ab-3340-4e4aa5.ogg",
       "caption": "",
       "fileName": "801078ab-3340-4f78-е9978be4aa5.ogg",
       "jpegThumbnail": "",
-      "mimeType": "audio/ogg"
+      "mimeType": "audio/ogg",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -157,6 +167,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -166,7 +177,9 @@ The rest of the fields are filled depending on the type of the quoted message an
       "caption": "",
       "fileName": "d417740b483b-8426-e8d871d6de9f.jpeg",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -199,6 +212,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -208,7 +222,9 @@ The rest of the fields are filled depending on the type of the quoted message an
       "caption": "",
       "fileName": "542ad819-166b-b0e1-279069cd03bb.jpeg",
       "jpegThumbnail": "",
-      "mimeType": "image/jpeg"
+      "mimeType": "image/jpeg",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

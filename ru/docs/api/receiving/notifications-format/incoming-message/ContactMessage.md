@@ -54,7 +54,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -62,7 +62,7 @@
     "contactMessageData": {
       "displayName": "Виктор Андреевич",
       "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     }
   }
@@ -84,7 +84,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -120,7 +120,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -128,7 +128,7 @@
     "contactMessageData": {
           "displayName": "Антиспам",
           "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Лена\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Мобильный\nEND:VCARD",
-		  "forwardingScore": 4,
+		      "forwardingScore": 4,
           "isForwarded": true
     },
     },
@@ -137,8 +137,8 @@
          "participant": "79061230000@c.us",
          "typeMessage": "imageMessage",
          "downloadUrl": "",
-          "caption": "",
-          "jpegThumbnail": ""
+         "caption": "",
+         "jpegThumbnail": ""
     }
   }
 ```
@@ -166,7 +166,7 @@
     "contactMessageData": {
       "displayName": "",
       "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Фонд;\nitem1.TEL;waid=79001203030:/em1.X-ABLabel:Новый тип\nEND:VCARD",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {
@@ -196,7 +196,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -204,7 +204,7 @@
     "contactMessageData": {
       "displayName": "Фонд",
       "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Сердца\nitem1.TEL;waid=79200000102\nitem1.X-ABLabel:Новый тип\nEND:VCARD",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {

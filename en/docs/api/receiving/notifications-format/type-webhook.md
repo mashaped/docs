@@ -4,6 +4,7 @@ Incoming webhooks may be of the below types:
 
 - [incomingMessageReceived](incoming-message/Webhook-IncomingMessageReceived.md) - incoming messages and files notification
 - [outgoingMessageReceived](outgoing-message/OutgoingMessage.md) - notification about a message sent from phone
+- [outgoingAPIMessageReceived](outgoing-message/OutgoingApiMessage.md) - Message sent via API
 - [outgoingMessageStatus](outgoing-message/OutgoingMessageStatus.md) - notification about outgoing messages sending/delivering/reading statuses
 - [stateInstanceChanged](StateInstanceChanged.md) - account authorization state change notification 
 - [statusInstanceChanged](StatusInstanceChanged.md) - account socket state change notification
