@@ -48,3 +48,5 @@
 | `Service().ArchiveChat`           | The method archives the chat                                                                                             |
 | `Service().UnarchiveChat`         | The method unarchives the chat                                                                                           |
 | `Service().SetDisappearingChat`   | The method is designed to change the settings of disappearing messages in chats                                          |
+| `GreenAPIWebhook.Start`           | The method is designed to start receiving new events                                                                     |
+| `GreenAPIWebhook.Stop`            | The method is designed to stop receiving new events                                                                      |

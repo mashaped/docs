@@ -1,4 +1,4 @@
-# How to send a message
+# How to use webhook
 
 ### Installation
 
@@ -8,10 +8,12 @@ go get github.com/green-api/whatsapp-api-client-golang
 
 ### Example of sending a message
 
-If an API method has optional parameters, you have to pass JSON to the library method (`map[string]interface{}`).
+To start receiving events, you need to pass a handler function to GreenAPIWebhook.Start(). The handler function should
+have 1 parameter (`body map[string]interface{}`). When a new event is received, your handler function will be executed.
+To stop receiving events, you need to call GreenAPIWebhook.Stop().
 
 Link to
-example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go).
+example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
 
 ```go
 package main
