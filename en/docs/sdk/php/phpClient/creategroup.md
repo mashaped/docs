@@ -43,6 +43,12 @@ if ($resultCreate->code == 200)
 IMPORTANT: If one tries to create a group with a non-existent number, WhatsApp 
 may block the sender's number. The number in the example is non-existent.
 
+#### Running index.php
+
+```
+php -S localhost:8080
+```
+
 ### The full list of examples
 
 | Description                                                    | Module                                                                                                                                   |

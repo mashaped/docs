@@ -47,6 +47,12 @@ Message body types and formats [here](https://green-api.com/en/docs/api/receivin
 
 This method will be called when an incoming message is received. Next, process messages according to the business logic of your system.
 
+#### Running index.php
+
+```
+php -S localhost:8080
+```
+
 ### The full list of examples
 
 | Description                                                    | Module                                                                                                                                   |

@@ -34,6 +34,12 @@ $result = $greenApi->sending->sendFileByUrl(
         'googlelogo_color_272x92dp.png', 'Google logo');
 ```
 
+#### Running index.php
+
+```
+php -S localhost:8080
+```
+
 ### The full list of examples
 
 | Description                                                    | Module                                                                                                                                   |

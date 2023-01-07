@@ -33,6 +33,13 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 $result = $greenApi->sending->sendFileByUpload('11001234567@c.us',
         'C:\Games\PicFromDisk.png', 'PicFromDisk.jpg', 'Picture from disk');
 ```
+
+#### Running index.php
+
+```
+php -S localhost:8080
+```
+
 ### The full list of examples
 
 | Description                                                    | Module                                                                                                                                   |

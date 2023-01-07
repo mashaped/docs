@@ -32,6 +32,13 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 ```
 $result = $greenApi->sending->sendMessage('11001234567@c.us', 'Message text');
 ```
+
+#### Запуск index.php
+
+```
+php -S localhost:8080
+```
+
 ### Полный список примеров
 
 | Описание                                             | Модуль                                                                                                                                   |
