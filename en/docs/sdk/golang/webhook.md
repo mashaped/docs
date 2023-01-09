@@ -1,4 +1,4 @@
-# How to use webhook
+# How to receive incoming webhooks
 
 ### Installation
 
@@ -6,7 +6,7 @@
 go get github.com/green-api/whatsapp-api-client-golang
 ```
 
-### Example of sending a message
+### Example of receiving incoming webhooks
 
 To start receiving events, you need to pass a handler function to GreenAPIWebhook.Start(). The handler function should
 have 1 parameter (`body map[string]interface{}`). When a new event is received, your handler function will be executed.
@@ -71,4 +71,4 @@ func main() {
 | Creating a group                     | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go)        |
 | Sending a message                    | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go)        |
 | Sending a message with an attachment | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go) |
-| Using webhook                        | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)             |
+| Receiving incoming webhooks          | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)             |
