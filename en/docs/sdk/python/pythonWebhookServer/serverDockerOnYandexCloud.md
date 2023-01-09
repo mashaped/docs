@@ -1,4 +1,4 @@
-# Пример разворачивания сервера в контейнере Docker на Yandex Cloud
+# Example of unrolling a server in a Docker container on Yandex Cloud
 
 >В данном примере сервер пишет полученные сообщения в журнал и выводит их в консоль виртуальной машины
 

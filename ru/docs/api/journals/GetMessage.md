@@ -41,21 +41,21 @@ POST https://api.green-api.com/waInstance{{idInstance}}/getMessage/{{apiTokenIns
 | `idMessage`           | **string**                                                 | Идентификатор входящего сообщения                                                                               |
 | `timestamp`           | **integer**                                                | Время принятия сообщения в UNIX-формате                                                                         |
 | `typeMessage`         | **string**                                                 | Тип сообщения, возможные значения:                                                                              |
-|                       | `textMessage` - текстовое сообщение                        |                                                                                                                 |
-|                       | `imageMessage` - сообщение с изображением                  |                                                                                                                 |
-|                       | `videoMessage` - видео сообщение                           |                                                                                                                 |
-|                       | `documentMessage` - сообщение с файлом документа           |                                                                                                                 |
-|                       | `audioMessage` - аудио сообщение                           |                                                                                                                 |
-|                       | `locationMessage` - сообщение геолокации                   |                                                                                                                 |
-|                       | `contactMessage` - сообщение с контактом                   |                                                                                                                 |
-|                       | `extendedTextMessage` - сообщение со ссылкой и превью      |                                                                                                                 |
-|                       | `quotedMessage` - сообщение с цитированием (УСТАРЕЛО)      |                                                                                                                 |
-|                       | `buttonsMessage` - сообщение с кнопками                    |                                                                                                                 |
-|                       | `templateMessage` - сообщение с шаблонными кнопками        |                                                                                                                 |
-|                       | `listMessage` - сообщение с кнопкой со списком             |                                                                                                                 |
-|                       | `buttonsResponseMessage` - ответ с кнопками                |                                                                                                                 |
-|                       | `templateButtonsReplyMessage` - ответ с фигурными кнопками |                                                                                                                 |
-|                       | `listResponseMessage` - ответ со списком                   |                                                                                                                 |
+|                       |                                                            | `textMessage` - текстовое сообщение                                                                             |
+|                       |                                                            | `imageMessage` - сообщение с изображением                                                                       |
+|                       |                                                            | `videoMessage` - видео сообщение                                                                                |
+|                       |                                                            | `documentMessage` - сообщение с файлом документа                                                                |
+|                       |                                                            | `audioMessage` - аудио сообщение                                                                                |
+|                       |                                                            | `locationMessage` - сообщение геолокации                                                                        |
+|                       |                                                            | `contactMessage` - сообщение с контактом                                                                        |
+|                       |                                                            | `extendedTextMessage` - сообщение со ссылкой и превью                                                           |
+|                       |                                                            | `quotedMessage` - сообщение с цитированием (УСТАРЕЛО)                                                           |
+|                       |                                                            | `buttonsMessage` - сообщение с кнопками                                                                         |
+|                       |                                                            | `templateMessage` - сообщение с шаблонными кнопками                                                             |
+|                       |                                                            | `listMessage` - сообщение с кнопкой со списком                                                                  |
+|                       |                                                            | `buttonsResponseMessage` - ответ с кнопками                                                                     |
+|                       |                                                            | `templateButtonsReplyMessage` - ответ с фигурными кнопками                                                      |
+|                       |                                                            | `listResponseMessage` - ответ со списком                                                                        |
 | `chatId`              | **string**                                                 | [Идентификатор чата](../chat-id.md), в котором получено сообщение                                               |
 | `senderId`            | **string**                                                 | [Идентификатор](../chat-id.md#corr) отправителя сообщения                                                       |
 | `senderName`          | **string**                                                 | Имя отправителя сообщения                                                                                       |

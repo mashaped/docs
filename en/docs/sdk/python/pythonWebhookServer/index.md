@@ -39,4 +39,4 @@
 
 - [Example of unrolling a server environment in a Docker container](serverDocker.md)
 - [Example of unrolling a server via Docker Compose](serverDockerCompose.md)
-- [Пример разворачивания сервера в контейнере Docker на Yandex Cloud](serverDockerOnYandexCloud.md)
+- [Example of unrolling a server in a Docker container on Yandex Cloud](serverDockerOnYandexCloud.md)

@@ -41,21 +41,21 @@ Object with parameters:
 | `idMessage`           | **string**                                                 | Message Id                                                                                                 |
 | `timestamp`           | **integer**                                                | Time when the message has been sent in UNIX format                                                         |
 | `typeMessage`         | **string**                                                 | Message type, possible variants:                                                                           |
-|                       | `textMessage` - text message                               |                                                                                                            |
-|                       | `imageMessage` - image message                             |                                                                                                            |
-|                       | `videoMessage` - video message                             |                                                                                                            |
-|                       | `documentMessage` - document file message                  |                                                                                                            |
-|                       | `audioMessage` - audio message                             |                                                                                                            |
-|                       | `locationMessage` - сообщение геолокации                   |                                                                                                            |
-|                       | `contactMessage` - contact message                         |                                                                                                            |
-|                       | `extendedTextMessage` - link and preview message           |                                                                                                            |
-|                       | `quotedMessage` - сообщение с цитированием (УСТАРЕЛО)      |                                                                                                            |
-|                       | `buttonsMessage` - сообщение с кнопками                    |                                                                                                            |
-|                       | `templateMessage` - сообщение с шаблонными кнопками        |                                                                                                            |
-|                       | `listMessage` - сообщение с кнопкой со списком             |                                                                                                            |
-|                       | `buttonsResponseMessage` - ответ с кнопками                |                                                                                                            |
-|                       | `templateButtonsReplyMessage` - ответ с фигурными кнопками |                                                                                                            |
-|                       | `listResponseMessage` - ответ со списком                   |                                                                                                            |
+|                       |                                                            | `textMessage` - text message                                                                               |
+|                       |                                                            | `imageMessage` - image message                                                                             |
+|                       |                                                            | `videoMessage` - video message                                                                             | 
+|                       |                                                            | `documentMessage` - document file message                                                                  |        
+|                       |                                                            | `audioMessage` - audio message                                                                             |     
+|                       |                                                            | `locationMessage` - сообщение геолокации                                                                   |
+|                       |                                                            | `contactMessage` - contact message                                                                         |   
+|                       |                                                            | `extendedTextMessage` - link and preview message                                                           |
+|                       |                                                            | `quotedMessage` - сообщение с цитированием (УСТАРЕЛО)                                                      | 
+|                       |                                                            | `buttonsMessage` - сообщение с кнопками                                                                    |
+|                       |                                                            | `templateMessage` - сообщение с шаблонными кнопками                                                        |
+|                       |                                                            | `listMessage` - сообщение с кнопкой со списком                                                             |
+|                       |                                                            | `buttonsResponseMessage` - ответ с кнопками                                                                |
+|                       |                                                            | `templateButtonsReplyMessage` - ответ с фигурными кнопками                                                 |
+|                       |                                                            | `listResponseMessage` - ответ со списком                                                                   |
 | `chatId`              | **string**                                                 | [Chat Id](../chat-id.md)                                                                                   |
 | `senderId`            | **string**                                                 | Incoming message sender [Id](../chat-id.md#corr). Present only for `type` = `incoming`                     |
 | `senderName`          | **string**                                                 | Incoming message sender name. Present only for `type` = `incoming`                                         |
