@@ -8,9 +8,9 @@ go get github.com/green-api/whatsapp-api-client-golang
 
 ### Пример получения входящих уведомлений
 
-Чтобы начать получать события, нужно передать функцию-обработчик в GreenAPIWebhook.Start(). Функция-обработчик должна
-содержать 1 параметр (`body map[string]interface{}`). При получении нового события ваша функция-обработчик будет
-выполнена. Чтобы перестать получать события, нужно вызвать функцию GreenAPIWebhook.Stop().
+Чтобы начать получать уведомления, нужно передать функцию-обработчик в GreenAPIWebhook.Start(). Функция-обработчик
+должна содержать 1 параметр (`body map[string]interface{}`). При получении нового уведомления ваша функция-обработчик
+будет выполнена. Чтобы перестать получать уведомления, нужно вызвать функцию GreenAPIWebhook.Stop().
 
 Ссылка на
 пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).

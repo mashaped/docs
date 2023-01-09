@@ -8,9 +8,9 @@ go get github.com/green-api/whatsapp-api-client-golang
 
 ### Example of receiving incoming webhooks
 
-To start receiving events, you need to pass a handler function to GreenAPIWebhook.Start(). The handler function should
-have 1 parameter (`body map[string]interface{}`). When a new event is received, your handler function will be executed.
-To stop receiving events, you need to call GreenAPIWebhook.Stop().
+To start receiving incoming webhooks, you need to pass a handler function to GreenAPIWebhook.Start(). The handler
+function should have 1 parameter (`body map[string]interface{}`). When an incoming webhook is received, your handler
+function will be executed. To stop receiving incoming webhooks, you need to call GreenAPIWebhook.Stop().
 
 Link to
 example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
