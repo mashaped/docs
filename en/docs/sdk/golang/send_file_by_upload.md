@@ -19,22 +19,24 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
+	//"os"
 
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
 )
 
 func main() {
-	IDInstance := os.Getenv("ID_INSTANCE")
-	APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
+	//You can set environment variables in your OS
+	//
+	//IDInstance := os.Getenv("ID_INSTANCE")
+	//APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 
 	GreenAPI := api.GreenAPI{
-		IDInstance:       IDInstance,
-		APITokenInstance: APITokenInstance,
+		IDInstance:       "IDInstance",
+		APITokenInstance: "APITokenInstance",
 	}
 
 	response, err := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
-		"chatId": "79001234567@c.us",
+		"chatId": "11001234567@c.us",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -51,3 +53,4 @@ func main() {
 | Creating a group                     | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go)        |
 | Sending a message                    | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go)        |
 | Sending a message with an attachment | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go) |
+| Receiving incoming webhooks          | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)             |

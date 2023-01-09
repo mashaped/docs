@@ -1,4 +1,4 @@
-# Как отправить вложение
+# Как получать входящие уведомления
 
 ### Установка
 
@@ -6,12 +6,14 @@
 go get github.com/green-api/whatsapp-api-client-golang
 ```
 
-### Пример отправки вложения
+### Пример получения входящих уведомлений
 
-Чтобы отправить вложение, нужно указать первым параметром путь к нужному документу.
+Чтобы начать получать уведомления, нужно передать функцию-обработчик в GreenAPIWebhook.Start(). Функция-обработчик
+должна содержать 1 параметр (`body map[string]interface{}`). При получении нового уведомления ваша функция-обработчик
+будет выполнена. Чтобы перестать получать уведомления, нужно вызвать функцию GreenAPIWebhook.Stop().
 
 Ссылка на
-пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go).
+пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
 
 ```go
 package main
@@ -22,6 +24,7 @@ import (
 	//"os"
 
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
+	"github.com/green-api/whatsapp-api-client-golang/pkg/webhook"
 )
 
 func main() {
@@ -35,14 +38,29 @@ func main() {
 		APITokenInstance: "APITokenInstance",
 	}
 
-	response, err := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
-		"chatId": "11001234567@c.us",
-	})
-	if err != nil {
-		log.Fatal(err)
+	GreenAPIWebhook := webhook.GreenAPIWebhook{
+		GreenAPI: GreenAPI,
 	}
 
-	fmt.Println(response)
+	GreenAPIWebhook.Start(func(body map[string]interface{}) {
+		typeWebhook := body["typeWebhook"]
+		if typeWebhook == "incomingMessageReceived" {
+			senderData := body["senderData"]
+			chatId := senderData.(map[string]interface{})["chatId"]
+
+			response, err := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
+				"chatId":  chatId,
+				"message": "Any message",
+			})
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			fmt.Println(response)
+
+			GreenAPIWebhook.Stop()
+		}
+	})
 }
 ```
 

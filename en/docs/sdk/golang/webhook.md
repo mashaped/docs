@@ -1,4 +1,4 @@
-# How to create a group
+# How to receive incoming webhooks
 
 ### Installation
 
@@ -6,10 +6,14 @@
 go get github.com/green-api/whatsapp-api-client-golang
 ```
 
-### Example of creating a group
+### Example of receiving incoming webhooks
+
+To start receiving incoming webhooks, you need to pass a handler function to GreenAPIWebhook.Start(). The handler
+function should have 1 parameter (`body map[string]interface{}`). When an incoming webhook is received, your handler
+function will be executed. To stop receiving incoming webhooks, you need to call GreenAPIWebhook.Stop().
 
 Link to
-example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go).
+example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
 
 ```go
 package main
@@ -20,6 +24,7 @@ import (
 	//"os"
 
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
+	"github.com/green-api/whatsapp-api-client-golang/pkg/webhook"
 )
 
 func main() {
@@ -33,15 +38,29 @@ func main() {
 		APITokenInstance: "APITokenInstance",
 	}
 
-	response, err := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
-		"11001234567@c.us",
-		"11002345678@c.us",
-	})
-	if err != nil {
-		log.Fatal(err)
+	GreenAPIWebhook := webhook.GreenAPIWebhook{
+		GreenAPI: GreenAPI,
 	}
 
-	fmt.Println(response)
+	GreenAPIWebhook.Start(func(body map[string]interface{}) {
+		typeWebhook := body["typeWebhook"]
+		if typeWebhook == "incomingMessageReceived" {
+			senderData := body["senderData"]
+			chatId := senderData.(map[string]interface{})["chatId"]
+
+			response, err := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
+				"chatId":  chatId,
+				"message": "Any message",
+			})
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			fmt.Println(response)
+
+			GreenAPIWebhook.Stop()
+		}
+	})
 }
 ```
 
