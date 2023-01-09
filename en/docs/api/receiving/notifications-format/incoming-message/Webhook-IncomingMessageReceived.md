@@ -5,18 +5,18 @@ This section describes the general format of incoming webhooks with the `incomin
 The system provides for receiving notifications about incoming messages of the below types:
 
 - [Incoming text message](TextMessage.md)
-- [Выбор обычной кнопки](/docs/api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md)
-- [Выбор шаблонной кнопки](/docs/api/receiving/notifications-format/selected-buttons/TemplateButtonsReplyMessage.md)
-- [Выбор элемента списка](/docs/api/receiving/notifications-format/selected-buttons/ListResponseMessage.md)
+- [Selecting a regular button](/docs/api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md)
+- [Selecting a template button](/docs/api/receiving/notifications-format/selected-buttons/TemplateButtonsReplyMessage.md)
+- [Selecting a List Item](/docs/api/receiving/notifications-format/selected-buttons/ListResponseMessage.md)
 - [Incoming text message with URL](ExtendedTextMessage.md)
 - [Incoming image, video, audio, document message](ImageMessage.md)
 - [Incoming location message](LocationMessage.md)
 - [Incoming contact message](ContactMessage.md)
-- [Входящее сообщение с массивом контактов](ContactsArrayMessage.md)
+- [Incoming message with an array of contacts](ContactsArrayMessage.md)
 - [Incoming quoted message](QuotedMessage.md)
-- [Входящее сообщение со стикером](StickerMessage.md)
-- [Входящее сообщение-реакция](ReactionMessage.md)
-- [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
+- [Incoming message with sticker](StickerMessage.md)
+- [Incoming message-reaction](ReactionMessage.md)
+- [Incoming message with an invitation to the group](GroupInviteMessage.md)
 
 ## incomingMessageReceived webhook parameters {#webhook-parameters}
 
@@ -55,11 +55,11 @@ Parameter | Type | Description
 - [Incoming image, video, audio, document message](ImageMessage.md)
 - [Incoming location message](LocationMessage.md)
 - [Incoming contact message](ContactMessage.md)
-- [Входящее сообщение с массивом контактов](ContactsArrayMessage.md)
+- [Incoming message with an array of contacts](ContactsArrayMessage.md)
 - [Incoming quoed message](QuotedMessage.md)
-- [Входящее сообщение со стикером](StickerMessage.md)
-- [Входящее сообщение-реакция](ReactionMessage.md)
-- [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
+- [Incoming message with sticker](StickerMessage.md)
+- [Incoming message-reaction](ReactionMessage.md)
+- [Incoming message with an invitation to the group](GroupInviteMessage.md)
 
 ### Webhook body example {#webhook-example-body}
 
