@@ -1,11 +1,14 @@
-# Как отправить файл во ссылке
+# Как отправить файл по ссылке
 ### Установка
+
+Перед добавлением [пакета green-api](https://packagist.org/packages/green-api/whatsapp-api-client-php), необходимо установить менеджер зависимостей php [composer](https://getcomposer.org)
+
 ```
 composer require green-api/whatsapp-api-client-php
 ```
 ### Import 
 ```
-require 'vendor\autoload.php';
+require './vendor/autoload.php';
 ```
 ### Примеры
 Полный пример можно посмотреть по ссылке: [sendPictureByLink.php](https://github.com/green-api/whatsapp-api-client-php/blob/master/examples/sendPictureByLink.php)
@@ -18,7 +21,7 @@ $greenApi = new GreenApiClient( ID_INSTANCE, API_TOKEN_INSTANCE );
 Обратите внимание, что ключи можно получать из переменных среды:
 ```
 <?php
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 define( "ID_INSTANCE", getenv("ID_INSTANCE" ));
 define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
@@ -29,6 +32,12 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 $result = $greenApi->sending->sendFileByUrl(
         '11001234567@c.us', 'https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
         'googlelogo_color_272x92dp.png', 'Google logo');
+```
+
+#### Запуск index.php
+
+```
+php -S localhost:8080
 ```
 
 ### Полный список примеров

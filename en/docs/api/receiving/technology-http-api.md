@@ -22,8 +22,7 @@ It is also required to specify what types of webhooks you need to receive. To en
     "webhookUrl": "",
     "outgoingWebhook": "yes",
     "stateWebhook": "yes",
-    "incomingWebhook": "yes",
-    "deviceWebhook": "no"
+    "incomingWebhook": "yes"
 }
 ```
 

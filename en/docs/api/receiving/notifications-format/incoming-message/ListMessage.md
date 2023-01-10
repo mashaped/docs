@@ -30,6 +30,8 @@ To get incoming webhooks of this type, two conditions must be true:
 | `listMessage` | **object** | Buttons data object |
 |`buttonText` | **string** | No | selection list button text|
 |`sections` | **array** | Yes | selection list values|
+|`isForwarded` | **boolean** | Is the forwarded message, принимает значения true/false
+|`forwardingScore` | **integer** | Count forwarded
 
 `sections` array parameters
 
@@ -71,6 +73,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
     "messageData": {
@@ -107,7 +110,9 @@ The rest of the fields are filled depending on the type of the quoted message an
                             "rowId": "option4",
                             "description": "Clarification"
                 }
-            ]
+            ],
+             "forwardingScore": 4,
+             "isForwarded": true
         }
     }
 }

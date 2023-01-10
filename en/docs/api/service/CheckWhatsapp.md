@@ -54,10 +54,11 @@ HTTP code | Error Id | Description
 
 ```python
 import requests
+import json
 
 url = "https://api.green-api.com/waInstance{{idInstance}}/checkWhatsapp/{{apiTokenInstance}}"
 
-payload = "{\r\n    \"phoneNumber\": 11001234567\r\n}"
+payload = json.dumps({ "phoneNumber": 79876716790 })
 headers = {
   'Content-Type': 'application/json'
 }

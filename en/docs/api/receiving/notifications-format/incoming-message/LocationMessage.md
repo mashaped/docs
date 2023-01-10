@@ -27,6 +27,8 @@ Parameter | Type | Description
 `latitude` | **double** | Location latitude
 `longitude` | **double** | Location longitude
 `jpegThumbnail` | **string** | `base64`-coded image preview
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false|
+|`forwardingScore` | **integer** | Количество пересылок сообщения|
 
 `quotedMessage` object parameters
 
@@ -53,6 +55,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -60,7 +63,9 @@ The rest of the fields are filled depending on the type of the quoted message an
     "locationMessageData": {
       "latitude": 12.345678910111213,
       "longitude": 14.151617181920212,
-      "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFx="
+      "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFx=",
+      "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -81,6 +86,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -90,7 +96,9 @@ The rest of the fields are filled depending on the type of the quoted message an
       "address": "",
       "jpegThumbnail": "217",
       "latitude": 74.5922641,
-      "longitude": 59.6645355
+      "longitude": 59.6645355,
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",

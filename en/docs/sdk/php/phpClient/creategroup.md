@@ -1,11 +1,14 @@
 # How to create a group and send a message to it
 ### Installation
+
+Before adding the [green-api package](https://packagist.org/packages/green-api/whatsapp-api-client-php), you need to install [composer](https://getcomposer.org) (php dependency manager).
+
 ```
 composer require green-api/whatsapp-api-client-php
 ```
 ### Import 
 ```
-require 'vendor\autoload.php';
+require './vendor/autoload.php';
 ```
 ### Examples
 You may see the full example at: [createGroupAndSendMessage.php](https://github.com/green-api/whatsapp-api-client-php/blob/master/examples/createGroupAndSendMessage.php)
@@ -18,7 +21,7 @@ $greenApi = new GreenApiClient( ID_INSTANCE, API_TOKEN_INSTANCE );
 Please note that keys can be obtained from environment variables:
 ```
 <?php
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 define( "ID_INSTANCE", getenv("ID_INSTANCE" ));
 define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
@@ -39,6 +42,12 @@ if ($resultCreate->code == 200)
 
 IMPORTANT: If one tries to create a group with a non-existent number, WhatsApp 
 may block the sender's number. The number in the example is non-existent.
+
+#### Running index.php
+
+```
+php -S localhost:8080
+```
 
 ### The full list of examples
 

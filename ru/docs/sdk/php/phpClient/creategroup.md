@@ -1,11 +1,14 @@
 # Как создать группу и отправить в неё сообщение
 ### Установка
+
+Перед добавлением [пакета green-api](https://packagist.org/packages/green-api/whatsapp-api-client-php), необходимо установить менеджер зависимостей php [composer](https://getcomposer.org)
+
 ```
 composer require green-api/whatsapp-api-client-php
 ```
 ### Import 
 ```
-require 'vendor\autoload.php';
+require './vendor/autoload.php';
 ```
 ### Примеры
 Полный пример можно посмотреть по ссылке: [createGroupAndSendMessage.php](https://github.com/green-api/whatsapp-api-client-php/blob/master/examples/createGroupAndSendMessage.php)
@@ -18,7 +21,7 @@ $greenApi = new GreenApiClient( ID_INSTANCE, API_TOKEN_INSTANCE );
 Обратите внимание, что ключи можно получать из переменных среды:
 ```
 <?php
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 define( "ID_INSTANCE", getenv("ID_INSTANCE" ));
 define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
@@ -39,6 +42,12 @@ if ($resultCreate->code == 200)
 
 ВАЖНО: Если попытаться создать группу с несуществующим номером, WhatsApp 
 может заблокировать номер отправителя. Номер в примере не существует.
+
+#### Запуск index.php
+
+```
+php -S localhost:8080
+```
 
 ### Полный список примеров
 

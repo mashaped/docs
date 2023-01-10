@@ -5,11 +5,18 @@ This section describes the general format of incoming webhooks with the `incomin
 The system provides for receiving notifications about incoming messages of the below types:
 
 - [Incoming text message](TextMessage.md)
+- [Selecting a regular button](/docs/api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md)
+- [Selecting a template button](/docs/api/receiving/notifications-format/selected-buttons/TemplateButtonsReplyMessage.md)
+- [Selecting a List Item](/docs/api/receiving/notifications-format/selected-buttons/ListResponseMessage.md)
 - [Incoming text message with URL](ExtendedTextMessage.md)
 - [Incoming image, video, audio, document message](ImageMessage.md)
 - [Incoming location message](LocationMessage.md)
 - [Incoming contact message](ContactMessage.md)
+- [Incoming message with an array of contacts](ContactsArrayMessage.md)
 - [Incoming quoted message](QuotedMessage.md)
+- [Incoming message with sticker](StickerMessage.md)
+- [Incoming message-reaction](ReactionMessage.md)
+- [Incoming message with an invitation to the group](GroupInviteMessage.md)
 
 ## incomingMessageReceived webhook parameters {#webhook-parameters}
 
@@ -36,6 +43,7 @@ Parameter | Type | Description
 ----- | ----- | -----
 `chatId` | **string** | [Chat Id](../../../chat-id.md), where a message or file has been received
 `sender` | **string** | Message or file sender [Id](../../../chat-id.md#corr) 
+`chatName` | **string** | chat name
 `senderName` | **string** | Sender name
 
 ### `messageData` object parameters
@@ -47,7 +55,11 @@ Parameter | Type | Description
 - [Incoming image, video, audio, document message](ImageMessage.md)
 - [Incoming location message](LocationMessage.md)
 - [Incoming contact message](ContactMessage.md)
+- [Incoming message with an array of contacts](ContactsArrayMessage.md)
 - [Incoming quoed message](QuotedMessage.md)
+- [Incoming message with sticker](StickerMessage.md)
+- [Incoming message-reaction](ReactionMessage.md)
+- [Incoming message with an invitation to the group](GroupInviteMessage.md)
 
 ### Webhook body example {#webhook-example-body}
 
@@ -64,6 +76,7 @@ Parameter | Type | Description
     "senderData": {
         "chatId": "79001234568@c.us",
         "sender": "79001234568@c.us",
+        "chatName": "Green API",
         "senderName": "Green API"
     },
     "messageData":{

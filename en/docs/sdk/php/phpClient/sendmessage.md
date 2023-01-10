@@ -1,11 +1,14 @@
 # How to send a text message
 ### Installation
+
+Before adding the [green-api package](https://packagist.org/packages/green-api/whatsapp-api-client-php), you need to install [composer](https://getcomposer.org) (php dependency manager).
+
 ```
 composer require green-api/whatsapp-api-client-php
 ```
 ### Import 
 ```
-require 'vendor\autoload.php';
+require './vendor/autoload.php';
 ```
 ### Examples
 You may see the full example at: [sendTextMessage.php](https://github.com/green-api/whatsapp-api-client-php/blob/master/examples/sendTextMessage.php)
@@ -19,7 +22,7 @@ $greenApi = new GreenApiClient( ID_INSTANCE, API_TOKEN_INSTANCE );
 Please note that keys can be obtained from environment variables:
 ```
 <?php
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 define( "ID_INSTANCE", getenv("ID_INSTANCE" ));
 define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
@@ -29,6 +32,13 @@ define( "API_TOKEN_INSTANCE", getenv("API_TOKEN_INSTANCE") );
 ```
 $result = $greenApi->sending->sendMessage('11001234567@c.us', 'Message text');
 ```
+
+#### Running index.php
+
+```
+php -S localhost:8080
+```
+
 ### The full list of examples
 
 | Description                                                    | Module                                                                                                                                   |

@@ -65,7 +65,7 @@
     "senderData": {
         "chatId": "79001234568@c.us",
         "sender": "79001234568@c.us",
-		"chatName": "Green API",
+		    "chatName": "Green API",
         "senderName": "Green API"
     },
     "messageData": {
@@ -75,8 +75,8 @@
             "description": "Green API docs shows how you can develop the WhatsApp Bot",
             "title": "How to develop WhatsApp Bot",
             "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYG==",
-			 "forwardingScore": 4,
-             "isForwarded": true
+			      "forwardingScore": 4,
+            "isForwarded": true
         }
     }
 }
@@ -105,8 +105,8 @@
       "text": "https://yandex.ru/former&utm_source=home&utm_content=main_informer&utm_term=main_number",
       "stanzaId": "0EA554E587820E35309858AE265BE7EA",
       "participant": "79001230000@c.us",
-	   "forwardingScore": 4,
-       "isForwarded": true
+	    "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -144,7 +144,7 @@
       "text": "https://yandex.ru/pogoda/?utm_medium=source=home&utm_content=main_informer&utm_term=main_number",
       "stanzaId": "B4AA239D112CB2576897B3910FEDE26E",
       "participant": "79001230000@c.us",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {

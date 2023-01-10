@@ -2,7 +2,7 @@
 
 Webhook Endpoint technology allows you to receive incoming webhooks directly to your server. This means that the Green API server will make a call to the method published on your server side. The advantage of this technology is the fastest possible receipt of incoming webhooks and high capacity, limited only by the rate of processing webhooks on your server side. The disadvantages include the implementation complexity. 
 
-> The Green API server makes 5 attempts to deliver webhooks with an extended delay. Therefore, set up your server so that it is always available to process incoming webhooks, or use [Receive webhooks via HTTP API](technology-http-api.md) technology, where the delivery of incoming webhooks is guaranteed within 24 hours.
+> The Green API server makes attempts to deliver webhooks at 1-minute interval. Therefore, set up your server so that it is always available to process incoming webhooks, or use [Receive webhooks via HTTP API](technology-http-api.md) technology. The delivery of incoming webhooks is guaranteed within 24 hours. 
 
 ## Server setting
 
@@ -71,7 +71,11 @@ You can also set up to receive incoming webhooks online. To do this, go to [My P
 
 ## Receive incoming webhooks
 
-After setting up the account, you can start receiving webhooks. You can see the example of incoming webhook processing code on [NodeJS](https://nodejs.org) in [file](https://github.com/green-api/whatsapp-api-client/blob/master/examples/ReceiveWebhook.js).
+After setting up the account, you can start receiving webhooks. You can see the example of incoming webhook processing code:
+
+- On [NodeJS](https://nodejs.org) in [file](../../sdk/nodejs/receiveNotificationserver.md#_5).
+
+- On [Python](https://python.org) in [file](../../sdk/python/pythonWebhookServer/index.md).
 
 ## Debug incoming webhooks
 

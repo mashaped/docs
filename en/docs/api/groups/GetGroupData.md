@@ -1,4 +1,4 @@
-# GetGro# GetGroupData
+# GetGroupData
 
 The method gets group chat data. 
 

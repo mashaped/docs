@@ -57,7 +57,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -67,7 +67,7 @@
       "caption": "Картинка",
       "jpegThumbnail": "",
       "mimeType": "image/jpeg",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     }
   }
@@ -89,7 +89,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -98,7 +98,7 @@
       "downloadUrl": "https://sw-media.storage.yandexcloud.net/9901742665/39c20293-eb8d-abdd-5fdd1b83820a.mpga",
       "fileName": "39c20293-eb8d-abdd-5fdd1b83820a.mpga",
       "mimeType": "image/jpeg",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {
@@ -137,7 +137,7 @@
       "fileName": "801078ab-3340-4f78-е9978be4aa5.ogg",
       "jpegThumbnail": "",
       "mimeType": "audio/ogg",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {
@@ -167,7 +167,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
@@ -178,7 +178,7 @@
       "fileName": "d417740b483b-8426-e8d871d6de9f.jpeg",
       "jpegThumbnail": "",
       "mimeType": "image/jpeg",
-	  "forwardingScore": 4,
+	    "forwardingScore": 4,
       "isForwarded": true
     },
     "quotedMessage": {
@@ -212,7 +212,7 @@
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
-	"chatName": "Green API",
+	  "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {

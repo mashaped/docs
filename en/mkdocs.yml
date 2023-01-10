@@ -62,9 +62,13 @@ nav:
                     - 'Video, audio, image, document': 'api/receiving/notifications-format/incoming-message/ImageMessage.md'
                     - 'Location': 'api/receiving/notifications-format/incoming-message/LocationMessage.md'
                     - 'Contact': 'api/receiving/notifications-format/incoming-message/ContactMessage.md'
+                    - 'Array of contacts': 'api/receiving/notifications-format/incoming-message/ContactsArrayMessage.md'
                     - 'Incoming buttons message': 'api/receiving/notifications-format/incoming-message/ButtonsMessage.md'
                     - 'Selection list incoming message': 'api/receiving/notifications-format/incoming-message/ListMessage.md'
                     - 'Template buttons incoming message': 'api/receiving/notifications-format/incoming-message/TemplateMessage.md'
+                    - 'Incoming message with sticker': 'api/receiving/notifications-format/incoming-message/StickerMessage.md'
+                    - 'Incoming message-reaction': 'api/receiving/notifications-format/incoming-message/ReactionMessage.md'
+                    - 'Incoming message with an invitation to the group': 'api/receiving/notifications-format/incoming-message/GroupInviteMessage.md'
                     - '(deprecated) Quoted message': 'api/receiving/notifications-format/incoming-message/QuotedMessage.md'
                 - 'Selecting buttons':
                     - 'Simple button selection ': 'api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md'
@@ -126,13 +130,23 @@ nav:
             - 'Chat Id': 'api/chat-id.md'
             - 'Messages sending delay': 'api/send-messages-delay.md'
             - 'Common errors': 'api/common-errors.md'
+    - 'Partners':
+        - 'Overview': 'partners/index.md'
+        - 'Create instance': 'partners/createInstance.md'
+        - 'Delete instance partner account': 'partners/deleteInstanceAccount.md'
+        - 'Get all instances of an account created by a partner': 'partners/getInstances.md'   
     - 'FAQ':
         - 'FAQ': 'faq/index.md'
         - 'How to protect number from ban?': 'faq/how-to-protect-number-from-ban.md'
         - 'If your number is blocked': 'faq/if-your-number-is-blocked.md'
+        - 'Features of sending and receiving messages to numbers of different countries': 'faq/features-of-sending-and-receiving-messages-from-different-countries.md'
+        - 'How can I prevent a QR session from being permanently disconnected?': 'faq/how-can-I-prevent-a-QR-session-from-being-permanently-disconnected.md'
+        - 'Why is re-blocking happening?': 'faq/why-is-re-blocking-happening.md'
+        - 'Why is logout happening?': 'faq/why-does-the-crash-happen.md'
   - Releases:
         - "Overview": 'release/index.md'
         - 'GREEN-API releases':
+          # - '5.44.20.42 от 11.01.2023': 'release/5.44.20.42.md'
           - '5.44.19.39 dd. 19.10.2022': 'release/5.44.19.39.md'
           - '5.44.18.74 dd. 20.09.2022': 'release/5.44.18.74.md'
           - '5.44.18.28 dd. 13.09.2022': 'release/5.44.18.28.md'
@@ -158,6 +172,7 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverLibrary.md'
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
+              - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
           - 'PHP WhatsApp Library':
             - 'Overview': 'sdk/php/index.md'
             - 'PHP WhatsApp Library':

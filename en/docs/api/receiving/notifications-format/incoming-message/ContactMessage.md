@@ -26,6 +26,8 @@ Parameter | Type | Description
 ----- | ----- | -----
 `displayName` | **string** | Displayed contact name
 `vcard` | **string** | VCard structure (contact visit card)
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+|`forwardingScore` | **integer** | Количество пересылок сообщения
 
 `quotedMessage` object parameters
 
@@ -52,13 +54,16 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Victor Andreevich",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD",
+      "forwardingScore": 4,
+      "isForwarded": true
     }
   }
 }
@@ -79,13 +84,16 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Anti-spam",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Anti-spam;;;\nFN:Anti-spam\nitem1.TEL:*9035936232#\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Anti-spam;;;\nFN:Anti-spam\nitem1.TEL:*9035936232#\nitem1.X-ABLabel:Mobile\nEND:VCARD",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -112,13 +120,16 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
           "displayName": "Anti-spam",
-          "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Lena\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+          "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Lena\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Mobile\nEND:VCARD",
+          "forwardingScore": 4,
+          "isForwarded": true
     },
     },
     "quotedMessage": {
@@ -126,7 +137,8 @@ The rest of the fields are filled depending on the type of the quoted message an
          "participant": "79061230000@c.us",
          "typeMessage": "imageMessage",
          "downloadUrl": "",
-          "caption": ""
+         "caption": "",
+         "jpegThumbnail": ""
     }
   }
 ```
@@ -146,13 +158,16 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Fond;\nitem1.TEL;waid=79001203030:/em1.X-ABLabel:New type\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Fond;\nitem1.TEL;waid=79001203030:/em1.X-ABLabel:New type\nEND:VCARD",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
@@ -181,13 +196,16 @@ The rest of the fields are filled depending on the type of the quoted message an
   "senderData": {
     "chatId": "79001234568@c.us",
     "sender": "79001234568@c.us",
+    "chatName": "Green API",
     "senderName": "Green API"
   },
   "messageData": {
     "typeMessage": "contactMessage",
     "contactMessageData": {
       "displayName": "Fond",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Hearts\nitem1.TEL;waid=79200000102\nitem1.X-ABLabel:New type\nEND:VCARD"
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:2 Hearts\nitem1.TEL;waid=79200000102\nitem1.X-ABLabel:New type\nEND:VCARD",
+      "forwardingScore": 4,
+      "isForwarded": true
     },
     "quotedMessage": {
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
