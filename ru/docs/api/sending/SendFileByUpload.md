@@ -42,11 +42,11 @@ url = "https://api.green-api.com/waInstance{{idInstance}}/sendFileByUpload/{{api
 payload = {'chatId': '11001234567@c.us',
 'caption': 'Описание'}
 files = [
-  ('file', open('/C:/window.jpg','rb'))
+  ('file', ('window.jpg', open('C:/window.jpg','rb'),'image/jpeg'))
 ]
 headers= {}
 
-response = requests.request("POST", url, headers=headers, data = payload, files = files)
+response = requests.request("POST", url, headers = headers, data = payload, files = files)
 
 print(response.text.encode('utf8'))
 ```
