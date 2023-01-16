@@ -72,5 +72,11 @@ https://api.green-api.com/partner/createInstance/{partnerToken}
     "typeInstance": "whatsapp"
 }
 ```
+В случае неудачи, отдается ответ с HTTP статусом 200, в теле ответа отдается JSON строка с кодом и описанием ошибки:
 
-В случае неудачи, отдается ответ с HTTP статусом 400 и текстом ошибки.
+```json
+{
+    "code": 401,
+    "description": "Unauthorized"
+}
+```
