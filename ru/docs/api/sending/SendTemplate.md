@@ -44,7 +44,6 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenI
 }
 
 ```
-```
 
 ## Ответ {#response}
 
