@@ -11,3 +11,4 @@ This section presents methods for sending text messages, video, audio, images, d
 - [Send location](SendLocation.md)
 - [Send contact](SendContact.md)
 - [Send link](SendLink.md)
+- [Forward messages](ForwardMessages.md)
