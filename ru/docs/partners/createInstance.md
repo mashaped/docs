@@ -73,4 +73,11 @@ https://api.green-api.com/partner/createInstance/{partnerToken}
 }
 ```
 
-В случае неудачи, отдается ответ с HTTP статусом 400 и текстом ошибки.
+В случае неудачи, отдается ответ с HTTP статусом 200, в теле ответа отдается JSON строка с кодом и описанием ошибки:
+
+```json
+{
+    "code": 401,
+    "description": "Unauthorized"
+}
+```
