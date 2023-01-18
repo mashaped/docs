@@ -30,7 +30,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendListMessage/{{apiTok
 `buttonText` | **string** | Нет | надпись на кнопке списка выбора
 `sections` | **array** | Да | значения списка выбора
 `quotedMessageId` | **string** | Нет | Идентификатор цитируемого сообщения,если указан то сообщение отправится с цитированием указанного сообщения чата
-`archiveChat` | **boolean** | Нет | Помещает в архив чат, в который отправлено сообщение. Принимает значания: true|false
+`archiveChat` | **boolean** | Нет | Помещает в архив чат, в который отправлено сообщение. Принимает значения: true|false
 
 Поля массива `sections`
 

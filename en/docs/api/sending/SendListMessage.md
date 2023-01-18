@@ -21,7 +21,7 @@ For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you
 
 ### Request parameters {#request-parameters}
 
-Parameter | Type | Mndatory | Description
+Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
 `chatId` | **string** | Yes | [Chat Id](../chat-id.md)
 `message` | **string** | Yes | Message text. Emoji 😃 characters supported
