@@ -22,6 +22,7 @@ Para debugar as solicitações na Gren API, use a seção [Utilizando o Postman]
 - [Enviando geo-localização](./sending/SendLocation.md)
 - [Enviando contatos](./sending/SendContact.md)
 - [Enviando links](./sending/SendLink.md)
+- [Encaminhar mensagens](./sending/ForwardMessages.md)
 
 ## [Recebendo Respostas](./receiving/index.md) {#receiving}
 

@@ -25,6 +25,7 @@ Make sure you have completed all the steps in [Before you start](../before-start
 - [Send location](./sending/SendLocation.md)
 - [Send contact](./sending/SendContact.md)
 - [Send link](./sending/SendLink.md)
+- [Forward messages](./sending/ForwardMessages.md)
 
 ## [Receiving](./receiving/index.md) {#receiving}
 
