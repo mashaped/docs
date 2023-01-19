@@ -25,6 +25,7 @@ Green API предоставляет HTTP API WhatsApp для отправки �
 - [Отправить геолокацию](./sending/SendLocation.md)
 - [Отправить контакт](./sending/SendContact.md)
 - [Отправить ссылку](./sending/SendLink.md)
+- [Переслать сообщения](./sending/ForwardMessages.md)
 
 ## [Получение](./receiving/index.md) {#receiving}
 

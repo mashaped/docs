@@ -35,6 +35,7 @@ nav:
             - 'Enviando geo-localização': 'api/sending/SendLocation.md'
             - 'Enviando contatos': 'api/sending/SendContact.md'
             - 'Enviando links': 'api/sending/SendLink.md'
+            - 'Mensagem encaminhada': 'api/sending/ForwardMessages.md'
         - 'Recebendo Respostas':
             - 'Visão Inicial': 'api/receiving/index.md'
             - 'HTTP API':

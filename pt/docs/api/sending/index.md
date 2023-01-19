@@ -8,3 +8,4 @@ Esta seção fornece métodos para enviar mensagens de texto, vídeo, áudio, im
 - [Enviar geolocalização](SendLocation.md)
 - [Enviar contato](SendContact.md)
 - [Enviar links](SendLink.md)
+- [Encaminhar mensagens](ForwardMessages.md)

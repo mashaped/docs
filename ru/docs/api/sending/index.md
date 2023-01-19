@@ -11,4 +11,4 @@
 - [Отправить геолокацию](SendLocation.md)
 - [Отправить контакт](SendContact.md)
 - [Отправить ссылку](SendLink.md)
-- [Переслать сообщение](ForwardMessages.md)
+- [Переслать сообщения](ForwardMessages.md)

@@ -121,7 +121,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/SendListMessage/{{apiTok
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendListMessage/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79192533586@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Текст сообщения",
     "buttonText": "Список действий",
     "title": "заголовок",

@@ -45,6 +45,7 @@ nav:
             - 'Send location': 'api/sending/SendLocation.md'
             - 'Send contact': 'api/sending/SendContact.md'
             - 'Send link': 'api/sending/SendLink.md'
+            - 'Forward messages': 'api/sending/ForwardMessages.md'
         - 'Receiving':
             - 'Conception': 'api/receiving/index.md'
             - 'HTTP API':

@@ -67,8 +67,8 @@ For a list of errors common to all methods, refer to [Common errors](../common-e
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/forwardMessages/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79192533586@c.us",
-    "chatIdFrom": "79192533586@c.us",
+    "chatId": "11001234567@c.us",
+    "chatIdFrom": "11001234567@c.us",
     "messages": [
         "BAE587FA1CECF760",
         "BAE5608BC86F2B59"

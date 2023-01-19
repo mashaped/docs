@@ -121,7 +121,7 @@ For a list of errors common to all methods, refer to [Common errors](../common-e
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendListMessage/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "chatId": "79192533586@c.us",
+    "chatId": "11001234567@c.us",
     "message": "Message text",
     "buttonText": "Action list",
     "title": "title",

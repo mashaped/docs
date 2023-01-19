@@ -45,6 +45,7 @@ nav:
             - 'Отправить геолокацию': 'api/sending/SendLocation.md'
             - 'Отправить контакт': 'api/sending/SendContact.md'
             - 'Отправить ссылку': 'api/sending/SendLink.md'
+            - 'Переслать сообщения': 'api/sending/ForwardMessages.md'
         - 'Получение':
             - 'Концепция': 'api/receiving/index.md'
             - 'HTTP API':
