@@ -4,6 +4,7 @@ repo_url: https://github.com/green-api/docs
 edit_uri: edit/master/ru/docs/
 site_dir: build
 site_url: https://green-api.com
+site_description: GREEN API - интеграция с WhatsApp на любом языке программирования
 
 nav:
   - "Главная":
