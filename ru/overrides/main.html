@@ -11,12 +11,12 @@
   {% endif %}
 
   <!-- The image needs to have an absolute URL -->
-  {% set image = config.site_url ~ 'assets/images/banner.png' %}
+  {% set image = config.site_url ~ 'assets/green-api-logo_2.png' %}
 
   <!-- Open graph meta tags -->
-  <meta property="og:title" content="GREEN API для отправки и получения сообщений WhatsApp">
-  <meta property="og:description" content="GREEN API - интеграция с WhatsApp на любом языке программирования PHP, JavaScript, 1С, Python, Java, C#, VBA">
-  <meta property="og:image" content="https://green-api.com/docs/assets/green-api-logo.png">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:image" content="https://green-api.com/docs/assets/green-api-logo_2.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="GREEN API">
   <meta property="og:type" content="website">
