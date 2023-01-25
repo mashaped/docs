@@ -1,9 +1,10 @@
-site_name: Green API
+site_name: GREEN API
 repo_name: green-api/docs
 repo_url: https://github.com/green-api/docs
 edit_uri: edit/master/ru/docs/
 site_dir: build
 site_url: https://green-api.com/en/
+site_description: GREEN API - WhatsApp API on any language
 
 nav:
   - "Home":
@@ -230,7 +231,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/green-api-logo.png
+  favicon: assets/green-api-logo_2.png
 
 extra_css:
   - stylesheets/styles.css

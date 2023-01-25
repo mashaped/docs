@@ -14,19 +14,63 @@
   {% set image = config.site_url ~ 'assets/images/banner.png' %}
 
   <!-- Open graph meta tags -->
-  <meta property="og:title" content="GREEN API for sending and receiving WhatsApp messages">
-  <meta property="og:description" content="GREEN API - integration with WhatsApp in any programming language PHP, JavaScript, 1С, Python, Java, C#, VBA">
-  <meta property="og:image" content="https://green-api.com/docs/assets/green-api-logo.png">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:image" itemprop="image" content="https://green-api.com/green-api-logo_2.png">
+  <meta property="og:image:secure_url" itemprop="image" content="https://green-api.com/green-api-logo_2.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="GREEN API">
+  <meta property="og:image:width" content="150"/>
+  <meta property="og:image:height" content="150"/>
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://green-api.com/en">
+  <meta property="og:url" content="https://green-api.com.kz">
+  <meta name="description" content="{{ config.site_description }}"/>
+  <link rel="image_src" href="https://green-api.com/green-api-logo_2.png">
+  <link rel="shortcut icon" href="https://green-api.com/green-api-logo_2.png">
 
   <!-- Twitter meta tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@squidfunk" />
-  <meta name="twitter:creator" content="@squidfunk" />
+  <meta name="twitter:site" content="https://green-api.com.kz" />
+  <meta name="twitter:creator" content="GREEN API" />
   <meta name="twitter:title" content="{{ title }}" />
   <meta name="twitter:description" content="{{ config.site_description }}" />
-  <meta name="twitter:image" content="{{ image }}" />
+  <meta name="twitter:image" content="https://green-api.com/green-api-logo_2.png" />
+
+  
+<!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+
+  (function (m, e, t, r, i, k, a) {
+
+  m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+
+  })
+
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+
+
+  ym(62362687, "init", {
+
+      clickmap: true,
+
+      trackLinks: true,
+
+      accurateTrackBounce: true
+
+  });
+
+</script>
+
+<noscript>
+
+  <div><img src="https://mc.yandex.ru/watch/62362687" style="position:absolute; left:-9999px;" alt="" /></div>
+
+</noscript>
+
+<!-- /Yandex.Metrika counter -->
+<script src="//code-ya.jivosite.com/widget/xlYRzYgjwH" async></script>
 {% endblock %}
