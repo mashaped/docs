@@ -10,3 +10,5 @@
 #### [Почему происходит повторная блокировка?](why-is-re-blocking-happening.md)
 
 #### [Почему случается разлогин?](why-does-the-crash-happen.md)
+
+#### [Как сделать ссылки в сообщении активными?](how-to-make-links-in-a-message-active.md)
