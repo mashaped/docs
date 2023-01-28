@@ -136,7 +136,7 @@ nav:
         - 'Overview': 'partners/index.md'
         - 'Create instance': 'partners/createInstance.md'
         - 'Delete instance partner account': 'partners/deleteInstanceAccount.md'
-        - 'Get all instances of an account created by a partner': 'partners/getInstances.md'   
+        - 'Get all instances of an account created by a partner': 'partners/getInstances.md'
     - 'FAQ':
         - 'FAQ': 'faq/index.md'
         - 'How to protect number from ban?': 'faq/how-to-protect-number-from-ban.md'
@@ -177,9 +177,10 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
           - 'Golang WhatsApp Library':
             - 'Overview': 'sdk/golang/index.md'
-            - 'sdk/golang/send_message.md'
-            - 'sdk/golang/send_file_by_upload.md'
             - 'sdk/golang/create_group.md'
+            - 'sdk/golang/send_file_by_upload.md'
+            - 'sdk/golang/send_file_by_url.md'
+            - 'sdk/golang/send_message.md'
             - 'sdk/golang/webhook.md'
           - 'PHP WhatsApp Library':
             - 'Overview': 'sdk/php/index.md'

@@ -6,50 +6,56 @@
 go get github.com/green-api/whatsapp-api-client-golang
 ```
 
-### Example of creating a group
+### Import
 
-Link to
-example: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go).
-
-```go
-package main
-
+```
 import (
-	"fmt"
-	"log"
-	//"os"
-
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
 )
+```
 
-func main() {
-	//You can set environment variables in your OS
-	//
-	//IDInstance := os.Getenv("ID_INSTANCE")
-	//APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
+### Examples
 
-	GreenAPI := api.GreenAPI{
-		IDInstance:       "IDInstance",
-		APITokenInstance: "APITokenInstance",
-	}
+#### How to initialize an object
 
-	response, err := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
-		"11001234567@c.us",
-		"11002345678@c.us",
-	})
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println(response)
+```
+GreenAPI := api.GreenAPI{
+    IDInstance:       "1234",
+    APITokenInstance: "bde035edae3fc00bc116bd112297908d8145e5ba8decc5d884",
 }
 ```
 
-## List of examples
+Note that keys can be obtained from environment variables:
 
-| Description                          | Link to example                                                                                                     |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Creating a group                     | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go)        |
-| Sending a message                    | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go)        |
-| Sending a message with an attachment | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go) |
-| Receiving incoming webhooks          | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)             |
+```
+IDInstance := os.Getenv("ID_INSTANCE")
+APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
+```
+
+#### How to create a group
+
+Link to
+example: [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go).
+
+```
+response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
+    "11001234567@c.us",
+    "11002345678@c.us",
+})
+```
+
+#### Running main.go
+
+```shell
+go run main.go
+```
+
+### List of examples
+
+| Description                           | Link to example                                                                                                                   |
+|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| How to create a group                 | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
+| How to send an attachment             | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
+| How to send an attachment by URI      | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
+| How to send a message                 | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
+| How to receive incoming notifications | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   |

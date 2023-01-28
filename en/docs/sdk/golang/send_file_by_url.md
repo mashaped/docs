@@ -1,4 +1,4 @@
-# How to send an attachment
+# How to send an attachment by URI
 
 ### Installation
 
@@ -32,16 +32,16 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### How to send an attachment
-
-To send an attachment, you need to give the path to the attachment.
+#### How to send an attachment by URI
 
 Link to
-example: [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go).
+example: [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go).
 
 ```
-response, _ := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
-    "chatId": "11001234567@c.us",
+response, _ := GreenAPI.Methods().Sending().SendFileByUrl(map[string]interface{}{
+    "chatId":   "11001234567@c.us",
+    "urlFile":  "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    "fileName": "Go-Logo_Blue.svg",
 })
 ```
 

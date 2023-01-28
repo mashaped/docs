@@ -3,9 +3,9 @@
 [![license](https://img.shields.io/github/license/green-api/whatsapp-api-client-golang)](https://github.com/green-api/whatsapp-api-client-golang/blob/master/LICENSE)
 [![release](https://img.shields.io/github/v/release/green-api/whatsapp-api-client-golang)](https://github.com/green-api/whatsapp-api-client-golang/releases)
 
-[Golang библиотека](https://github.com/green-api/whatsapp-api-client-golang) для интеграции с мессенджером WhatsAPP
-через API сервиса [green-api.com](https://green-api.com/). Чтобы воспользоваться библиотекой нужно получить
-регистрационный токен и id аккаунта в [личном кабинете](https://console.green-api.com/). Есть бесплатный тариф аккаунта
+[Golang библиотека](https://github.com/green-api/whatsapp-api-client-golang) для интеграции с мессенджером WhatsApp
+через API сервиса [green-api.com](https://green-api.com/). Чтобы воспользоваться библиотекой, нужно получить
+регистрационный токен и ID аккаунта в [личном кабинете](https://console.green-api.com/). Есть бесплатный тариф аккаунта
 разработчика.
 
 #### API
@@ -15,13 +15,15 @@
 
 #### Авторизация
 
-Чтобы отправить сообщение или выполнить другой метод Green-API, аккаунт WhatsApp в приложении телефона должен быть в
+Чтобы отправить сообщение или выполнить другие методы Green API, аккаунт WhatsApp в приложении телефона должен быть в
 авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://console.green-api.com/) и
 сканируйте QR-код с использованием приложения WhatsApp.
 
 #### [Как создать группу](create_group.md)
 
 #### [Как отправить вложение](send_file_by_upload.md)
+
+#### [Как отправить вложение по URI](send_file_by_url.md)
 
 #### [Как отправить сообщение](send_message.md)
 
