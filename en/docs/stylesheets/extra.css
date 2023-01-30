@@ -84,3 +84,13 @@ img {
 .sg-footer {
     background-color:  black;
 }
+
+:root {
+    --md-admonition-icon--success: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg')
+}
+
+.md-typeset .admonition,
+.md-typeset details.success {
+  border-width: 0;
+  border-left-width: 4px;
+}
