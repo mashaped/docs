@@ -145,6 +145,7 @@ nav:
         - 'How can I prevent a QR session from being permanently disconnected?': 'faq/how-can-I-prevent-a-QR-session-from-being-permanently-disconnected.md'
         - 'Why is re-blocking happening?': 'faq/why-is-re-blocking-happening.md'
         - 'Why is logout happening?': 'faq/why-does-the-crash-happen.md'
+        - 'How to make links in messages active?': 'faq/how-to-make-links-in-a-message-active.md'
   - Releases:
         - "Overview": 'release/index.md'
         - 'GREEN-API releases':
