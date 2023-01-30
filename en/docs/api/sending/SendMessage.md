@@ -21,7 +21,7 @@ Parameter | Type | Mandatory | Description
 `message` | **string** | Yes | Message text. Emoji 😃 characters supported 
 `quotedMessageId` | **string** | No | Quoted message ID. If present, the message will be sent quoting the specified chat message
 `archiveChat` | **boolean** | No | Archives the chat to which the message was sent. Takes value: true|false
-`linkPreview` | **boolean** | No | The parameter includes displaying a preview and a description of the link. Enabled by default. Accepts values: true|false
+`linkPreview` | **boolean** | No | The parameter includes displaying a preview and a description of the link. Enabled by default. Accepts values: true/false
 
 
 > The maximum length of a text message is 4096 characters
