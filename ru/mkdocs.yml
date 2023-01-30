@@ -145,6 +145,7 @@ nav:
         - 'Как предотвратить постоянное отключение QR-сессии?': 'faq/how-can-I-prevent-a-QR-session-from-being-permanently-disconnected.md'
         - 'Почему происходит повторная блокировка?': 'faq/why-is-re-blocking-happening.md'
         - 'Почему случается разлогин?': 'faq/why-does-the-crash-happen.md'
+        - 'Как сделать ссылки в сообщении активными?': 'faq/how-to-make-links-in-a-message-active.md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':
