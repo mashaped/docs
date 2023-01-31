@@ -68,8 +68,8 @@
         
         return phone
 
-    print(prepare_whatsapp_number("+559281386116"))
-    print(prepare_whatsapp_number("+5592981386116")) #phone number not working
+    print(prepare_whatsapp_number("+559212345678"))
+    print(prepare_whatsapp_number("+5592912345678")) #phone number not working
     ```
 
-Информация взята из [стати](https://support.gupshup.io/hc/en-us/articles/4407840924953-A-brief-note-on-the-inconsistencies-for-mobile-numbers-and-their-WhatsApp-IDs-in-Brazil-digit-9-Mexico-digit-1-)
+Информация взята из [статьи](https://support.gupshup.io/hc/en-us/articles/4407840924953-A-brief-note-on-the-inconsistencies-for-mobile-numbers-and-their-WhatsApp-IDs-in-Brazil-digit-9-Mexico-digit-1-)
