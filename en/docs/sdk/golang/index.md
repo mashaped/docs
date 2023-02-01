@@ -3,9 +3,9 @@
 [![license](https://img.shields.io/github/license/green-api/whatsapp-api-client-golang)](https://github.com/green-api/whatsapp-api-client-golang/blob/master/LICENSE)
 [![release](https://img.shields.io/github/v/release/green-api/whatsapp-api-client-golang)](https://github.com/green-api/whatsapp-api-client-golang/releases)
 
-[Golang Library](https://github.com/green-api/whatsapp-api-client-golang) for integration with WhatsAPP messenger via
+[Golang Library](https://github.com/green-api/whatsapp-api-client-golang) for integration with WhatsApp messenger via
 API of [green-api.com](https://green-api.com/en) service. To use the library you have to get a registration token and an
-account id in the [personal area](https://console.green-api.com/). There is a free developer account tariff plan.
+account ID in the [personal cabinet](https://console.green-api.com/). There is a free developer account tariff plan.
 
 #### API
 
@@ -14,17 +14,19 @@ so the documentation at the above url applies to the library as well.
 
 #### Authorization
 
-To send a message or to execute some other Green-API method, you have to have the WhatsApp account in the phone
+To send a message or to execute some other Green API methods, you have to have the WhatsApp account in the phone
 application to be authorized. To authorize your account please go to the [personal area](https://console.green-api.com/)
 and scan a QR-code using the WhatsApp application.
 
 #### [How to create a group](create_group.md)
 
+#### [How to send an attachment](send_file_by_upload.md)
+
+#### [How to send an attachment by URI](send_file_by_url.md)
+
 #### [How to send a message](send_message.md)
 
-#### [How to send a message with an attachment](send_file_by_upload.md)
-
-#### [How to receive incoming webhooks](webhook.md)
+#### [How to receive incoming notifications](webhook.md)
 
 #### [List of all library methods](all_methods.md)
 

@@ -178,9 +178,10 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
           - 'Golang WhatsApp Library':
             - 'Обзор': 'sdk/golang/index.md'
-            - 'sdk/golang/send_message.md'
-            - 'sdk/golang/send_file_by_upload.md'
             - 'sdk/golang/create_group.md'
+            - 'sdk/golang/send_file_by_upload.md'
+            - 'sdk/golang/send_file_by_url.md'
+            - 'sdk/golang/send_message.md'
             - 'sdk/golang/webhook.md'
           - 'PHP WhatsApp Library':
             - 'Обзор': 'sdk/php/index.md'

@@ -6,51 +6,57 @@
 go get github.com/green-api/whatsapp-api-client-golang
 ```
 
-### Пример отправки вложения
+### Импорт
+
+```
+import (
+	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
+)
+```
+
+### Примеры
+
+#### Как инициализировать объект
+
+```
+GreenAPI := api.GreenAPI{
+    IDInstance:       "1234",
+    APITokenInstance: "bde035edae3fc00bc116bd112297908d8145e5ba8decc5d884",
+}
+```
+
+Обратите внимание, что ключи можно получать из переменных среды:
+
+```
+IDInstance := os.Getenv("ID_INSTANCE")
+APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
+```
+
+#### Как отправить вложение
 
 Чтобы отправить вложение, нужно указать первым параметром путь к нужному документу.
 
 Ссылка на
-пример: [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go).
+пример: [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go).
 
-```go
-package main
+```
+response, _ := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
+    "chatId": "11001234567@c.us",
+})
+```
 
-import (
-	"fmt"
-	"log"
-	//"os"
+#### Запуск main.go
 
-	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
-)
-
-func main() {
-	//You can set environment variables in your OS
-	//
-	//IDInstance := os.Getenv("ID_INSTANCE")
-	//APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
-
-	GreenAPI := api.GreenAPI{
-		IDInstance:       "IDInstance",
-		APITokenInstance: "APITokenInstance",
-	}
-
-	response, err := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
-		"chatId": "11001234567@c.us",
-	})
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println(response)
-}
+```shell
+go run main.go
 ```
 
 ### Список примеров
 
-| Описание                          | Ссылка на пример                                                                                                    |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Как создать группу                | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/create_group/main.go)        |
-| Как отправить вложение            | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_file_by_upload/main.go) |
-| Как отправить сообщение           | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/send_message/main.go)        |
-| Как получать входящие уведомления | [main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)             | 
+| Описание                          | Ссылка на пример                                                                                                                  |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Как создать группу                | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
+| Как отправить вложение            | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
+| Как отправить вложение по URI     | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
+| Как отправить сообщение           | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
+| Как получать входящие уведомления | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   | 

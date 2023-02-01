@@ -1,4 +1,4 @@
-# Как создать группу
+# Как отправить вложение по URI
 
 ### Установка
 
@@ -32,15 +32,16 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### Как создать группу
+#### Как отправить вложение по URI
 
 Ссылка на
-пример: [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go).
+пример: [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go).
 
 ```
-response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
-    "11001234567@c.us",
-    "11002345678@c.us",
+response, _ := GreenAPI.Methods().Sending().SendFileByUrl(map[string]interface{}{
+    "chatId":   "11001234567@c.us",
+    "urlFile":  "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    "fileName": "Go-Logo_Blue.svg",
 })
 ```
 
