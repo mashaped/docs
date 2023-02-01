@@ -27,7 +27,7 @@ Parameter | Type | Mandatory | Description
 `message` | **string** | Yes | Message text. Emoji 😃 characters supported
 `title` | **string** | No | Message title.
 `footer` | **string** | No | Message footer. Useful for visually highlighting text related to buttons.
-`buttonText` | **string** | No | select list button text
+`buttonText` | **string** | Yes | select list button text
 `sections` | **array** | Yes | select list values
 `quotedMessageId` | **string** | No | Quoted message ID. If present, the message will be sent quoting the specified chat message
 `archiveChat` | **boolean** | No | Archives the chat to which the message was sent.  Takes value: true|false
