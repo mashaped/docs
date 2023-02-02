@@ -23,6 +23,7 @@ Campos do objeto `textMessageData`
 Parâmetro | Тipo | Descrição
 ----- | ----- | -----
 `textMessage` | **string** | Mensagem de texto
+`isTemplateMessage` | **boolean** | A bandeira indica se a mensagem foi gerada a partir de um modelo
 
 ### Exemplo de dados vindo pelo webhook {#webhook-example-body}
 
