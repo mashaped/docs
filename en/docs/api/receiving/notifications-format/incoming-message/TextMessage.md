@@ -22,9 +22,10 @@ To get incoming webhooks of this type, two conditions must be true:
 
 `textMessageData` object parameters
 
-|Parameter     | type       | Description  |
-|------------- | ---------- | -----        |
-|`textMessage` | **string** | Text message |
+|Parameter           | type        | Description  |
+|------------------- | ----------- | -----        |
+|`textMessage`       | **string**  | Text message |
+|`isTemplateMessage` | **boolean** | The flag indicates whether the message was generated from a template |
 
 `quotedMessage` object parameters
 
