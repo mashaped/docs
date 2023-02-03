@@ -20,15 +20,15 @@ and scan a QR-code using the WhatsApp application.
 
 #### [How to create a group](create_group.md)
 
-#### [How to send an attachment](send_file_by_upload.md)
+#### [How to send a file by uploading from the disk](send_file_by_upload.md)
 
-#### [How to send an attachment by URI](send_file_by_url.md)
+#### [How to send a file by URL](send_file_by_url.md)
 
 #### [How to send a message](send_message.md)
 
 #### [How to receive incoming notifications](webhook.md)
 
-#### [List of all library methods](all_methods.md)
+#### [The full list of the library methods](all_methods.md)
 
 #### Service methods documentation
 

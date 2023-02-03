@@ -1,4 +1,4 @@
-# How to send an attachment by URI
+# How to send a file by URL
 
 ### Installation
 
