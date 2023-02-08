@@ -7,7 +7,7 @@ HTTP code | Error ID | Description
 400 | `instance in starting process try later` | The account is in starting/restarting process. Please try again in a few seconds.
 400 | `instance account not authorized` | The account is not authorized. To authorize your account, go to [My Profile](https://console.green-api.com) and scan the QR code from the [WhatsApp Business](https://www.whatsapp.com/business/) application on your phone.
 400 | `bad request data` | The request data are not valid. Correct the error in the request parameters and try again.
-429 | `Too Many Requests` | The user has sent too many requests in a given amount of time.
+429 | `Too Many Requests` | The user has been rate limited. Please decrease the frequency requests
 466 | `correspondentsStatus` | The limit is used up, more details in the error body.
 500 | `"File from url exceeded max upload size. Size: XXXXmb Limit: 100mb Url:` | An attempt to send a file larger than 100 MB
 
