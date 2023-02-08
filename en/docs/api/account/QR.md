@@ -44,7 +44,8 @@ Parameter | Type |  Description
 Parameter | Type |  Description
 ----- | ----- | ----- 
 `type` | **string** | `error` - an error is occurred
-`message` | **string** | `Instance has auth. You need to make log out` - there is authorization data, but they are not suitable for authorization, it is necessary to execute the logout method and rescan the QR code
+`message` | **string** | Error description
+||`Instance has auth. You need to make log out` - there is authorization data, but they are not suitable for authorization, it is necessary to execute the logout method and rescan the QR code
 
 > Getting a QR code can take up to 10 minutes
 
@@ -63,14 +64,14 @@ For a list of errors common to all methods, refer to [Common errors](../common-e
 ## Example of getting a QR code in a browser {#request-example-js}
 
 ```
-https://qr.green-api.com/waInstance{{idInstance}}/qr/{{apiTokenInstance}}
+https://qr.green-api.com/waInstance{{idInstance}}/{{apiTokenInstance}}
 ```
 
 For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you start](../../before-start.md#parameters) section.
 
 > You need to replace the idInstance and apiTokenInstance values with yours to get a link like this:
 
-> https://qr.green-api.com/waInstance11015502/ccc44689b17435537c15a939d0a478b71c3bd7d7d52d312345
+> `https://qr.green-api.com/waInstance11015502/ccc44689b17435537c15a939d0a478b71c3bd7d7d52d312345`
 
 You can also see an example of getting a QR code in a browser in the file [browserExampleQRcode](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html) 
 
