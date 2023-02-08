@@ -17,6 +17,7 @@ The system provides for receiving notifications about incoming messages of the b
 - [Incoming message with sticker](StickerMessage.md)
 - [Incoming message-reaction](ReactionMessage.md)
 - [Incoming message with an invitation to the group](GroupInviteMessage.md)
+- [Incoming poll message](PollMessage.md)
 
 ## incomingMessageReceived webhook parameters {#webhook-parameters}
 
@@ -60,6 +61,7 @@ Parameter | Type | Description
 - [Incoming message with sticker](StickerMessage.md)
 - [Incoming message-reaction](ReactionMessage.md)
 - [Incoming message with an invitation to the group](GroupInviteMessage.md)
+- [Incoming poll message](PollMessage.md)
 
 ### Webhook body example {#webhook-example-body}
 

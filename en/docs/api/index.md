@@ -51,6 +51,7 @@ Make sure you have completed all the steps in [Before you start](../before-start
 - [Incoming message with sticker](./receiving/notifications-format/incoming-message/StickerMessage.md)
 - [Incoming message-reaction](./receiving/notifications-format/incoming-message/ReactionMessage.md)
 - [Incoming message with an invitation to the group](./receiving/notifications-format/incoming-message/GroupInviteMessage.md)
+- [Incoming poll message](./receiving/notifications-format/incoming-message/PollMessage.md)
 
 #### Outgoing message {#receiving-outgoing-message}
 

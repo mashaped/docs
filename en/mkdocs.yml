@@ -71,6 +71,7 @@ nav:
                     - 'Incoming message with sticker': 'api/receiving/notifications-format/incoming-message/StickerMessage.md'
                     - 'Incoming message-reaction': 'api/receiving/notifications-format/incoming-message/ReactionMessage.md'
                     - 'Incoming message with an invitation to the group': 'api/receiving/notifications-format/incoming-message/GroupInviteMessage.md'
+                    - 'Incoming poll message': 'api/receiving/notifications-format/incoming-message/PollMessage.md'
                     - '(deprecated) Quoted message': 'api/receiving/notifications-format/incoming-message/QuotedMessage.md'
                 - 'Selecting buttons':
                     - 'Simple button selection ': 'api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md'
@@ -150,7 +151,7 @@ nav:
   - Releases:
         - "Overview": 'release/index.md'
         - 'GREEN-API releases':
-          # - '5.44.20.42 dd. 07.02.2023': 'release/5.44.20.42.md'
+          # - '5.44.20.42 dd. 28.02.2023': 'release/5.44.20.42.md'
           - '5.44.19.39 dd. 19.10.2022': 'release/5.44.19.39.md'
           - '5.44.18.74 dd. 20.09.2022': 'release/5.44.18.74.md'
           - '5.44.18.28 dd. 13.09.2022': 'release/5.44.18.28.md'
@@ -184,6 +185,7 @@ nav:
             - 'sdk/golang/send_file_by_url.md'
             - 'sdk/golang/send_message.md'
             - 'sdk/golang/webhook.md'
+            - 'sdk/golang/all_methods.md'
           - 'PHP WhatsApp Library':
             - 'Overview': 'sdk/php/index.md'
             - 'PHP WhatsApp Library':

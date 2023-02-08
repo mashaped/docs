@@ -1,4 +1,4 @@
-# How to send an attachment
+# How to send a file by uploading from the disk
 
 ### Installation
 
