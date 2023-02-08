@@ -184,6 +184,7 @@ nav:
             - 'sdk/golang/send_file_by_url.md'
             - 'sdk/golang/send_message.md'
             - 'sdk/golang/webhook.md'
+            - 'sdk/golang/all_methods.md'
           - 'PHP WhatsApp Library':
             - 'Обзор': 'sdk/php/index.md'
             - 'PHP WhatsApp Library':
