@@ -46,7 +46,9 @@ GET https://api.green-api.com/waInstance{{idInstance}}/qr/{{apiTokenInstance}}
 ----- | ----- | ----- 
 `type` | **string** | `error` - возникла ошибка
 `message` | **string** | Описание ошибки
+||`Instance has auth. You need to make log out` - данные авторизации есть, но они не пригодны для авторизации, необходимо выполнить метод logout и произвести повторное сканирование QR кода
 
+> Получение QR кода может занимать время до 10 минут
 
 #### Аккаунт уже авторизован {#response-type-alreadyLogged}
 
@@ -62,9 +64,15 @@ GET https://api.green-api.com/waInstance{{idInstance}}/qr/{{apiTokenInstance}}
 
 ## Пример получения QR-кода в браузере {#request-example-js}
 
-```js
-// ...
 ```
+https://qr.green-api.com/waInstance{{idInstance}}/{{apiTokenInstance}}
+```
+
+Для получения параметров запроса `idInstance` и `apiTokenInstance` обратитесь к разделу [Перед началом работы](../../before-start.md#parameters).
+
+> Вам необходимо заменить значения idInstance и apiTokenInstance на ваши, для получения ссылки вида:
+
+> `https://qr.green-api.com/waInstance11015502/ccc44689b17435537c15a939d0a478b71c3bd7d7d52d312345`
 
 Также пример получения QR-кода в браузере можно посмотреть в файле [browserExampleQRcode](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html) 
 
