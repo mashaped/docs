@@ -51,6 +51,7 @@ Green API предоставляет HTTP API WhatsApp для отправки �
 - [Входящее сообщение со стикером](./receiving/notifications-format/incoming-message/StickerMessage.md)
 - [Входящее сообщение-реакция](./receiving/notifications-format/incoming-message/ReactionMessage.md)
 - [Входящее сообщение с приглашением в группу](./receiving/notifications-format/incoming-message/GroupInviteMessage.md)
+- [Входящее сообщение с опросом](./receiving/notifications-format/incoming-message/PollMessage.md)
 
 #### Отправленное сообщение {#receiving-outgoing-message}
 

@@ -14,7 +14,7 @@
 - [Входящее сообщение со стикером](incoming-message/StickerMessage.md)
 - [Входящее сообщение-реакция](incoming-message/ReactionMessage.md)
 - [Входящее сообщение с приглашением в группу](incoming-message/GroupInviteMessage.md)
-
+- [Входящее сообщение с опросом](incoming-message/PollMessage.md)
 
 ## Отправленное сообщение
 

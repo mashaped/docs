@@ -71,6 +71,7 @@ nav:
                     - 'Incoming message with sticker': 'api/receiving/notifications-format/incoming-message/StickerMessage.md'
                     - 'Incoming message-reaction': 'api/receiving/notifications-format/incoming-message/ReactionMessage.md'
                     - 'Incoming message with an invitation to the group': 'api/receiving/notifications-format/incoming-message/GroupInviteMessage.md'
+                    - 'Incoming poll message': 'api/receiving/notifications-format/incoming-message/PollMessage.md'
                     - '(deprecated) Quoted message': 'api/receiving/notifications-format/incoming-message/QuotedMessage.md'
                 - 'Selecting buttons':
                     - 'Simple button selection ': 'api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md'

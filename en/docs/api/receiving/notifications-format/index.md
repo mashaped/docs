@@ -14,7 +14,7 @@ This section describes incoming webhooks format: messages, files, outgoing messa
 - [Incoming message with sticker](incoming-message/StickerMessage.md)
 - [Incoming message-reaction](incoming-message/ReactionMessage.md)
 - [Incoming message with an invitation to the group](incoming-message/GroupInviteMessage.md)
-
+- [Incoming poll message](incoming-message/PollMessage.md)
 
 ## Outgoing message
 

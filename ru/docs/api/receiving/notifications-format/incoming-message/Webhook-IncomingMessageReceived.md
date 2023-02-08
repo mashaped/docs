@@ -60,6 +60,7 @@
 - [Входящее сообщение со стикером](StickerMessage.md)
 - [Входящее сообщение-реакция](ReactionMessage.md)
 - [Входящее сообщение с приглашением в группу](GroupInviteMessage.md)
+- [Входящее сообщение с опросом](PollMessage.md)
 
 ### Пример тела уведомления {#webhook-example-body}
 

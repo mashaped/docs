@@ -71,6 +71,7 @@ nav:
                     - 'Входящее сообщение со стикером': 'api/receiving/notifications-format/incoming-message/StickerMessage.md'
                     - 'Входящее сообщение-реакция': 'api/receiving/notifications-format/incoming-message/ReactionMessage.md'
                     - 'Входящее сообщение с приглашением в группу': 'api/receiving/notifications-format/incoming-message/GroupInviteMessage.md'
+                    - 'Входящее сообщение с опросом': 'api/receiving/notifications-format/incoming-message/PollMessage.md'
                     - '(не используется) Cообщение с цитатой': 'api/receiving/notifications-format/incoming-message/QuotedMessage.md'
                 - 'Выбор кнопок':
                     - 'Выбор обычной кнопки': 'api/receiving/notifications-format/selected-buttons/ButtonsResponseMessage.md'
