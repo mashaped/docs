@@ -132,6 +132,7 @@ nav:
             - 'Идентификатор чата': 'api/chat-id.md'
             - 'Интервал отправки сообщений': 'api/send-messages-delay.md'
             - 'Стандартные ошибки': 'api/common-errors.md'
+        # - 'Ограничение частоты запросов': 'api/ratelimiter/index.md'
     - 'Партнёрам':
         - 'Обзор': 'partners/index.md'
         - 'Создание инстанса': 'partners/createInstance.md'

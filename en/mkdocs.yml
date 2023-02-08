@@ -132,6 +132,7 @@ nav:
             - 'Chat Id': 'api/chat-id.md'
             - 'Messages sending delay': 'api/send-messages-delay.md'
             - 'Common errors': 'api/common-errors.md'
+        # - 'Rate limiter': 'api/ratelimiter/index.md'
     - 'Partners':
         - 'Overview': 'partners/index.md'
         - 'Create instance': 'partners/createInstance.md'
