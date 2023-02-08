@@ -7,6 +7,7 @@
 400 | `instance in starting process try later` | Аккаунт находится в процессе запуска/перезапуска. Попробуйте повторить попытку спустя несколько секунд.
 400 | `instance account not authorized` | Аккаунт не авторизован. Для авторизации аккаунта перейдите в [Личный кабинет](https://console.green-api.com) и считайте QR-код из приложения [WhatsApp Business](https://www.whatsapp.com/business/) на телефоне.
 400 | `bad request data` | Данные запроса не валидны. Исправьте ошибку в параметрах запроса и повторите попытку.
+429 | `Too Many Requests` | Пользователь отправил слишком много запросов за заданный промежуток времени.
 466 | `correspondentsStatus` | Исчерпан лимит, подробнее в теле ошибки.
 500 | `"File from url exceeded max upload size. Size: XXXXmb Limit: 100mb Url:` | Попытка отправки файла размером более 100 МБайт
 
