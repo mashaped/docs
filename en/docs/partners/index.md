@@ -58,7 +58,7 @@ https://api.green-api.com/partner/{method}/{partnerToken}
 
     * Также реализовано получение QR-кода на отдельной странице в Интернете: 
     ```
-    https://qr.sw.slonbook.com/waInstance{idInstance}/{apiTokenInstance}
+    https://qr.green-api.com/waInstance{idInstance}/{apiTokenInstance}
     ```
     > idInstance и apiTokenInstance могут быть получены методами [createInstance](./createInstance.md) и [getInstances](./getInstances.md).
 
