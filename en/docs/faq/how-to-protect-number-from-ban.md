@@ -11,8 +11,13 @@ Parameters influencing number blocking resistance:
 
 ## 1. Number age (number warm-up) {#001}
 The longer the number is registered with WhatsApp, the more resistant it is to blocking.
-If you have just registered a new number, then it is the most vulnerable. You need to be especially careful during the first 10 days of the number use.
-You should gradually "warm up" the number. During the first 10 days of the number use, the recommended sending volume is no more than 20 new recipients per day. 
+If you have just registered a new number, then it is the most vulnerable, we recommend that you start warming up only the next day after creating a WhatsApp account. You need to be especially careful during the first 10 days of the number use. You should gradually "warm up" the number. 
+
+During the first 10 days of the number use:
+
+* do not send messages through the instance and do not create groups immediately after connecting, it is recommended to start sending messages the next day
+
+* no more than 20 new recipients per day
 
 ## 2. Response ratio (incoming and outgoing messages ratio) {#002}
 The ideal case is when customers send messages to you first and add you to their contacts. However, in most cases this scenario cannot be achieved. It is often required to start the dialogue first. If you send too many messages and do not receive a single reply in response, then you run the risk of getting banned. Aim for at least 30 responses from customers (30%) for every 100 messages send. In this case, with 30% of replies, it can be assumed that the number is not at risk.
@@ -25,6 +30,14 @@ The first contact with the customer is very important. Try to address to the cus
 
 ## 5. Question in the first message {#005}
 In the very first message, explicitly request permission to send messages to the customer. It is important here to ensure that the customer enters into a dialogue with your number (bot) and at least replies something. This will help you achieve a good [response ratio](#002) and drop out negatively minded customers.
+
+Before sending a message, we recommend making a dialogue of the form:
+
+> Andrew, good afternoon! Do you want to receive an electronic invoice from My Company LLP?
+
+> Answer: Yes
+
+> check
 
 ## 6. Short messages {#006}
 Instead of one heavy message, send several small messages. This style is more like real communication than automated mailing.
