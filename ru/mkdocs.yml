@@ -148,6 +148,7 @@ nav:
         - 'Почему происходит повторная блокировка?': 'faq/why-is-re-blocking-happening.md'
         - 'Почему случается разлогин?': 'faq/why-does-the-crash-happen.md'
         - 'Как сделать ссылки в сообщении активными?': 'faq/how-to-make-links-in-a-message-active.md'
+        - 'Как отправить файл методом sendFileByUrl, используя внешнее хранилище?': 'faq/how-to-send-file-by-sendFileByUrl-method-using-external-storage.md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':

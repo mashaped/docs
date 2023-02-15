@@ -12,3 +12,5 @@
 #### [Почему случается разлогин?](why-does-the-crash-happen.md)
 
 #### [Как сделать ссылки в сообщении активными?](how-to-make-links-in-a-message-active.md)
+
+#### [Как отправить файл методом sendFileByUrl, используя внешнее хранилище?](how-to-send-file-by-sendFileByUrl-method-using-external-storage.md)

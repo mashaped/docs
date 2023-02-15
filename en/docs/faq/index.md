@@ -12,3 +12,5 @@
 #### [Why is logout happening?](why-does-the-crash-happen.md)
 
 #### [How to make links in messages active?](how-to-make-links-in-a-message-active.md)
+
+#### [How to send file by sendFileByUrl method using external storage?](how-to-send-file-by-sendFileByUrl-method-using-external-storage.md)
