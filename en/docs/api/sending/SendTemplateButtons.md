@@ -10,7 +10,7 @@ The rate at which messages are sent from the queue is managed by [Message sendin
 
 To send a message, you have to execute a request at:
 ```
-POST https://api.green-api.com/waInstance{{idInstance}}/SendMessage/{{apiTokenInstance}}
+POST https://api.green-api.com/waInstance{{idInstance}}/SendTemplateButtons/{{apiTokenInstance}}
 ```
 
 For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you start](../../before-start.md#parameters) section.
@@ -112,7 +112,7 @@ For a list of errors common to all methods, refer to [Common errors](../common-e
 ## curl example
 
 ```
-curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendMessage/{{apiTokenInstance}}' \
+curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/SendTemplateButtons/{{apiTokenInstance}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"chatId": "11001234567@c.us",
