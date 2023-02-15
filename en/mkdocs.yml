@@ -148,6 +148,7 @@ nav:
         - 'Why is re-blocking happening?': 'faq/why-is-re-blocking-happening.md'
         - 'Why is logout happening?': 'faq/why-does-the-crash-happen.md'
         - 'How to make links in messages active?': 'faq/how-to-make-links-in-a-message-active.md'
+        - 'How to display company name and logo in chats?': 'faq/how-to-display-company-name-and-logo-in-chats.md'
   - Releases:
         - "Overview": 'release/index.md'
         - 'GREEN-API releases':

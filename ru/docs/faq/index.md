@@ -12,3 +12,5 @@
 #### [Почему случается разлогин?](why-does-the-crash-happen.md)
 
 #### [Как сделать ссылки в сообщении активными?](how-to-make-links-in-a-message-active.md)
+
+#### [Как отображать имя компании и логотип в чатах?](how-to-display-company-name-and-logo-in-chats.md)
