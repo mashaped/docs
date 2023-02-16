@@ -13,4 +13,8 @@
 
 #### [How to make links in messages active?](how-to-make-links-in-a-message-active.md)
 
+
 #### [How to display company name and logo in chats?](how-to-display-company-name-and-logo-in-chats.md)
+
+#### [Why are incoming notifications slow (webhooks)?](why-are-incoming-notifications-slow-(webhooks).md)
+

@@ -149,6 +149,7 @@ nav:
         - 'Почему случается разлогин?': 'faq/why-does-the-crash-happen.md'
         - 'Как сделать ссылки в сообщении активными?': 'faq/how-to-make-links-in-a-message-active.md'
         - 'Как отображать имя компании и логотип в чатах?': 'faq/how-to-display-company-name-and-logo-in-chats.md'
+        - 'Почему медленно приходят входящие уведомления (вебхуки)?': 'faq/why-are-incoming-notifications-slow-(webhooks).md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':
