@@ -12,3 +12,5 @@
 #### [Why is logout happening?](why-does-the-crash-happen.md)
 
 #### [How to make links in messages active?](how-to-make-links-in-a-message-active.md)
+
+#### [Why are incoming notifications slow (webhooks)?](why-are-incoming-notifications-slow-(webhooks).md)
