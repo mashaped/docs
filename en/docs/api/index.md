@@ -33,7 +33,7 @@ Make sure you have completed all the steps in [Before you start](../before-start
 - [Receive notification](receiving/technology-http-api/ReceiveNotification.md)
 - [Delete notification](receiving/technology-http-api/DeleteNotification.md)
 
-### [Receiving notofications via Webhook Endpoint](receiving/technology-webhook-endpoint.md) {#technology-webhook-endpoint}
+### [Receiving notifications via Webhook Endpoint](receiving/technology-webhook-endpoint.md) {#technology-webhook-endpoint}
 
 ### [Incoming notifications format](receiving/notifications-format/index.md) {#notifications-format}
 
