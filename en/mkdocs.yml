@@ -250,7 +250,7 @@ plugins:
   - search:
       lang:
         - en
-        - ru
+#        - ru
   - minify:
       minify_html: true
 
