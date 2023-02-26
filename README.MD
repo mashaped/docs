@@ -4,10 +4,6 @@
 
 Welcome to GREEN API [docs](https://green-api.com/docs/) repository. 
 
-## About documentation
-
-Documentation is based on [MkDocs](https://github.com/mkdocs/mkdocs/).
-
 ## How to help
 
 If you noticed error or having any ideas about specific topics then you are welcome. Just create an issue describing problem or a pull request with your changes.
