@@ -1,8 +1,8 @@
 # Why are incoming notifications slow (webhooks)?
 
-Наш сервис ждёт ответ 200 от вашего сервера 20 секунд, если не получено подтверждение, то через 1 минуту снова пытается отправить это же уведомление. Таким образом ответ 200 от вашего сервера должен быть дан в течение 20 секунд с момента получения вами входящего уведомления. Для верной настройки обработчика входящих уведомлений необходимо убрать логику обработки входящих уведомлений в момент приёма, а именно использовать следующую схему:
+Our service is waiting for a 200 response from your server for 20 seconds, if no confirmation is received, then after 1 minute it tries to send the same notification again. So a 200 response from your server should be given within 20 seconds of you receiving the incoming notification. To correctly configure the incoming notification handler, you need to remove the logic for processing incoming notifications at the time of receipt, namely, use the following scheme:
 
-- принять уведомление с нашего сервиса
-- сохранить уведомление на своей стороне, можно использовать очередь
-- ответить нашему сервису 200
-- обрабатывать входящее уведомление из своего хранилища. Нельзя обрабатывать уведомления сразу при получении, если это вызывает задержку приёма уведомлений
+- accept notification from our service
+- keep the notification on your side, you can use the queue
+- reply to our service 200
+- process an incoming notification from its storage. It is not recommended to process notifications immediately upon receipt if this causes a delay in receiving notifications
