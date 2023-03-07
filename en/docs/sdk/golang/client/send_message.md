@@ -55,7 +55,7 @@ response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
 })
 ```
 
-#### Running the application
+### Running the application
 
 ```shell
 go run main.go
@@ -63,10 +63,10 @@ go run main.go
 
 ### List of examples
 
-| Description                           | Link to example                                                                                                                   |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| How to create a group                 | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
-| How to send an attachment             | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
-| How to send an attachment by URI      | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
-| How to send a message                 | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
-| How to receive incoming notifications | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   |
+| Description                                   | Link to example                                                                                                                   |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| How to create a group                         | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
+| How to send a file by uploading from the disk | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
+| How to send a file by URL                     | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
+| How to send a message                         | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
+| How to receive incoming notifications         | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   |

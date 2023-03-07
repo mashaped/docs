@@ -50,7 +50,7 @@ _ := webhook.StartServer(func(body map[string]interface{}) {
 })
 ```
 
-#### Запуск приложения
+### Запуск приложения
 
 ```shell
 go run main.go

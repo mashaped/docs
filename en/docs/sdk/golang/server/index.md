@@ -32,5 +32,5 @@ and scan a QR-code using the WhatsApp application.
 #### License
 
 Licensed under MIT terms. Please see file [LICENSE](
-https://github.com/green-api/whatsapp-api-client-golang/blob/master/LICENSE
+https://github.com/green-api/whatsapp-api-webhook-server-golang/blob/master/LICENSE
 ).
