@@ -1,6 +1,14 @@
-# How to send a message
+# How to receive incoming notifications
 
 ### Installation
+
+Do not forget to create a module:
+
+```shell
+go mod init example
+```
+
+Installation:
 
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
@@ -11,6 +19,7 @@ go get github.com/green-api/whatsapp-api-client-golang
 ```
 import (
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
+	"github.com/green-api/whatsapp-api-client-golang/pkg/webhook"
 )
 ```
 
@@ -32,21 +41,27 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### How to send a message
+#### How to receive incoming notifications
 
-If an API method has optional parameters, you have to pass JSON to the library method (`map[string]interface{}`).
+To start receiving incoming webhooks, you need to send a handler function to GreenAPIWebhook.Start(). The handler
+function should have 1 parameter (`body map[string]interface{}`). When you receive a new notification, your handler
+function will be executed. To stop receiving incoming webhooks, you need to call GreenAPIWebhook.Stop().
 
-Link to
-example: [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go).
+Link to example: [webhook/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go
+).
 
 ```
-response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
-    "chatId":  "11001234567@c.us",
-    "message": "Any message",
+GreenAPIWebhook := webhook.GreenAPIWebhook{
+    GreenAPI: GreenAPI,
+}
+
+GreenAPIWebhook.Start(func(body map[string]interface{}) {
+    fmt.Println(body)
 })
 ```
 
-#### Running main.go
+#### Running the application
 
 ```shell
 go run main.go

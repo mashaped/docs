@@ -2,7 +2,7 @@
 
 #### ![Python](https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg){width="25"} [Python WhatsApp Libraries](../sdk/python/index.md)
 
-#### ![Golang](https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg){width="25"} [Golang WhatsApp Library](../sdk/golang/index.md)
+#### ![Golang](https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg){width="25"} [Golang WhatsApp Libraries](golang/client/index.md)
 
 #### ![PHP](https://www.php.net/images/logos/php-logo.svg){width="25"} [PHP WhatsApp Libraries](../sdk/php/index.md)
 

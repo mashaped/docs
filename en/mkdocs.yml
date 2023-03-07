@@ -181,14 +181,20 @@ nav:
               - 'sdk/python/pythonWebhookServer/serverDocker.md'
               - 'sdk/python/pythonWebhookServer/serverDockerCompose.md'
               - 'sdk/python/pythonWebhookServer/serverDockerOnYandexCloud.md'
-          - 'Golang WhatsApp Library':
-            - 'Overview': 'sdk/golang/index.md'
-            - 'sdk/golang/create_group.md'
-            - 'sdk/golang/send_file_by_upload.md'
-            - 'sdk/golang/send_file_by_url.md'
-            - 'sdk/golang/send_message.md'
-            - 'sdk/golang/webhook.md'
-            - 'sdk/golang/all_methods.md'
+          - "Golang WhatsApp Library":
+              - "Overview": "sdk/golang/index.md"
+              - "Golang WhatsApp Library":
+                  - "Overview": "sdk/golang/client/index.md"
+                  - "sdk/golang/client/create_group.md"
+                  - "sdk/golang/client/send_file_by_upload.md"
+                  - "sdk/golang/client/send_file_by_url.md"
+                  - "sdk/golang/client/send_message.md"
+                  - "sdk/golang/client/webhook.md"
+                  - "sdk/golang/client/all_methods.md"
+              - "Golang Webhook Server Library":
+                  - "Overview": "sdk/golang/server/index.md"
+                  - "sdk/golang/server/launch.md"
+                  - "sdk/golang/server/ubuntu.md"
           - 'PHP WhatsApp Library':
             - 'Overview': 'sdk/php/index.md'
             - 'PHP WhatsApp Library':

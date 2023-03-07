@@ -1,6 +1,14 @@
-# How to create a group
+# How to send a message
 
 ### Installation
+
+Do not forget to create a module:
+
+```shell
+go mod init example
+```
+
+Installation:
 
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
@@ -32,19 +40,22 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### How to create a group
+#### How to send a message
 
-Link to
-example: [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go).
+If an API method has optional parameters, you have to pass JSON to the library method (`map[string]interface{}`).
+
+Link to example: [sendMessage/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go
+).
 
 ```
-response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
-    "11001234567@c.us",
-    "11002345678@c.us",
+response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
+    "chatId":  "11001234567@c.us",
+    "message": "Any message",
 })
 ```
 
-#### Running main.go
+#### Running the application
 
 ```shell
 go run main.go

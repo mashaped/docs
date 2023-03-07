@@ -1,30 +1,28 @@
-# Установка и запуск
+# Как запустить веб-сервер
+
+### Установка
+
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
 
 ```shell
 go get github.com/green-api/whatsapp-api-webhook-server-golang
 ```
 
-#### Установка и запуск примера
-
-Установка:
-
-```shell
-wget https://raw.githubusercontent.com/green-api/whatsapp-api-webhook-server-golang/master/examples/main.go
-```
-
-Запуск:
-
-```shell
-go run main.go
-```
-
-#### Импорт
+### Импорт
 
 ```
 import (
 	"github.com/green-api/whatsapp-api-webhook-server-golang/pkg"
 )
 ```
+
+### Примеры
 
 #### Как инициализировать объект
 
@@ -37,13 +35,23 @@ webhook := pkg.Webhook{
 }
 ```
 
-#### Запуск сервера
+#### Как запустить веб-сервер
 
 Функция StartServer принимает функцию-обработчик. Функция-обработчик должна содержать 1
 параметр (`body map[string]interface{}`). При получении нового уведомления ваша функция-обработчик будет выполнена.
+
+Ссылка на пример: [main.go](
+https://github.com/green-api/whatsapp-api-webhook-server-golang/blob/master/examples/main.go
+).
 
 ```
 _ := webhook.StartServer(func(body map[string]interface{}) {
     fmt.Println(body)
 })
+```
+
+#### Запуск приложения
+
+```shell
+go run main.go
 ```

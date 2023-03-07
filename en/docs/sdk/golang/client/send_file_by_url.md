@@ -1,6 +1,14 @@
-# How to send a file by uploading from the disk
+# How to send a file by URL
 
 ### Installation
+
+Do not forget to create a module:
+
+```shell
+go mod init example
+```
+
+Installation:
 
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
@@ -32,20 +40,21 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### How to send an attachment
+#### How to send an attachment by URI
 
-To send an attachment, you need to give the path to the attachment.
-
-Link to
-example: [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go).
+Link to example: [sendFileByURL/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go
+).
 
 ```
-response, _ := GreenAPI.Methods().Sending().SendFileByUpload("example.png", map[string]interface{}{
-    "chatId": "11001234567@c.us",
+response, _ := GreenAPI.Methods().Sending().SendFileByUrl(map[string]interface{}{
+    "chatId":   "11001234567@c.us",
+    "urlFile":  "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    "fileName": "Go-Logo_Blue.svg",
 })
 ```
 
-#### Running main.go
+#### Running the application
 
 ```shell
 go run main.go

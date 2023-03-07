@@ -2,6 +2,14 @@
 
 ### Установка
 
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
+
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
 ```
@@ -36,8 +44,9 @@ APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 
 Если у метода API есть необязательные параметры, то в метод библиотеки нужно передавать JSON (`map[string]interface{}`).
 
-Ссылка на
-пример: [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go).
+Ссылка на пример: [sendMessage/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go
+).
 
 ```
 response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
@@ -46,7 +55,7 @@ response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
 })
 ```
 
-#### Запуск main.go
+#### Запуск приложения
 
 ```shell
 go run main.go

@@ -1,6 +1,14 @@
-# How to receive incoming notifications
+# How to create a group
 
 ### Installation
+
+Do not forget to create a module:
+
+```shell
+go mod init example
+```
+
+Installation:
 
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
@@ -11,7 +19,6 @@ go get github.com/green-api/whatsapp-api-client-golang
 ```
 import (
 	"github.com/green-api/whatsapp-api-client-golang/pkg/api"
-	"github.com/green-api/whatsapp-api-client-golang/pkg/webhook"
 )
 ```
 
@@ -33,37 +40,20 @@ IDInstance := os.Getenv("ID_INSTANCE")
 APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 ```
 
-#### How to receive incoming notifications
+#### How to create a group
 
-To start receiving incoming webhooks, you need to send a handler function to GreenAPIWebhook.Start(). The handler
-function should have 1 parameter (`body map[string]interface{}`). When you receive a new notification, your handler
-function will be executed. To stop receiving incoming webhooks, you need to call GreenAPIWebhook.Stop().
-
-Link to
-example: [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
+Link to example: [createGroup/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go
+).
 
 ```
-GreenAPIWebhook := webhook.GreenAPIWebhook{
-    GreenAPI: GreenAPI,
-}
-
-GreenAPIWebhook.Start(func(body map[string]interface{}) {
-    typeWebhook := body["typeWebhook"]
-    if typeWebhook == "incomingMessageReceived" {
-        senderData := body["senderData"]
-        chatId := senderData.(map[string]interface{})["chatId"]
-
-        response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
-            "chatId":  chatId,
-            "message": "Any message",
-        })
-
-        GreenAPIWebhook.Stop()
-    }
+response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
+    "11001234567@c.us",
+    "11002345678@c.us",
 })
 ```
 
-#### Running main.go
+#### Running the application
 
 ```shell
 go run main.go

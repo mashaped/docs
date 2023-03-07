@@ -2,6 +2,14 @@
 
 ### Установка
 
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
+
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
 ```
@@ -39,8 +47,9 @@ APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 должна содержать 1 параметр (`body map[string]interface{}`). При получении нового уведомления ваша функция-обработчик
 будет выполнена. Чтобы перестать получать уведомления, нужно вызвать функцию GreenAPIWebhook.Stop().
 
-Ссылка на
-пример: [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
+Ссылка на пример: [webhook/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go
+).
 
 ```
 GreenAPIWebhook := webhook.GreenAPIWebhook{
@@ -48,22 +57,11 @@ GreenAPIWebhook := webhook.GreenAPIWebhook{
 }
 
 GreenAPIWebhook.Start(func(body map[string]interface{}) {
-    typeWebhook := body["typeWebhook"]
-    if typeWebhook == "incomingMessageReceived" {
-        senderData := body["senderData"]
-        chatId := senderData.(map[string]interface{})["chatId"]
-
-        response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
-            "chatId":  chatId,
-            "message": "Any message",
-        })
-
-        GreenAPIWebhook.Stop()
-    }
+    fmt.Println(body)
 })
 ```
 
-#### Запуск main.go
+#### Запуск приложения
 
 ```shell
 go run main.go

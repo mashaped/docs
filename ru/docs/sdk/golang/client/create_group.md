@@ -2,6 +2,14 @@
 
 ### Установка
 
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
+
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
 ```
@@ -34,8 +42,9 @@ APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 
 #### Как создать группу
 
-Ссылка на
-пример: [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go).
+Ссылка на пример: [createGroup/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go
+).
 
 ```
 response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
@@ -44,7 +53,7 @@ response, _ := GreenAPI.Methods().Groups().CreateGroup("groupName", []string{
 })
 ```
 
-#### Запуск main.go
+#### Запуск приложения
 
 ```shell
 go run main.go

@@ -194,8 +194,8 @@ nav:
                   - "sdk/golang/client/all_methods.md"
               - "Golang Webhook Server Library":
                   - "Обзор": "sdk/golang/server/index.md"
+                  - "sdk/golang/server/launch.md"
                   - "sdk/golang/server/ubuntu.md"
-                  - "sdk/golang/server/install.md"
           - 'PHP WhatsApp Library':
             - 'Обзор': 'sdk/php/index.md'
             - 'PHP WhatsApp Library':

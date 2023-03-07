@@ -2,6 +2,14 @@
 
 ### Установка
 
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
+
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
 ```
@@ -34,8 +42,9 @@ APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 
 #### Как отправить вложение по URI
 
-Ссылка на
-пример: [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go).
+Ссылка на пример: [sendFileByURL/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go
+).
 
 ```
 response, _ := GreenAPI.Methods().Sending().SendFileByUrl(map[string]interface{}{
@@ -45,7 +54,7 @@ response, _ := GreenAPI.Methods().Sending().SendFileByUrl(map[string]interface{}
 })
 ```
 
-#### Запуск main.go
+#### Запуск приложения
 
 ```shell
 go run main.go
