@@ -27,9 +27,9 @@
 `downloadUrl` | **string** | Ссылка на стикер
 `jpegThumbnail` | **string** | Предпросмотр изображения в base64 |
 `isAnimated` | **boolean** | Является ли стикер анимированным |
-| `mimeType` | **string** | Тип файла, согласно класификации [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-|`forwardingScore` | **integer** | Количество пересылок сообщения
+`mimeType` | **string** | Тип файла, согласно класификации [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
+`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
+`forwardingScore` | **integer** | Количество пересылок сообщения
 
 
 Поля объекта `quotedMessage`
