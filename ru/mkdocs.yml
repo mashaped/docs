@@ -151,6 +151,7 @@ nav:
         - 'Как отправить файл методом sendFileByUrl, используя внешнее хранилище?': 'faq/how-to-send-file-by-sendFileByUrl-method-using-external-storage.md'
         - 'Как отображать имя компании и логотип в чатах?': 'faq/how-to-display-company-name-and-logo-in-chats.md'
         - 'Почему медленно приходят входящие уведомления (вебхуки)?': 'faq/why-are-incoming-notifications-slow-(webhooks).md'
+        - 'Если получаем ошибку вида "WhatsApp временно недоступен. Попробуйте через 1 час."': 'faq/whatsApp-is-temporarily-unavailable.md'
   - Релизы:
         - "Оглавление": 'release/index.md'
         - 'Список релизов':

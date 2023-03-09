@@ -151,6 +151,7 @@ nav:
         - 'How to send file by sendFileByUrl method using external storage?': 'faq/how-to-send-file-by-sendFileByUrl-method-using-external-storage.md'
         - 'How to display company name and logo in chats?': 'faq/how-to-display-company-name-and-logo-in-chats.md'
         - 'Why are incoming notifications slow (webhooks)?': 'faq/why-are-incoming-notifications-slow-(webhooks).md'
+        - 'If we get an error like "WhatsApp is temporarily unavailable. Try again in 1 hour."': 'faq/whatsApp-is-temporarily-unavailable.md'
   - Releases:
         - "Overview": 'release/index.md'
         - 'GREEN-API releases':
