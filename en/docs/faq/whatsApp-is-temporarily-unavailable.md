@@ -1,8 +1,8 @@
-# If we get an error like "WhatsApp is temporarily unavailable. Try again in 1 hour."
+# Error "WhatsApp is temporarily unavailable. Try again in 1 hour."
 
-??? question "Make sure your number is not registered with WABA (WhatsApp Business)"
+??? question "Make sure your number is not registered with WABA (WhatsApp Business API)"
 
-    WhatsApp Messenger and the WhatsApp Business app are two different apps. You won't be able to use the same phone number in both apps at the same time, but you can switch between them.
+    WhatsApp Messenger, WhatsApp Business are different applications, but WhatsApp Business API is a different technology. You will not be able to use the same phone number in WABA and apps, but you can switch between them. If the number is registered in WABA, you will not be able to install the application on this number.
     [Read more here.](https://faq.whatsapp.com/663543925287107)
 
 
