@@ -19,4 +19,4 @@
 
 #### [Why are incoming notifications slow (webhooks)?](why-are-incoming-notifications-slow-(webhooks).md)
 
-#### [If we get an error like "WhatsApp is temporarily unavailable. Try again in 1 hour."](whatsApp-is-temporarily-unavailable.md)
+#### [Error "WhatsApp is temporarily unavailable. Try again in 1 hour."](whatsApp-is-temporarily-unavailable.md)

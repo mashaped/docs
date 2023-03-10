@@ -19,4 +19,4 @@
 
 #### [Почему медленно приходят входящие уведомления (вебхуки)?](why-are-incoming-notifications-slow-(webhooks).md)
 
-#### [Если получаем ошибку вида "WhatsApp временно недоступен. Попробуйте через 1 час."](whatsApp-is-temporarily-unavailable.md)
+#### [Ошибка "WhatsApp временно недоступен. Попробуйте через 1 час."](whatsApp-is-temporarily-unavailable.md)
