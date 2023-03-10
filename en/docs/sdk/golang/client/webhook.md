@@ -29,8 +29,8 @@ import (
 
 ```
 GreenAPI := api.GreenAPI{
-    IDInstance:       "1234",
-    APITokenInstance: "bde035edae3fc00bc116bd112297908d8145e5ba8decc5d884",
+    IDInstance:       "1101000001",
+    APITokenInstance: "d75b3a66374942c5b3c019c698abc2067e151558acbd412345",
 }
 ```
 
