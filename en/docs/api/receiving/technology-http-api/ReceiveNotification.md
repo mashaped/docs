@@ -2,7 +2,7 @@
 
 The method is aimed for receiving one incoming notification from the notifications queue.
 
-> ReceiveNotification method waits for a notification receipt for 20 sec. The method call ends with an empty response if a timeout is reached. If a notification comes to the queue within 20 seconds, the method call is completed, and the method returns the received notification. 
+> ReceiveNotification method waits for a notification receipt for 5 sec. The method call ends with an empty response if a timeout is reached. If a notification comes to the queue within 5 seconds, the method call is completed, and the method returns the received notification. 
 
 After receiving and processing an incoming notification, you need to delete the notification from the queue. This requires you to run [DeleteNotification](DeleteNotification.md) method. After calling [DeleteNotification](DeleteNotification.md) method, the notification will be considered received and processed and will be permanently deleted from the queue. Therefore, the next call of [ReceiveNotification](#request) method will return the next notification from the queue in the order in which notifications come to the queue.
 

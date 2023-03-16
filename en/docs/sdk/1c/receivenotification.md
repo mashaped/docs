@@ -19,7 +19,7 @@ The processing model has a software interface designed in accordance with [1C de
 ![`Получение сообщения`](https://github.com/green-api/whatsapp-api-client-1c/blob/master/media/Receiving.png?raw=true)
 
 1. Go to the ``Receiving Messages`` tab
-2. Click on the ``Receive a message`` button. If a message has been sent, then the ``Message body`` parameter will be filled in with the data in JSON format. If there are no messages sent, then the processing model will wait 20 seconds to receive a message.
+2. Click on the ``Receive a message`` button. If a message has been sent, then the ``Message body`` parameter will be filled in with the data in JSON format. If there are no messages sent, then the processing model will wait 5 seconds to receive a message.
 
 ### The full list of examples
 
