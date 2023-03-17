@@ -1,7 +1,7 @@
 # SendFileByUrl
 
 The method is aimed for sending a file uploaded by Url.
-The message will be added to the send queue. Checking whatsapp authorization on the phone (i.e. availability in linked devices) is not performed. The message will be kept for 24 hours in the queue and will be sent immediately after phone authorization.
+The message will be added to the send queue. The message will be kept for 24 hours in the queue and will be sent immediately after phone authorization.
 The rate at which messages are sent from the queue is managed by [Message sending delay](../send-messages-delay.md) parameter.
 
 Video, audio and image files available for viewing and listening to are sent as in native-mode WhatsApp.
@@ -9,7 +9,7 @@ Documents are sent in the same way as in native-mode WhatsApp.
 Outgoing file type and send method is determined by the file extension. 
 Description is only added to images and video.
 
-> The maximum size of outgoing files is 37 MB. 
+> The maximum size of outgoing files is 100 MB. 
 
 ## Request {#request}
 
