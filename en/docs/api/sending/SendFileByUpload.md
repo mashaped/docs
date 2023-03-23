@@ -9,7 +9,7 @@ Documents are sent in the same way as in native-mode WhatsApp.
 Outgoing file type and send method is determined by the file extension. 
 Description is only added to images and video. 
 
-> The maximum size of outgoing files is 37 MB. 
+> The maximum size of outgoing files is 100 MB. 
 
 ## Request {#request}
 

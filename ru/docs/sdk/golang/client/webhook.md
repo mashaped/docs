@@ -2,6 +2,14 @@
 
 ### Установка
 
+Не забудьте создать модуль:
+
+```shell
+go mod init example
+```
+
+Установка:
+
 ```shell
 go get github.com/green-api/whatsapp-api-client-golang
 ```
@@ -21,8 +29,8 @@ import (
 
 ```
 GreenAPI := api.GreenAPI{
-    IDInstance:       "1234",
-    APITokenInstance: "bde035edae3fc00bc116bd112297908d8145e5ba8decc5d884",
+    IDInstance:       "1101000001",
+    APITokenInstance: "d75b3a66374942c5b3c019c698abc2067e151558acbd412345",
 }
 ```
 
@@ -39,8 +47,9 @@ APITokenInstance := os.Getenv("API_TOKEN_INSTANCE")
 должна содержать 1 параметр (`body map[string]interface{}`). При получении нового уведомления ваша функция-обработчик
 будет выполнена. Чтобы перестать получать уведомления, нужно вызвать функцию GreenAPIWebhook.Stop().
 
-Ссылка на
-пример: [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go).
+Ссылка на пример: [webhook/main.go](
+https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go
+).
 
 ```
 GreenAPIWebhook := webhook.GreenAPIWebhook{
@@ -48,22 +57,11 @@ GreenAPIWebhook := webhook.GreenAPIWebhook{
 }
 
 GreenAPIWebhook.Start(func(body map[string]interface{}) {
-    typeWebhook := body["typeWebhook"]
-    if typeWebhook == "incomingMessageReceived" {
-        senderData := body["senderData"]
-        chatId := senderData.(map[string]interface{})["chatId"]
-
-        response, _ := GreenAPI.Methods().Sending().SendMessage(map[string]interface{}{
-            "chatId":  chatId,
-            "message": "Any message",
-        })
-
-        GreenAPIWebhook.Stop()
-    }
+    fmt.Println(body)
 })
 ```
 
-#### Запуск main.go
+### Запуск приложения
 
 ```shell
 go run main.go
@@ -71,10 +69,10 @@ go run main.go
 
 ### Список примеров
 
-| Описание                          | Ссылка на пример                                                                                                                  |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Как создать группу                | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
-| Как отправить вложение            | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
-| Как отправить вложение по URI     | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
-| Как отправить сообщение           | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
-| Как получать входящие уведомления | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   | 
+| Описание                             | Ссылка на пример                                                                                                                  |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Как создать группу                   | [createGroup/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/createGroup/main.go)           |
+| Как отправить файл загрузкой с диска | [sendFileByUpload/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByUpload/main.go) |
+| Как отправить файл по ссылке         | [sendFileByURL/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendFileByURL/main.go)       |
+| Как отправить сообщение              | [sendMessage/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/sendMessage/main.go)           |
+| Как получать входящие уведомления    | [webhook/main.go](https://github.com/green-api/whatsapp-api-client-golang/blob/master/examples/webhook/main.go)                   | 

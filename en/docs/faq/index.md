@@ -18,3 +18,5 @@
 #### [How to display company name and logo in chats?](how-to-display-company-name-and-logo-in-chats.md)
 
 #### [Why are incoming notifications slow (webhooks)?](why-are-incoming-notifications-slow-(webhooks).md)
+
+#### [Error "WhatsApp is temporarily unavailable. Try again in 1 hour."](whatsApp-is-temporarily-unavailable.md)
