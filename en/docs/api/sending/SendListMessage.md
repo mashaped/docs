@@ -115,6 +115,22 @@ Parameter | Type |  Description
 
 For a list of errors common to all methods, refer to [Common errors](../common-errors.md) section
 
+??? warning "Possible mistakes"
+
+    When using the SendListMessage method, messages may not be displayed on the web, desktop, and mobile versions of the application. The ability to send messages with buttons is implemented by us in a low-level way. The official WhatsApp-Web client does not provide the functionality of sending buttons. To a large extent, the stability of the SendListMessage method does not depend on us, WhatsApp constantly makes changes to their work.
+
+    We recommend that you always duplicate buttons with regular messages.
+
+    > For example, use numbers to define choices.
+
+    > Choose an action:
+
+    > 1 - action 1
+
+    > 2 - action 2
+
+    > 3 - action 3
+
 ## curl example
 
 ```
