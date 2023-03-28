@@ -4,6 +4,12 @@
 Сообщение будет добавлено в очередь на отправку. Сообщение на отправку хранится 24 часа в очереди и будет отправлено сразу же после авторизации телефона. 
 Скорость отправки сообщений из очереди регулирует параметр [Интервал отправки сообщений](../send-messages-delay.md).
 
+## Видеоинструкция
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tnX1rByc3CI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## Запрос {#request}
 ы
 Для отправки текстового сообщения требуется выполнить запрос по адресу:

@@ -9,6 +9,12 @@
 5. [Получить параметры доступа к Аккаунту](#parameters)
 6. [Настроить получение входящих данных](#receiving)
 
+## Видеоинструкция
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pLGoeZ27buM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## 1. Создать учетную запись в Личном кабинете {#cabinet}
 
 Для создания учетной записи перейдите в [Личный кабинет](https://console.green-api.com). После авторизации в личном кабинете будет доступна возможность создания аккаунта. В личном кабинете можно создать несколько аккаунтов для одной учетной записи.
