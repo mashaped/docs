@@ -8,6 +8,12 @@
 2. [Конфигурирование](#configure): настройка переменных среды
 3. [Тестирование](#test): использование методов API
 
+## Видеоинструкция
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MkuiIck5Z4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## Установка {#setup}
 
 Чтобы приступить к работе, скачайте указанные ниже компоненты и установите Postman:
