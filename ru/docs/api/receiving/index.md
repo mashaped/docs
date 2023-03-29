@@ -10,3 +10,9 @@
 Формат уведомлений подробно описан в разделе [Формат входящих уведомлений](notifications-format/index.md)
 
 Для скачивания файлов из входящих уведомлений обратитесь к разделу [Получение файлов](files/DownloadFile.md)
+
+## Видеоинструкция
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tyezVCxMugY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
