@@ -11,7 +11,7 @@
 </center>
 
 ## Запрос {#request}
-ы
+
 Для отправки текстового сообщения требуется выполнить запрос по адресу:
 ```
 POST https://api.green-api.com/waInstance{{idInstance}}/SendMessage/{{apiTokenInstance}}
