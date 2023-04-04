@@ -90,3 +90,12 @@ response = requests.request("GET", url, headers=headers, data = payload)
 
 print(response.text.encode('utf8'))
 ```
+
+## Использование своего доменного имени для получения QR-кода
+
+Для использования своего доменного имени, создайте CNAME запись с адресом нашего DNS сервера:
+```
+https://qr.green-api.com
+```
+
+[Подробная инструкция по добавлению CNAME в настройки DNS домена](https://support.google.com/a/answer/47283?hl=ru#expand-all)
