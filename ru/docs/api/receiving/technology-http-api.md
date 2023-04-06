@@ -6,6 +6,12 @@
 
 > Срок хранения входящих уведомлений составляет 24 часа.
 
+## Видеоинструкция
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5HmhPCbzFgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## Настройка аккаунта
 
 Перед получением входящих уведомлений требуется выполнить настройку аккаунта. Настройка аккаунта может быть выполнена [программно](#SetSettings) с использованием метода [SetSettings](../account/SetSettings.md), либо [интерактивно](#cabinet) в интерфейсе личного кабинета.
