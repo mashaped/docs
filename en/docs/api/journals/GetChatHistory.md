@@ -42,6 +42,7 @@ Parameter | Type |  Description
 `timestamp` | **integer** | Time when the message has been sent in UNIX format
 `idMessage` | **string** | Message Id
 `statusMessage` | **string** | Outgoing message status. Present only for `type` = `outgoing`. Possible variants:
+| | `pending` - is sent
 | | `sent` - sent
 | | `delivered` - delivered
 | | `read` - read/seen/heard

@@ -31,6 +31,7 @@ Parameter | Type |  Description
 `statusMessage` | **string** | Outgoing message status, possible variants:
 | | `noAccount` - no WhatsApp account on phone number 
 | | `notInGroup` - not in this group
+| | `pending` - is sent
 | | `sent` - sent
 | | `delivered` - delivered
 | | `read` - read/seen/heard

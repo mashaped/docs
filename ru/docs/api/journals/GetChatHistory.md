@@ -42,6 +42,7 @@ POST https://api.green-api.com/waInstance{{idInstance}}/GetChatHistory/{{apiToke
 `timestamp` | **integer** | Время отправки сообщения в UNIX-формате
 `idMessage` | **string** | Идентификатор сообщения
 `statusMessage` | **string** | Статус исходящего сообщения. Присутствует только для `type` = `outgoing`. Возможные значения:
+| | `pending` - сообщение отправляется
 | | `sent` - отправлено
 | | `delivered` - доставлено
 | | `read` - прочитано/просмотрено/прослушано
