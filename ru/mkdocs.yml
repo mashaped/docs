@@ -214,6 +214,7 @@ nav:
             - 'sdk/nodejs/sendfilebyupload.md'
             - 'sdk/nodejs/receiveNotification.md'
             - 'sdk/nodejs/receiveNotificationserver.md'
+            - 'sdk/nodejs/sampleReceiveWebhook.md'
             - 'sdk/nodejs/getqr.md'
           - 'HTML5 WhatsApp Library':
             - 'Обзор': 'sdk/html5/index.md'

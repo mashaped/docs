@@ -1,58 +1,83 @@
-# Как отправить файл загрузкой с диска
+# Как принимать webhook endpoint уведомления на локальной машине
+
+Для получения уведомлений Вам необходимо иметь статический адрес для запросов с нашего сервера, это возможно реализовать с помощью приложения ngrok.
+Оно позволяет создать временный статический адрес и перенаправлять запросы с него на локальную машину. Данный механизм удобен для отладки вашего кода.
+
 ### Установка
+
+Перейдите на сайт [ngrok](https://ngrok.com) зарегестрируйтесь и скачайте ngrok.
+
+Установите пакеты для работы с примером
 ```
-npm i @green-api/whatsapp-api-client
+npm i express body-parser   
 ```
 ### Import 
+
 Есть несколько способов импортировать библиотеку в проект
+
 Используя классический javascript 
 ```
-const whatsAppClient = require("@green-api/whatsapp-api-client");
+const express = require("express");
 ```
 Используя ES6 javascript 
 ```
-import whatsAppClient from "@green-api/whatsapp-api-client";
+import express from "express";
 ```
 Используя typescript 
-```ы
-import * as whatsAppClient from "@green-api/whatsapp-api-client";
 ```
-#### Как инициализировать объект
+import * as express from "express";
+```
 
-Храните Ваши авторизационные данные отдельно от кода. Библиотека позволяет создать  файл с произвольным именем и местом в следующем формате: 
+### Как принять webhook endpoint уведомление на локальной машине
+
+Полный пример можно посмотреть по ссылке: [SampleReceiveWebhook.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SampleReceiveWebhook.js)
+
+Запустите пример используя команду:
+
+```shell
+node SampleReceiveWebhook.js  
 ```
-API_TOKEN_INSTANCE = "MY_API_TOKEN_INSTANCE"
-ID_INSTANCE = "MY_ID_INSTANCE"
+В новом терминала запустите ngrok:
+
+```shell
+ngrok http 80  
 ```
-Передать ключи, можно используя пример ниже:
+В строке вы увидите адрес, который необходимо указать в настройках инстанса
+
+> Forwarding ```http://32c4-146-158-66-240.ngrok-free.app -> http://localhost:80 ```
+
+Так уведомление будет перенаправленно Вам на локальную машину.
+
+> для завершения работы примера нажмите Ctrl+C
+
+### Пример
+
 ``` js
-const restAPI = whatsAppClient.restAPI(({
-    credentialsPath: "examples\\credentials"
-}))
-```
-### Примеры
-
-Полный пример можно посмотреть по ссылке: [SendWhatsAppFileUpload.js](https://github.com/green-api/whatsapp-api-client-js/blob/master/examples/SendWhatsAppFileUpload.js)
-
-#### Как отправить файл загрузкой с диска
-
-``` js
-import whatsAppClient from '@green-api/whatsapp-api-client'
-import FormData from 'form-data'
-import * as fs from 'fs'
+const express = require('express');
+const bodyParser = require('body-parser');
 
 (async () => {
-    const restAPI = whatsAppClient.restAPI(({
-        idInstance: process.env.ID_INSTANCE,
-        apiTokenInstance: process.env.API_TOKEN_INSTANCE
-    }))
-    const data = new FormData();
-    data.append('chatId', '7xxxxxxxxxx@c.us');
-    data.append('caption', 'My file');
-    data.append('file', fs.createReadStream('hello.txt'));
-    const response = await restAPI.file.sendFileByUpload(data)
-    console.log(`file uploaded ${response.idMessage}`)
+  try {
+
+    const app = express();
+    const port = 80;
+
+    app.use(bodyParser.json());
+    app.post('/', (req, res) => {
+      console.log(req.body);
+      res.status(200).send('');
+    });
+    
+    
+    app.listen(port, () => {
+      console.log(`Server is listening on port ${port}`);
+    });
+  } catch (error) {
+      console.error(error);
+      process.exit(1);
+  }
 })();
+
 ```
 ### Полный список примеров
 
