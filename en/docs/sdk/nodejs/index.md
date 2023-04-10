@@ -18,6 +18,7 @@ To send a message or to execute some other Green-API method, you have to have th
 #### [How to send a file by uploading from the disk](sendfilebyupload.md)
 #### [How to receive and process a notification](receiveNotification.md)
 #### [How to receive and process notifications using a server](receiveNotificationserver.md)
+#### [How to receive webhook endpoint notifications on local machine](sampleReceiveWebhook.md)
 #### [How to get a QR code](getqr.md)
 
 #### Development environment unrolling
