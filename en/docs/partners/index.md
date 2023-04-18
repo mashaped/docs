@@ -1,16 +1,16 @@
-# Партнёрам
+# To Partners
 
-Партнёрская схема работы предполагает более глубокую интеграцию с сервисом и работу с большим числом инстансев на вашей стороне:
+The partnership scheme of cooperation involves deeper integration with the service and work with a larger number of instances on your side:
 
-* Управление инстансами по API
+* API instances management
 
-* Постоплатная система работы (со второго месяца работы)
+* Postpaid cooperation plan (from the second month of cooperation)
 
-* Посуточная тарификация (за созданные и не удалённые инстансы)
+* Daily billing (for created and non-deleted instances)
 
-* Выделенная линия поддержки 
+* Personal support chat 
 
-> По вопросам подключения к партнёрской схеме и дополнительных условиях просим вас писать на почту support@green-api.com или в чат на сайте.
+> In case of any questions in regard to the partnership scheme and additional conditions, please send us a message to support@green-api.com or chat on the website.
 
 ## Получение партнерского ключа
 
