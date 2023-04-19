@@ -50,16 +50,16 @@ https://api.green-api.com/partner/{method}/{partnerToken}
 
     Дополнительно отображение QR-кода можно реализовать в интерфейсе Вашего программного продукта. Для этого рекомендуется воспользоваться примерами кода ниже:
 
-    * Получение QR-кода через [HTTP-запрос](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html)
+    * Getting a QR-code through [HTTP-request](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html)
 
-    * Получение QR-кода через [web-socket](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCodeWebsocket.html)
+    * Getting a QR-code via [web-socket](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCodeWebsocket.html)
 
-    * Получение QR-кода в [1С](https://green-api.com/integrations/1c.html)
+    * Getting a QR-code in [1С](https://green-api.com/integrations/1c.html)
 
     * Также реализовано получение QR-кода на отдельной странице в Интернете: 
     ```
     https://qr.green-api.com/waInstance{idInstance}/{apiTokenInstance}
     ```
-    > idInstance и apiTokenInstance могут быть получены методами [createInstance](./createInstance.md) и [getInstances](./getInstances.md).
+    > idInstance and apiTokenInstance may be obtained by the [createInstance](./createInstance.md) and [getInstances](./getInstances.md) methods.
 
-3. Инстанс готов к работе. Для отправки и получения сообщений используйте методы API согласно [документации](../api/index.md)
+3. The instance is ready for work. To send and get messages use API methods according to [documentation](../api/index.md)
