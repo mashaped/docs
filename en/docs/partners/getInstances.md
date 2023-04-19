@@ -1,29 +1,29 @@
 # GetInstances
 
-Метод предназначен для получения всех инстансов аккаунтов созданных партнером.
+The method is aimed for getting all the account instances created by the partner.
 
-## Запрос
+## Request
 
-Для получения всех инстансов аккаунта требуется выполнить GET запрос по адресу:
+To get all the account instances you have to execute a GET request at:
 ```
 https://api.green-api.com/partner/getInstances/{partnerToken}
 ```
->Получение параметра запроса `partnerToken` происходит через техподдержку Green API (support@green-api.com) с запросом получить API-ключ партнера.
+>For `partnerToken`request parameter please contact Green API technical support (support@green-api.com) with a request to get a partnership API-token.
 
-## Ответ 
+## Response
 
-### Поля ответа 
+### Response parameters 
 
-Поле | Тип |  Описание
+Parameter | Type |  Description
 ----- | ----- | ----- 
-`idInstance` | **int** | идентификатор инстанса аккаунта
-`apiTokenInstance` | **string** | токен API инстанса аккаунта
-`typeInstance` | **string** | тип мессенджера для инстанса аккаунта
-`timeCreated` | **string** | время создания инстанса
+`idInstance` | **int** | account instance id
+`apiTokenInstance` | **string** | account instance API token
+`typeInstance` | **string** | messenger type for account instance
+`timeCreated` | **string** | instance creation time
 
-### Пример тела ответа 
+### Response body example 
 
-В случае успеха, в ответ на запрос, отдается JSON строка следующего вида с HTTP статусом 200:
+If successful, in response to the request, you get a JSON string with HTTP 200 status of the below form:
 ```json
 [
     {
