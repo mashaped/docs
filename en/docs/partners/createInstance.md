@@ -27,9 +27,9 @@ Parameter | Type | Mandatory | Description
 `stateWebhook` | __string__ | optional | Get notifications about the account authorization state change, possible variants: “yes”, “no”. Default is “no”
 `incomingWebhook` | __string__ | optional | Get notifications about incoming messages and files, possible variants: “yes”, “no”. Default is “no”
 `deviceWebhook` | __string__ | optional | Get notifications about the device (phone) and battery level, possible variants: “yes”, “no”. Default is “no”
-`stateWebhook` | __string__ | optional | Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: “yes”, “no”. По умолчанию “no”
-`outgoingAPIMessageWebhook` | __string__ | необязательный | Получать уведомления о сообщениях, отправленных из API, возможные значения: “yes”, “no”.  По умолчанию “no”
-`keepOnlineStatus` | __string__ | необязательный | Отображать статус инстанса “В сети”. Возможные значения: “yes”, “no”. По умолчанию “no”. Примечание: При включенной настройке не будут приходить звуковые уведомления о новых сообщениях на телефонный аппарат, подключенный к API
+`stateWebhook` | __string__ | optional | Get notifications about the account authorization state change, possible variants: “yes”, “no”. Default is “no”
+`outgoingAPIMessageWebhook` | __string__ | optional | Get notifications about messages sent via API, possible variants: “yes”, “no”.  Default is “no”
+`keepOnlineStatus` | __string__ | optional | Display the instance status “Online”. Possible variants: “yes”, “no”. Default is “no”. Note: If the setting is on, sound notifications about new messages will not be sent to the telephone connected to API
 
 
 ### Request body example
