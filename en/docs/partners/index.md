@@ -22,7 +22,7 @@ For testing methods we recommend to use the [Postman for partners](https://githu
 
 > To work with the collection, you must first get a partnership API token via support@green-api Green API technical support.
 >
-> Справка по [установке Postman](../postman-collection.md)
+> Help for [Postman installation](../postman-collection.md)
 
 ## Request format 
 
@@ -56,7 +56,7 @@ https://api.green-api.com/partner/{method}/{partnerToken}
 
     * Getting a QR-code in [1С](https://green-api.com/integrations/1c.html)
 
-    * Также реализовано получение QR-кода на отдельной странице в Интернете: 
+    * Besides you may receive a QR code on a separate page on the Internet: 
     ```
     https://qr.green-api.com/waInstance{idInstance}/{apiTokenInstance}
     ```
