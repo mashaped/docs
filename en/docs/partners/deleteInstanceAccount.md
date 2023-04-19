@@ -42,7 +42,7 @@ If successful, in response to the request, you get a JSON string with HTTP 200 s
 }
 ```
 
-In case of failure, you get a response with HTTP 200 status 200, a JSON string with a code and description of the error is returned in the response body:
+In case of failure, you get a response with HTTP 200 status, a JSON string with a code and description of the error is returned in the response body:
 
 ```json
 {
