@@ -12,11 +12,11 @@ The partnership scheme of cooperation involves deeper integration with the servi
 
 > In case of any questions in regard to the partnership scheme and additional conditions, please send us a message to support@green-api.com or chat on the website.
 
-## Получение партнерского ключа
+## Getting a partnership token
 
-Получение партнерского API-ключа происходит через техподдержку Green API support@green-api.com.
+You may get a partnership API-token via support@green-api.com Green API technical support.
 
-## Тестирование методов
+## Methods testing
 
 Для проверки методов рекомендуем использовать коллекцию [Postman для партнеров.](https://github.com/green-api/partners-green-api-postman-collection)
 
@@ -24,24 +24,24 @@ The partnership scheme of cooperation involves deeper integration with the servi
 >
 > Справка по [установке Postman](../postman-collection.md)
 
-## Формат запроса 
+## Request format 
 
 Обращение к API производится по адресу:
 ```
 https://api.green-api.com/partner/{method}/{partnerToken}
 ```
 
->{method} - (string) - название метода API;
+>{method} - (string) - API method name;
 >
->{partnerToken} - (string) - токен партнера, получается отдельно через техподдержку Green API (support@green-api.com);
+>{partnerToken} - (string) - partner's token, you get it via Green API technical support (support@green-api.com);
  
-## Доступные методы API для партнеров
+## API methods available for partners
 
-[createInstance](./createInstance.md) - метод создания инстанса аккаунта мессенджера от имени партнера
+[createInstance](./createInstance.md) - method for creating a messanger account instance on the partner's part
 
-[deleteInstanceAccount](./deleteInstanceAccount.md) - метод удаляет инстанс аккаунта партнера
+[deleteInstanceAccount](./deleteInstanceAccount.md) - method for deleting a partner's account instance
 
-[getInstances](./getInstances.md) - метод возвращает все инстансы аккаунтов созданных партнером
+[getInstances](./getInstances.md) - method returns all the accounts instances created by the partner
 
 ## Порядок работы
 
