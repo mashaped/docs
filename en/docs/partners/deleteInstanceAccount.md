@@ -14,7 +14,7 @@ https://api.green-api.com/partner/deleteInstanceAccount/{partnerToken}
 
 Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
-`idInstance` | __int__ | обязательный параметр | идентификатор инстанса аккаунта
+`idInstance` | __int__ | mandatory parameter | account instance id
 
 ### Request body example
 
@@ -28,13 +28,13 @@ Parameter | Type | Mandatory | Description
 
 ### Response parameters 
 
-Поле | Тип |  Описание
+Parameter | Type |  Description
 ----- | ----- | ----- 
-`deleteInstanceAccount` | __boolean__ |флаг удаления инстанса аккаунта
+`deleteInstanceAccount` | __boolean__ |account instance deletion flag
 
 ### Response body example 
 
-В случае успеха, в ответ на запрос, отдается JSON строка следующего вида с HTTP статусом 200:
+If successful, in response to the request, you get a JSON string with HTTP 200 status of the below form:
 
 ```json
 {
@@ -42,7 +42,7 @@ Parameter | Type | Mandatory | Description
 }
 ```
 
-В случае неудачи, отдается ответ с HTTP статусом 200, в теле ответа отдается JSON строка с кодом и описанием ошибки:
+In case of failure, you get a response with HTTP 200 status 200, a JSON string with a code and description of the error is returned in the response body:
 
 ```json
 {
