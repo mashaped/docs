@@ -71,7 +71,7 @@ If successful, in response to the request, you get a JSON string with HTTP 200 s
 ]
 ```
 
-> Для получения параметров инстансов аккаунтов, используются соответствующие [методы API](../api/account/index.md).
+> To get accounts instances parameters, use the corresponing [API methods](../api/account/index.md).
 
-В случае неудачи, отдается ответ с HTTP статусом 400 и текстом ошибки.
+In case of failure, a response with HTTP 400 status and an error text is returned.
  
