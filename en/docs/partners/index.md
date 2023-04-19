@@ -26,7 +26,7 @@ For testing methods we recommend to use the [Postman for partners](https://githu
 
 ## Request format 
 
-Обращение к API производится по адресу:
+Request to API should be executed at:
 ```
 https://api.green-api.com/partner/{method}/{partnerToken}
 ```
@@ -43,12 +43,12 @@ https://api.green-api.com/partner/{method}/{partnerToken}
 
 [getInstances](./getInstances.md) - method returns all the accounts instances created by the partner
 
-## Порядок работы
+## Work order
 
-1. Создайте инстанс методом [createInstance](./createInstance.md)
-2. Авторизуйте новый инстанс на телефоне. Для этого перейдите в [личный кабинет](https://console.green-api.com) и сканируйте QR-код.
+1. Create an instance by [createInstance](./createInstance.md) method
+2. Authorize a new instance on your phone. To do this go to your [personal area](https://console.green-api.com) and scan a QR-code.
 
-    Дополнительно отображение QR-кода можно реализовать в интерфейсе Вашего программного продукта. Для этого рекомендуется воспользоваться примерами кода ниже:
+    Additionally, the display of a QR code can be implemented in the interface of your software product. To do this, it is recommended to use the code examples below:
 
     * Getting a QR-code through [HTTP-request](https://github.com/green-api/whatsapp-api-client/blob/master/examples/browserExampleQRCode.html)
 
