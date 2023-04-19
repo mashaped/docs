@@ -13,7 +13,7 @@ https://api.green-api.com/partner/createInstance/{partnerToken}
 
 ### Request parameters
 
-Допускается указывать параметры выборочно. Хотя бы один параметр должен быть указан.
+Selective specification of parameters is allowed. At least one parameter must be specified.
 
 Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
@@ -22,12 +22,12 @@ Parameter | Type | Mandatory | Description
 `delaySendMessagesMilliseconds` | __integer__ | optional | message sending delay in milliseconds, default is 3000 msec, minimum is 500 msec
 `markIncomingMessagesReaded` | __string__ | optional | mark incoming messages as read or not (“yes”/”no”), default is “no”. Ignored if markIncomingMessagesReadedOnReply is “yes”
 `markIncomingMessagesReadedOnReply` | __string__ | optional |  mark incoming messages as read or not (“yes”/”no”) when posting a message to the chat, default is “no” (incoming messages are not marked as read)
-`outgoingWebhook` | __string__ | optional | Получать уведомления о статусах отправки/доставки/прочтении исходящих сообщений, возможные значения: “yes”, “no”. По умолчанию “no”
-`outgoingMessageWebhook` | __string__ | необязательный | Получать уведомления о сообщениях, отправленных с телефона, возможные значения: “yes”, “no”.  По умолчанию “no”
-`stateWebhook` | __string__ | необязательный | Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: “yes”, “no”. По умолчанию “no”
-`incomingWebhook` | __string__ | необязательный | Получать уведомления о входящих сообщениях и файлах, возможные значения: “yes”, “no”. По умолчанию “no”
-`deviceWebhook` | __string__ | необязательный | Получать уведомления об устройстве (телефоне) и уровне заряда батареи, возможные значения: “yes”, “no”. По умолчанию “no”
-`stateWebhook` | __string__ | необязательный | Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: “yes”, “no”. По умолчанию “no”
+`outgoingWebhook` | __string__ | optional | Get notifications about outgoing messages sending/delivering/reading statuses, possible variants: “yes”, “no”. Default is “no”
+`outgoingMessageWebhook` | __string__ | optional | Get notifications about messages sent from the phone, possible variants: “yes”, “no”.  Default is “no”
+`stateWebhook` | __string__ | optional | Get notifications about the account authorization state change, possible variants: “yes”, “no”. Default is “no”
+`incomingWebhook` | __string__ | optional | Get notifications about incoming messages and files, possible variants: “yes”, “no”. Default is “no”
+`deviceWebhook` | __string__ | optional | Get notifications about the device (phone) and battery level, possible variants: “yes”, “no”. Default is “no”
+`stateWebhook` | __string__ | optional | Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: “yes”, “no”. По умолчанию “no”
 `outgoingAPIMessageWebhook` | __string__ | необязательный | Получать уведомления о сообщениях, отправленных из API, возможные значения: “yes”, “no”.  По умолчанию “no”
 `keepOnlineStatus` | __string__ | необязательный | Отображать статус инстанса “В сети”. Возможные значения: “yes”, “no”. По умолчанию “no”. Примечание: При включенной настройке не будут приходить звуковые уведомления о новых сообщениях на телефонный аппарат, подключенный к API
 
