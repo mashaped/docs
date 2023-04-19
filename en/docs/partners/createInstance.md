@@ -1,28 +1,28 @@
 # CreateInstance
 
-Метод предназначен для создания инстанса аккаунта мессенджера от имени партнера.
+The method is aimed for creating a messenger account instance on the partner's part.
 
-## Запрос
+## Request
 
-Для создания инстанса аккаунта от имени партнера требуется выполнить POST запрос по адресу:
+To create an account instance on the partner's part you have to execute a POST request at:
 ```
 https://api.green-api.com/partner/createInstance/{partnerToken}
 ```
 
->Получение параметра запроса `partnerToken` происходит через техподдержку Green API (support@green-api.com) с запросом получить API-ключ партнера.
+>For `partnerToken`request parameter please contact Green API technical support (support@green-api.com) with a request to get a partnership API-token.
 
-### Параметры запроса
+### Request parameters
 
 Допускается указывать параметры выборочно. Хотя бы один параметр должен быть указан.
 
-Параметр | Тип | Обязательный | Описание
+Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
-`webhookUrl`| __string__ | необязательный | URL для отправки webhook оповещений
-`webhookUrlToken` | __string__ | необязательный | Токен для подключения к вашему вебхук серверу;
-`delaySendMessagesMilliseconds` | __integer__ | необязательный | задержка между отправкой исходящих сообщений в миллисекундах, по умолчанию 3000 мсек, минимум 500 мсек
-`markIncomingMessagesReaded` | __string__ | необязательный | отмечать входящие сообщения прочитанными или нет (“yes”/”no”), по умолчанию “no”, параметр игнорируется, если markIncomingMessagesReadedOnReply в значении “yes”
-`markIncomingMessagesReadedOnReply` | __string__ | необязательный |  отмечать входящие сообщения прочитанными или нет (“yes”/”no”) при отправке сообщения в чат, по умолчанию “no” (входящие сообщения не помечаются прочитанными)
-`outgoingWebhook` | __string__ | необязательный | Получать уведомления о статусах отправки/доставки/прочтении исходящих сообщений, возможные значения: “yes”, “no”. По умолчанию “no”
+`webhookUrl`| __string__ | optional | URL for sending webhook notifications
+`webhookUrlToken` | __string__ | optional | Token for connection to your webhook server;
+`delaySendMessagesMilliseconds` | __integer__ | optional | message sending delay in milliseconds, default is 3000 msec, minimum is 500 msec
+`markIncomingMessagesReaded` | __string__ | optional | mark incoming messages as read or not (“yes”/”no”), default is “no”. Ignored if markIncomingMessagesReadedOnReply is “yes”
+`markIncomingMessagesReadedOnReply` | __string__ | optional |  mark incoming messages as read or not (“yes”/”no”) when posting a message to the chat, default is “no” (incoming messages are not marked as read)
+`outgoingWebhook` | __string__ | optional | Получать уведомления о статусах отправки/доставки/прочтении исходящих сообщений, возможные значения: “yes”, “no”. По умолчанию “no”
 `outgoingMessageWebhook` | __string__ | необязательный | Получать уведомления о сообщениях, отправленных с телефона, возможные значения: “yes”, “no”.  По умолчанию “no”
 `stateWebhook` | __string__ | необязательный | Получать уведомления об изменении состояния авторизации аккаунта, возможные значения: “yes”, “no”. По умолчанию “no”
 `incomingWebhook` | __string__ | необязательный | Получать уведомления о входящих сообщениях и файлах, возможные значения: “yes”, “no”. По умолчанию “no”
