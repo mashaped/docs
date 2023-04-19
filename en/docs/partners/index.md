@@ -18,9 +18,9 @@ You may get a partnership API-token via support@green-api.com Green API technica
 
 ## Methods testing
 
-Для проверки методов рекомендуем использовать коллекцию [Postman для партнеров.](https://github.com/green-api/partners-green-api-postman-collection)
+For testing methods we recommend to use the [Postman for partners](https://github.com/green-api/partners-green-api-postman-collection) collection.
 
-> Для работы с коллекцией требуется предварительно получить API-ключ партнера через техподдержку Green API (support@green-api.com).
+> To work with the collection, you must first get a partnership API token via support@green-api Green API technical support.
 >
 > Справка по [установке Postman](../postman-collection.md)
 
