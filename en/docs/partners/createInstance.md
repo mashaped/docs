@@ -32,7 +32,7 @@ Parameter | Type | Mandatory | Description
 `keepOnlineStatus` | __string__ | необязательный | Отображать статус инстанса “В сети”. Возможные значения: “yes”, “no”. По умолчанию “no”. Примечание: При включенной настройке не будут приходить звуковые уведомления о новых сообщениях на телефонный аппарат, подключенный к API
 
 
-### Пример тела запроса
+### Request body example
 
 ```json
 {
@@ -51,19 +51,19 @@ Parameter | Type | Mandatory | Description
 }
 ```
 
-## Ответ 
+## Response
 
-### Поля ответа 
+### Response parameters 
 
-Поле | Тип |  Описание
+Parameter | Type |  Description
 ----- | ----- | ----- 
-`idInstance` | **int** | идентификатор инстанса аккаунта
-`apiTokenInstance` | **string** | токен API инстанса аккаунта
-`typeInstance` | **string** | тип мессенджера для инстанса аккаунта
+`idInstance` | **int** | account instance id
+`apiTokenInstance` | **string** | account instance API token
+`typeInstance` | **string** | messenger type for account instance
 
-### Пример тела ответа 
+### Response bdy example 
 
-В случае успеха, в ответ на запрос, отдается JSON строка следующего вида с HTTP статусом 200:
+If successful, in response to the request, you get a JSON string with HTTP 200 status of the below form:
 
 ```json
 {
@@ -72,7 +72,7 @@ Parameter | Type | Mandatory | Description
     "typeInstance": "whatsapp"
 }
 ```
-В случае неудачи, отдается ответ с HTTP статусом 200, в теле ответа отдается JSON строка с кодом и описанием ошибки:
+In case of failure, you get a response with HTTP 200 status, a JSON string with a code and description of the error is returned in the response body:
 
 ```json
 {
