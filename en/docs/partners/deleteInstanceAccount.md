@@ -1,22 +1,22 @@
 # DeleteInstanceAccount
 
-Метод предназначен для удаления инстанса аккаунта партнера.
+The method is aimed for deleting an instance of the partners's account.
 
-## Запрос
+## Request
 
-Для удаления инстанса аккаунта от имени партнера требуется выполнить POST запрос по адресу:
+To delete an instance on the partner's part you have to execute a POST request at:
 ```
 https://api.green-api.com/partner/deleteInstanceAccount/{partnerToken}
 ```
->Получение параметра запроса `partnerToken` происходит через техподдержку Green API (support@green-api.com) с запросом получить API-ключ партнера.
+>For `partnerToken`request parameter please contact Green API technical support (support@green-api.com) with a request to get a partnership API-token.
 
-### Параметры запроса
+### Request parameters
 
-Параметр | Тип | Обязательный | Описание
+Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
 `idInstance` | __int__ | обязательный параметр | идентификатор инстанса аккаунта
 
-### Пример тела запроса
+### Request body example
 
 ```json
 {
@@ -24,15 +24,15 @@ https://api.green-api.com/partner/deleteInstanceAccount/{partnerToken}
 }
 ```
 
-## Ответ 
+## Response 
 
-### Поля ответа 
+### Response parameters 
 
 Поле | Тип |  Описание
 ----- | ----- | ----- 
 `deleteInstanceAccount` | __boolean__ |флаг удаления инстанса аккаунта
 
-### Пример тела ответа 
+### Response body example 
 
 В случае успеха, в ответ на запрос, отдается JSON строка следующего вида с HTTP статусом 200:
 
