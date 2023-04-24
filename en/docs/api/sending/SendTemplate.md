@@ -44,7 +44,6 @@ Sending a message to a personal chat:
 }
 
 ```
-```
 
 ## Response {#response}
 
