@@ -27,8 +27,8 @@ To get incoming webhooks of this type, two conditions must be true:
 | `contentText` | **string** | Buttons body text message|
 | `footer` | **string** | Buttons footer text message|
 | `buttons`   | **object** | Buttons data object |
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-|`forwardingScore` | **integer** | Количество пересылок сообщения
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+|`forwardingScore` | **integer** | Number of message forwards
 
 `buttons` object parameters
 
