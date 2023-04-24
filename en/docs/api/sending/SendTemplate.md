@@ -1,37 +1,37 @@
 # SendTemplate
 
-Метод предназначен для отправки шаблонного сообщения из официального API. Удобен для массовых рассылок. Для отправки данного сообщения необходимо иметь или предварительно создать шаблон сообщения. Если у вас нет своего шаблона, то мы можем помочь, для этого свяжитесь с нами через почту support@green-api.com или другим удобным способом.
+The method is aimed for sending a template message from the official API. It is useful for bulk emailing. To send this type of a message, you must have or previously create a message template. If you do not have your own template, then we can help you. For this, please contact us via email support@green-api.com or in any other convenient way.
 
-## Запрос {#request}
+## Request {#request}
 
-Для отправки сообщения со ссылкой требуется выполнить запрос по адресу:
+To send a message, you have to execute a request at:
 ```
 POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenInstance}}
 ```
 
-Для получения параметров запроса `idInstance` и `apiTokenInstance` обратитесь к разделу [Перед началом работы](../../before-start.md#parameters).
+For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you start](../../before-start.md#parameters) section.
 
-### Параметры запроса {#request-parameters}
+### Request parameters {#request-parameters}
 
-Параметр | Тип | Обязательный | Описание
+Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
-`chatId` | **string** | Да | [Идентификатор чата](../chat-id.md)
-`namespace` | **string** | Да | имя пространства имен из официального АПИ
-`namespace` | **string** | Да | имя шаблона сообщения
-`languageCode` | **string** | Да | Код языка локализации шаблона сообщения
-`params` | **array** | Нет | Массив параметров, используемых в шаблоне. Обязательный, если шаблон использует параметры
-`quotedMessageId` | **string** | Нет | Идентификатор цитируемого сообщения,если указан то сообщение отправится с цитированием указанного сообщения чата
+`chatId` | **string** | Yes | [Chat Id](../chat-id.md)
+`namespace` | **string** | Yes | name of the names space from the official API
+`namespace` | **string** | Yes | message template name
+`languageCode` | **string** | Yes | Message template localization language code
+`params` | **array** | No | Array of parameters used in the template. Mandatory if the template uses parameters
+`quotedMessageId` | **string** | No | Quoted message ID. If present, the message will be sent quoting the specified chat message
 
-Поля массива `params`
+`params` array parameters
 
-Параметр | Тип | Описание
+Parameter | Type | Description
 ----- | ----- | -----
-`default` | **string** | значение параметра default
+`default` | **string** | default parameter value
 
 
-### Пример тела запроса {#request-example-body}
+### Request body example {#request-example-body}
 
-Отправка сообщения в личный чат:
+Sending a message to a personal chat:
 ```json
 {
     "chatId": "11001234567@c.us",
@@ -46,15 +46,15 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenI
 ```
 ```
 
-## Ответ {#response}
+## Response {#response}
 
-### Поля ответа {#response-parameters}
+### Response parameters {#response-parameters}
 
-Поле | Тип |  Описание
+Parameter | Type |  Description
 ----- | ----- | -----
-`idMessage ` | **string** | Идентификатор отправленного сообщения 
+`idMessage ` | **string** | Sent message Id 
 
-### Пример тела ответа {#response-example-body}
+### Response body example {#response-example-body}
 
 ```json
 {
@@ -62,11 +62,11 @@ POST https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenI
 }
 ```
 
-### Ошибки {#errors}
+### Errors {#errors}
 
-Перечень общих для всех методов ошибок смотрите в разделе [Стандартные ошибки](../common-errors.md)
+For a list of errors common to all methods, refer to [Common errors](../common-errors.md) section
 
-## Пример кода на curl  {#request-example-curl}
+## curl example  {#request-example-curl}
 
 ```
 curl --location --request POST 'https://api.green-api.com/waInstance{{idInstance}}/sendTemplate/{{apiTokenInstance}}' \
