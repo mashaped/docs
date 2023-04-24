@@ -18,8 +18,8 @@ To get incoming webhooks of this type, two conditions must be true:
 | `typeMessage`        | **string** | Incoming message type. For messages of this type the parameter takes on the value `contactsArrayMessage` |
 | `contacts` | **object** | Incoming contact data object.                                                              |
 | `quotedMessage`      | **object** | Quoted message data object. Present only if the message itself is a quote |
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, takes on values true/false|
-|`forwardingScore` | **integer** | Количество пересылок сообщения|
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false|
+|`forwardingScore` | **integer** | Number of message forwards|
 
 `contacts` object parameters
 
@@ -205,7 +205,7 @@ The rest of the fields are filled depending on the type of the quoted message an
   }
 }
 ```
-### Пример тела уведомления входящего сообщения с массивом контактов и цитатой геопозиции {#webhook-example-body4}
+### Contacts array and location quote incoming message webhook body example {#webhook-example-body4}
 
 ```json
 {
@@ -226,12 +226,12 @@ The rest of the fields are filled depending on the type of the quoted message an
     "typeMessage": "ContactsArrayMessage",
     "contacts":  [
 		{
-			"displayName": "Виктор Андреевич",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"displayName": "Victor Andreevich",
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
