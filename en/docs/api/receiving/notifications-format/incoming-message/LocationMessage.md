@@ -27,8 +27,8 @@ Parameter | Type | Description
 `latitude` | **double** | Location latitude
 `longitude` | **double** | Location longitude
 `jpegThumbnail` | **string** | `base64`-coded image preview
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false|
-|`forwardingScore` | **integer** | Количество пересылок сообщения|
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false|
+|`forwardingScore` | **integer** | Number of message forwards|
 
 `quotedMessage` object parameters
 
