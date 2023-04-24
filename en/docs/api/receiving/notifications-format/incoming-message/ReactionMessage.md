@@ -1,43 +1,43 @@
-# Входящее сообщение-реакция
+# Incoming reaction message
 
-В данном разделе описывается формат входящего уведомления объекта `messageData` для входящего сообщения реакции. Для получения описания общего формата входящих уведомлений обратитесь к разделу [Входящие сообщения](Webhook-IncomingMessageReceived.md).
+This section describes `messageData` object incoming webhook format for incoming reaction message. For a description of the general format of incoming webhooks, refer to [Incoming messages](Webhook-IncomingMessageReceived.md) section.
 
-Для получения входящих уведомлений данного вида требуется выполнение двух условий:
+To get incoming webhooks of this type, two conditions must be true:
 
 `typeWebhook` = `incomingMessageReceived`
 
 `messageData.typeMessage` = `reactionMessage`
 
-## Уведомление {#webhook}
+## Webhook {#webhook}
 
-### Формат уведомления {#webhook-parameters}
+### Webhook parameters {#webhook-parameters}
 
-Поля объекта `messageData`
+`messageData` object parameters
 
-| Параметр          | Тип        | Описание                                                                                                                                       |
+| Parameter          | Type        | Description                                                                                                                                       |
 | ----------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `typeMessage`     | **string** | Тип принятого сообщения. Для сообщений данного типа поле принимает значение: `reactionMessage`|
-|`extendedTextMessageData` | **object** | Объект данных о принятом сообщении-реакции  |                                                                                           |
-| `quotedMessage`   | **object** | Объект данных о цитируемом сообщении. Сообщение на которое отреагировал собеседник   |
+| `typeMessage`     | **string** | Incoming message type. For messages of this type the parameter takes on the value: `reactionMessage`|
+|`extendedTextMessageData` | **object** | Incoming reaction message data object  |                                                                                           |
+| `quotedMessage`   | **object** | Quoted message data object. The message the correspondent has reacted to   |
 
-Поля объекта `extendedTextMessageData`
+`extendedTextMessageData` object parameters
 
-Параметр | Тип | Описание
+Parameter | Type | Description
 ----- | ----- | -----
-`text` | **string** | Реакция (эмоджи) на сообщение
+`text` | **string** | Reaction (emoji) to the message
 
 
-Поля объекта `quotedMessage`
+`quotedMessage` object parameters
 
-| Параметр      | Тип        | Описание            |
+| Parameter     | Type        | Description            |
 | ------------- | ---------- | ------------------- |
-| `stanzaId` | **string** | id цитируемого сообщения |
-| `participant` | **string** | id отправителя цитируемого сообщения |
-| `typeMessage` | **string** | Тип цитируемого сообщения |
+| `stanzaId` | **string** | quoted message id |
+| `participant` | **string** | quoted message sender's id |
+| `typeMessage` | **string** | quoted message type |
 
-Остальные поля заполняются в зависимости от типа цитируемого сообщения и идентичны полям входящих сообщений описаннных в разделе [Входящие сообщения](Webhook-IncomingMessageReceived.md)
+The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md) section
 
-### Пример тела уведомления {#webhook-example-body}
+### Webhook body example {#webhook-example-body}
 
 ```json
 {
@@ -51,9 +51,9 @@
   "idMessage": "F7AEC1B7086ECDC7E6E45923F5EDB825",
   "senderData": {
     "chatId": "79001234568@c.us",
-    "chatName": "Грин",
+    "chatName": "Green",
     "sender": "79001234568@c.us",
-    "senderName": "Грин"
+    "senderName": "Green"
   },
   "messageData": {
     "typeMessage": "reactionMessage",
