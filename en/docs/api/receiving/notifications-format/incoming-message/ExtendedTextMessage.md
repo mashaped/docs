@@ -28,16 +28,16 @@ Parameter | Type | Description
 `description` | **string** | Link description, may be empty
 `title` | **string** | Link title, may be empty
 `jpegThumbnail` | **string** | `base64`-coded image preview, may be absent
-`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-`forwardingScore` | **integer** | Количество пересылок сообщения
-`previewType` | **string** | Тип превью.(только для рекламных сообщений)
-`containsAutoReply` | **boolean** | Содержит ли сообщение автоответ.(только для рекламных сообщений)
-`mediaType` | **string** | Тип медиа сообщения, например "IMAGE".(только для рекламных сообщений)
-`showAdAttribution` | **boolean** | Показывать ли атрибуты рекламы в сообщении.(только для рекламных сообщений)
-`sourceId` | **string** | Id рекламы.(только для рекламных сообщений)
-`sourceType` | **string** | Тип источника, например "ad".(только для рекламных сообщений)
-`sourceUrl` | **string** | Ссылка на рекламу.(только для рекламных сообщений)
-`thumbnailUrl` | **string** | Ссылка на превью изображения.(только для рекламных сообщений)
+`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+`forwardingScore` | **integer** | Number of message forwards
+`previewType` | **string** | Preview type (only for advertisement messages)
+`containsAutoReply` | **boolean** | Whether the message contains an auto reply (only for advertisement messages)
+`mediaType` | **string** | Message media type, for example "IMAGE" (only for advertisement messages)
+`showAdAttribution` | **boolean** | Whether the advertisement details should be shown (only for advertisement messages)
+`sourceId` | **string** | Advertisement Id (only for advertisement messages)
+`sourceType` | **string** | Source type, for example "ad" (only for advertisement messages)
+`sourceUrl` | **string** | Advertisement url (only for advertisement messages)
+`thumbnailUrl` | **string** | Image preview url (only for advertisement messages)
 
 
 `quotedMessage` object parameters
