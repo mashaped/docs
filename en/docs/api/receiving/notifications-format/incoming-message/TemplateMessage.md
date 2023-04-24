@@ -24,13 +24,13 @@ To get incoming webhooks of this type, two conditions must be true:
 
 | Parameter      | Type        | Description               |
 | ------------- | ---------- | ------------------- |
-| `namespace` | **string** | Пространство имен организации|
-| `elementName` | **string** | Имя шаблонного сообщения|
+| `namespace` | **string** | Organization names space|
+| `elementName` | **string** | template message name|
 | `contentText` | **string** | Buttons body text message|
 | `footer` | **string** | Buttons footer text message|
 | `buttons`   | **object** | Buttons data object |
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-|`forwardingScore` | **integer** | Количество пересылок сообщения
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+|`forwardingScore` | **integer** | Number of message forwards
 
 `buttons` object parameters
 
