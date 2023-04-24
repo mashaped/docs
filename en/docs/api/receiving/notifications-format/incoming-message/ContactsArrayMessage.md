@@ -37,7 +37,7 @@ To get incoming webhooks of this type, two conditions must be true:
 | `participant` | **string** | quoted message sender's id |
 | `typeMessage` | **string** | quoted message type            |
 
-The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md)
+The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md) section
 
 ### Webhook body example {#webhook-example-body}
 
