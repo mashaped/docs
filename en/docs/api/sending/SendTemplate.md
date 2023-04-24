@@ -16,8 +16,8 @@ For `idInstance` and `apiTokenInstance` request parameters, refer to [Before you
 Parameter | Type | Mandatory | Description
 ----- | ----- | ----- | -----
 `chatId` | **string** | Yes | [Chat Id](../chat-id.md)
-`namespace` | **string** | Yes | name of the names space from the official API
-`namespace` | **string** | Yes | message template name
+`namespace` | **string** | Yes | Name of the names space from the official API
+`namespace` | **string** | Yes | Message template name
 `languageCode` | **string** | Yes | Message template localization language code
 `params` | **array** | No | Array of parameters used in the template. Mandatory if the template uses parameters
 `quotedMessageId` | **string** | No | Quoted message ID. If present, the message will be sent quoting the specified chat message
