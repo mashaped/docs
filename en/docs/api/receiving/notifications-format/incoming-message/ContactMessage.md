@@ -26,8 +26,8 @@ Parameter | Type | Description
 ----- | ----- | -----
 `displayName` | **string** | Displayed contact name
 `vcard` | **string** | VCard structure (contact visit card)
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-|`forwardingScore` | **integer** | Количество пересылок сообщения
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+|`forwardingScore` | **integer** | Number of message forwards
 
 `quotedMessage` object parameters
 
