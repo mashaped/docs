@@ -27,8 +27,10 @@ Parameter | Type | Description
 `downloadUrl` | **string** | Link to download file
 `caption` | **string** | File caption
 | `fileName` | **string** | File name |
-| `mimeType` | **string** | File type according to the classification [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
-
+| `jpegThumbnail` | **string** | Image preview in base64 |
+| `mimeType` | **string** | File type according to the [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) classification |
+|`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+|`forwardingScore` | **integer** | Number of message forwards
 
 `quotedMessage` object parameters
 
