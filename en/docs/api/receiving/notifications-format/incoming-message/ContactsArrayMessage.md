@@ -144,7 +144,7 @@ The rest of the fields are filled depending on the type of the quoted message an
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
@@ -187,7 +187,7 @@ The rest of the fields are filled depending on the type of the quoted message an
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;Victorр;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:MobileND\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:MobileND\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
