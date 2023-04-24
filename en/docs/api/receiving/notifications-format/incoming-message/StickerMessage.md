@@ -1,48 +1,48 @@
-# Входящее сообщение со стикером
+# Incoming sticker message
 
-В данном разделе описывается формат входящего уведомления объекта `messageData` для входящего сообщения со стикером. Для получения описания общего формата входящих уведомлений обратитесь к разделу [Входящие сообщения](Webhook-IncomingMessageReceived.md).
+This section describes `messageData` object incoming webhook format for incoming sticker message. For a description of the general format of incoming webhooks, refer to [Incoming messages](Webhook-IncomingMessageReceived.md) section.
 
-Для получения входящих уведомлений данного вида требуется выполнение двух условий:
+To get incoming webhooks of this type, two conditions must be true:
 
 `typeWebhook` = `incomingMessageReceived`
 
 `messageData.typeMessage` = `stickerMessage`
 
-## Уведомление {#webhook}
+## Webhook {#webhook}
 
-### Формат уведомления {#webhook-parameters}
+### Webhook parameters {#webhook-parameters}
 
-Поля объекта `messageData`
+`messageData` object parameters
 
-| Параметр          | Тип        | Описание                                                                                                                                       |
+| Parameter          | Type        | Description                                                                                                                                       |
 | ----------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `typeMessage`     | **string** | Тип принятого сообщения. Для сообщений данного типа поле принимает значение: `stickerMessage`|
-|`fileMessageData` | **object** | Объект данных о принятом стикере  |                                                                                                            |
-| `quotedMessage`   | **object** | Объект данных о цитируемом сообщении  |
+| `typeMessage`     | **string** | Incoming message type. For messages of this type the parameter takes on the value: `stickerMessage`|
+|`fileMessageData` | **object** | Incoming sticker data object  |                                                                                                            |
+| `quotedMessage`   | **object** | Quoted message data object  |
 
-Поля объекта `fileMessageData`
+`fileMessageData` object parameters
 
-Параметр | Тип | Описание
+Parameter | Type | Description
 ----- | ----- | -----
-`downloadUrl` | **string** | Ссылка на стикер
-`jpegThumbnail` | **string** | Предпросмотр изображения в base64 |
-`isAnimated` | **boolean** | Является ли стикер анимированным |
-`mimeType` | **string** | Тип файла, согласно класификации [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
-`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false
-`forwardingScore` | **integer** | Количество пересылок сообщения
+`downloadUrl` | **string** | Sticker url
+`jpegThumbnail` | **string** | Image preview in base64 |
+`isAnimated` | **boolean** | Whether the sticker is animated |
+`mimeType` | **string** | File type according to the [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) classification |
+`isForwarded` | **boolean** | Whether the message is forwarded, takes on values true/false
+`forwardingScore` | **integer** | Number of message forwards
 
 
-Поля объекта `quotedMessage`
+`quotedMessage` object parameters
 
-| Параметр      | Тип        | Описание            |
+| Parameter      | Type        | Description            |
 | ------------- | ---------- | ------------------- |
-| `stanzaId` | **string** | id цитируемого сообщения |
-| `participant` | **string** | id отправителя цитируемого сообщения |
-| `typeMessage` | **string** | Тип цитируемого сообщения |
+| `stanzaId` | **string** | quoted message id |
+| `participant` | **string** | quoted message sender's id |
+| `typeMessage` | **string** | quoted message type |
 
-Остальные поля заполняются в зависимости от типа цитируемого сообщения и идентичны полям входящих сообщений описаннных в разделе [Входящие сообщения](Webhook-IncomingMessageReceived.md)
+The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md) section
 
-### Пример тела уведомления {#webhook-example-body}
+### Webhook body example {#webhook-example-body}
 
 ```json
 {
@@ -56,9 +56,9 @@
   "idMessage": "F7AEC1B7086ECDC7E6E45923F5EDB825",
   "senderData": {
     "chatId": "79001234568@c.us",
-    "chatName": "Грин",
+    "chatName": "Green",
     "sender": "79001234568@c.us",
-    "senderName": "Грин"
+    "senderName": "Green"
   },
   "messageData": {
     "typeMessage": "stickerMessage",
