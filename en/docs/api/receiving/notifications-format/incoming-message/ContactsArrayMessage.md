@@ -1,45 +1,45 @@
-# Входящее сообщение с массивом контактов
-В данном разделе описывается формат входящего уведомления объекта `messageData` для входящего сообщения с массивом контактов. Для получения описания общего формата входящих уведомлений обратитесь к разделу [Входящие сообщения](Webhook-IncomingMessageReceived.md).
+# Incoming contacts array message
+This section describes `messageData` object incoming webhook format for incoming contacts array message. For a description of the general format of incoming webhooks, refer to [Incoming messages](Webhook-IncomingMessageReceived.md).
 
-Для получения входящих уведомлений данного вида требуется выполнение двух условий:
+To get incoming webhooks of this type, two conditions must be true:
 
 `typeWebhook` = `incomingMessageReceived`
 
 `messageData.typeMessage` = `contactsArrayMessage`
 
-## Уведомление {#webhook}
+## Webhook {#webhook}
 
-### Формат уведомления {#webhook-parameters}
+### Webhok parameters {#webhook-parameters}
 
-Поля объекта `messageData`
+`messageData` object parameters
 
-| Параметр             | Тип        | Описание                                                                                        |
+| Parameter             | Type        | Description                                                                                        |
 | -------------------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| `typeMessage`        | **string** | Тип принятого сообщения. Для сообщений данного типа поле принимает значение `contactsArrayMessage` |
-| `contacts` | **object** | Объект массива данных о принятых контактах.                                                              |
-| `quotedMessage`      | **object** | Объект данных о цитируемом сообщении. Присутствует только, если само сообщение является цитатой |
-|`isForwarded` | **boolean** | Является ли сообщение пересланным, принимает значения true/false|
+| `typeMessage`        | **string** | Incoming message type. For messages of this type the parameter takes on the value `contactsArrayMessage` |
+| `contacts` | **object** | Incoming contact data object.                                                              |
+| `quotedMessage`      | **object** | Quoted message data object. Present only if the message itself is a quote |
+|`isForwarded` | **boolean** | Является ли сообщение пересланным, takes on values true/false|
 |`forwardingScore` | **integer** | Количество пересылок сообщения|
 
-Поля объекта `contacts`
+`contacts` object parameters
 
-| Параметр      | Тип        | Описание                                     |
+| Parameter      | Type        | Description                                     |
 | ------------- | ---------- | -------------------------------------------- |
-| `displayName` | **string** | Отображаемое имя контакта                    |
-| `vcard`       | **string** | Структура VCard (визитной карточки контакта) |
+| `displayName` | **string** | Displayed contact name                 |
+| `vcard`       | **string** | СVCard structure (contact visit card) |
 
 
-Поля объекта `quotedMessage`
+`quotedMessage` object parameters
 
-| Параметр      | Тип        | Описание                             |
+| Parameter      | Type        | Description                             |
 | ------------- | ---------- | ------------------------------------ |
-| `stanzaId`    | **string** | id цитируемого сообщения             |
-| `participant` | **string** | id отправителя цитируемого сообщения |
-| `typeMessage` | **string** | Тип цитируемого сообщения            |
+| `stanzaId`    | **string** | quoted message id             |
+| `participant` | **string** | quoted message sender's id |
+| `typeMessage` | **string** | quoted message type            |
 
-Остальные поля заполняются в зависимости от типа цитируемого сообщения и идентичны полям входящих сообщений описаннных в разделе [Входящие сообщения](Webhook-IncomingMessageReceived.md)
+The rest of the fields are filled depending on the type of the quoted message and are identical to the fields of incoming messages described in [Incoming messages](Webhook-IncomingMessageReceived.md)
 
-### Пример тела уведомления {#webhook-example-body}
+### Webhook body example {#webhook-example-body}
 
 ```json
 {
@@ -60,12 +60,12 @@
     "typeMessage": "ContactsArrayMessage",
     "contacts":  [
 		{
-			"displayName": "Виктор Андреевич",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"displayName": "Victor Andreevich",
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
@@ -75,7 +75,7 @@
 }
 ```
 
-### Пример тела уведомления входящего сообщения с массивом контактов и цитатой текстового сообщения {#webhook-example-body1}
+### Contacts array and text message quote incoming message webhook body example {#webhook-example-body1}
 
 ```json
 {
@@ -97,12 +97,12 @@
     "typeMessage": "ContactsArrayMessage",
     "contacts":  [
 		{
-			"displayName": "Виктор Андреевич",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"displayName": "Victor Andreevich",
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
@@ -112,13 +112,13 @@
       "stanzaId": "9A73322488DCB7D9689A6112F2528C9D",
       "participant": "79001235696@c.us",
       "typeMessage": "textMessage",
-      "textMessage": "Привет"
+      "textMessage": "Hello"
     }
   }
 }
 ```
 
-### Пример тела уведомления входящего сообщения с массивом контактов и цитатой аудио/видео/документ {#webhook-example-body2}
+### Contacts array and audio/video/document quote incoming message webhook body example {#webhook-example-body2}
 
 ```json
 {
@@ -139,12 +139,12 @@
     "typeMessage": "ContactsArrayMessage",
     "contacts":  [
 		{
-			"displayName": "Виктор Андреевич",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"displayName": "Victor Andreevich",
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
@@ -161,7 +161,7 @@
   }
 ```
 
-### Пример тела уведомления входящего сообщения с массивом контактов и цитатой контакта {#webhook-example-body3}
+### Contacts array and contact quote incoming message webhook body example {#webhook-example-body3}
 
 ```json
 {
@@ -182,12 +182,12 @@
     "typeMessage": "ContactsArrayMessage",
     "contacts":  [
 		{
-			"displayName": "Виктор Андреевич",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"displayName": "Victor Andreevich",
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich, Victor;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Mobile\nEND:VCARD"
 		},
 		{
 			"displayName": "Oleg edrosovich",
-			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Андреевич;Виктор;;;\nFN:Виктор Андреевич\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+			"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Andreevich;Victor;Victorр;;;\nFN:Victor Andreevich\nORG:Image\nTITLE:\nitem1.TEL;waid=79001234569:+7 900 123-45-69\nitem1.X-ABLabel:MobileND\nEND:VCARD"
 		}
     ],
 	"forwardingScore": 4,
@@ -199,7 +199,7 @@
       "typeMessage": "contactMessage",
       "contact": {
         "displayName": "Green-Api",
-        "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Green-Api\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Мобильный\nEND:VCARD"
+        "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Green-Api\nitem1.TEL;waid=79001230000\nitem1.X-ABLabel:Mobile\nEND:VCARD"
       }
     }
   }
