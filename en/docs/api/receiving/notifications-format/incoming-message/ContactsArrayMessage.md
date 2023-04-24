@@ -1,5 +1,5 @@
 # Incoming contacts array message
-This section describes `messageData` object incoming webhook format for incoming contacts array message. For a description of the general format of incoming webhooks, refer to [Incoming messages](Webhook-IncomingMessageReceived.md).
+This section describes `messageData` object incoming webhook format for incoming contacts array message. For a description of the general format of incoming webhooks, refer to [Incoming messages](Webhook-IncomingMessageReceived.md) section.
 
 To get incoming webhooks of this type, two conditions must be true:
 
