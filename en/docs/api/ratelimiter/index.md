@@ -1,6 +1,6 @@
 # Rate limiter
 
-The system is designed to prevent incorrect use of the API.
+The system is aimed to prevent incorrect use of the API.
 Requests made with a frequency higher than indicated in the table will be rejected with error 429.
 
 | Method          | Requests per second |                    
